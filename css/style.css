@@ -3,32 +3,36 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap');
 /* #9be644; */
 
-*{
+* {
     box-sizing: content-box;
 }
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
 }
 
 /* Inicio Estilos Header */
 header {
     padding: 0;
-    margin: 0;  
+    margin: 0;
     background-image: url("../assets/img/header-fondo.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
 }
-.container-header{
+
+.container-header {
     padding: 2% 2%;
     background-color: rgba(0, 0, 0, .8);
     display: grid;
@@ -36,28 +40,34 @@ header {
     align-items: center;
     gap: 1%;
 }
-.container-header-logo-gopass img{
+
+.container-header-logo-gopass img {
     width: 100px;
 }
-.container-header-button-login{
+
+.container-header-button-login {
     display: grid;
     justify-items: center;
 }
-.burguer-button{
+
+.burguer-button {
     display: none;
 }
-.container-header-button-login a{
+
+.container-header-button-login a {
     color: #9be644;
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
 }
-.container-header-text{
+
+.container-header-text {
     margin: 0;
     background-color: rgba(0, 0, 0, .8);
     padding: 5% 0;
 }
-.container-header-text p{
+
+.container-header-text p {
     padding: 0 2%;
     margin: 0;
     max-width: 1000px;
@@ -67,22 +77,27 @@ header {
     font-weight: bold;
     font-size: 68px;
 }
-.menu{
+
+.menu {
     display: none;
 }
-.container-header-nav{
+
+.container-header-nav {
     background-color: rgba(0, 0, 0, .8);
 }
+
 .container-header-nav .nav-header ul {
     margin: 0;
     padding: 2.5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 .container-header-nav .nav-header ul li {
     display: grid;
     justify-items: center;
 }
+
 .container-header-nav .nav-header ul li a {
     text-transform: uppercase;
     font-weight: bold;
@@ -91,6 +106,7 @@ header {
     position: relative;
     padding-bottom: 10px;
 }
+
 .container-header-nav .nav-header ul li a::before {
     content: "";
     display: block;
@@ -101,16 +117,77 @@ header {
     bottom: 0;
     transition: all 1s;
 }
+
 .container-header-nav .nav-header ul li a:hover::before {
     width: 100%;
 }
+/* Fin estilos Header */
+/* Inicio estios Home */
+.home {
+    height: 600px;
+    background-image: url("../assets/img/home-fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 25px 0;
+    display: grid;
+    align-items: center;
+}
+.home-container {
+    margin: 0;
+    padding: 0%;
+    display: grid;
+    grid-template-rows: 150px 100px 100px;
+    justify-items: center;
+}
+.home-container-text p {
+    text-align: center;
+    margin: 0;
+    padding: 0% 10%;
+    font-size: 1.5em;
+    color: gray;
+    font-weight: bold;
+}
+.home-container-text .text-strong {
+    color: #585857;
+}
 
+.home-container-text .text-strong strong {
+    color: #9be644;
+    font-size: 1.4em;
+}
+
+.home-container-image {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.home-container-image img {
+    width: 300px;
+}
+
+.home-container-link {
+    margin-top: 2%;
+}
+
+.home-container-link a {
+    text-transform: uppercase;
+    color: gray;
+    font-weight: bold;
+    font-size: 1.4em;
+    border-bottom: 2px solid grey;
+}
+/* Fin estilos Home */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .container-header-nav .nav-header ul li a {
         font-size: .5em;
     }
+
     header {
         margin: 0;
         padding: 0;
@@ -119,34 +196,42 @@ header {
         background-size: cover;
         background-repeat: no-repeat;
     }
-    .container-header{
-        background-color:initial;
+
+    .container-header {
+        background-color: initial;
         border-bottom: 20px solid transparent;
     }
-    .container-header-logo-gopass{
+
+    .container-header-logo-gopass {
         display: flex;
         z-index: 5;
     }
-    .container-header-logo-gopass img{
+
+    .container-header-logo-gopass img {
         width: 70px;
     }
-    .container-header-button-login{
+
+    .container-header-button-login {
         display: none;
     }
-    .burguer-button{
+
+    .burguer-button {
         width: 50vw;
         position: fixed;
         z-index: 4;
         display: flex;
-        right: -40vw; 
+        right: -40vw;
     }
-    .burguer-button i{
+
+    .burguer-button i {
         color: #9be644;
     }
-    .container-header-text{
+
+    .container-header-text {
         background-color: initial;
     }
-    .menu{
+
+    .menu {
         background-color: rgba(0, 0, 0, .9);
         position: fixed;
         top: 0;
@@ -160,34 +245,51 @@ header {
         font-weight: bold;
         transition: .5s;
     }
-    .menu ul{
+
+    .menu ul {
         margin: 0;
         padding: 0;
     }
-    .menu ul li{
+
+    .menu ul li {
         margin: 5px 0;
         padding: 0;
     }
-    .menu ul li a{
+
+    .menu ul li a {
         border-bottom: 1px solid #9be644;
         margin: 0;
         padding: 0;
         color: #9be644;
         text-transform: uppercase;
-        
     }
-    
-    .menu.is-active{
+
+    .menu.is-active {
         transition: .5s;
         left: 0;
     }
-    .container-header-nav{
+
+    .container-header-nav {
         display: none;
     }
-    .container-header-text p{
-        font-size: 2em;
+
+    .container-header-text p {
+        font-size: 1.5em;
     }
-} 
+    .home {
+        background-image: url("../assets/img/responsive/home-fondo-responsive.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        padding: 25px 0;
+    }
+    .home-container-text p{
+        font-size: 1.2em;
+    }
+    .home-container-text .text-strong strong {
+        font-size: 1.2em;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
@@ -195,14 +297,14 @@ header {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .container-header-nav .nav-header ul li a {
-        font-size: 1em;
+        font-size: .5em;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     container-header-nav .nav-header ul li a {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 
