@@ -345,7 +345,8 @@ header {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
-        padding: 25px 0;
+        padding: 2% 0;
+        border: 1px solid #9be644;
     }
     .home-container-text p{
         font-size: 1.2em;
