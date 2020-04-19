@@ -289,6 +289,13 @@ header {
     .home-container-text .text-strong strong {
         font-size: 1.2em;
     }
+    .home-container-image {
+        padding: 1% 0;
+    }
+    .home-container-image img {
+        width: 250px;
+    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
