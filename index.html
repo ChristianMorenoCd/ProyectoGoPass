@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="js/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+   
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoPass</title>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <a href="" class="container-header-logo-gopass"> <img src="assets/img/header-logo-gopass.png"alt="logo GoPass"></a>
+             <div class="burguer-button" id="burguer-button">
+                <i class="fas fa-bars  fa-2x"></i>
+            </div>
+            <div class="container-header-button-login">
+                <a href="">iniciar sesión</a>
+            </div>
+        </div>
+        <div class="container-header-text">
+            <p> el medio de pago automático sin filas, sin efectivo.</p>
+        </div>
+        <nav class="menu" id="menu">
+            <ul>
+                <li>
+                    <a href="#">¿qué es gopass?</a>
+                </li>
+                <li>
+                    <a href="#">nuestros servicios</a>
+                </li>
+                <li>
+                    <a href="#">preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a href="#">adquiere tu tag</a>
+                </li>
+                <li>
+                    <a href="#">iniciar sesión</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-header-nav">
+            <nav class="nav-header">
+                <ul>
+                    <li>
+                        <a href="#">¿qué es gopass?</a>
+                    </li>
+                    <li>
+                        <a href="#">nuestros servicios</a>
+                    </li>
+                    <li>
+                        <a href="#">preguntas frecuentes</a>
+                    </li>
+                    <li>
+                        <a href="#">adquiere tu tag</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        const burguerBtn = document.querySelector('#burguer-button');
+
+        burguerBtn.addEventListener('click', showHide);
+
+        function showHide(){
+            menu.classList.toggle('is-active')
+        }
+    </script>
+</body>
+</html>
