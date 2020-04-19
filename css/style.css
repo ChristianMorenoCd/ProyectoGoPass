@@ -181,7 +181,71 @@ header {
     border-bottom: 2px solid grey;
 }
 /* Fin estilos Home */
+/* Inicio estilos description */
+.description {
+    background-image: url("../assets/img/description-fondo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    padding: 30px 0;
+    align-items: center;
+}
 
+
+.container-description-image-responsive {
+    display: none;
+}
+
+.container-description {
+    padding: 0;
+    padding-left: 50px;
+    display: grid;
+    align-items: center;
+}
+.container-description-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4.5em;
+    line-height: 90%;
+    margin: 0;
+    padding: 0;
+    color: #585857;
+}
+
+.container-description-title p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.container-description-text {
+    color: gray;
+    font-size: 2em;
+    line-height: 95%;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+.container-description-text p {
+    margin: 0;
+    padding: 0;
+}
+.container-description-image {
+    padding: 0;
+    display: grid;
+    justify-items: end;
+    align-items: center;
+}
+
+.container-description-image img {
+    width: 600px;
+}
+
+/* Fin estilos Descripcion */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .container-header-nav .nav-header ul li a {
@@ -295,6 +359,32 @@ header {
     .home-container-image img {
         width: 250px;
     }
+    .description{
+        background-image: initial;
+    }
+    .container-description{
+        grid-template-rows: repeat(3, 250px);
+    }
+    .container-description-image-responsive{
+        display: grid;
+        gap: 50px;
+    }
+    .container-description-image-responsive img{
+        width: 433px;
+    }
+    .container-description-title p{
+        font-size: .6em;
+        line-height: 85%;
+        padding: 6%;
+    }
+    .container-description-text p{
+        padding: 6%;
+        font-size: 1em;
+        text-align: initial;
+    }
+    .container-description-image{
+        display: none;
+    }
     
 }
 
@@ -306,6 +396,7 @@ header {
     .container-header-nav .nav-header ul li a {
         font-size: 1.2em;
     }
+   
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
