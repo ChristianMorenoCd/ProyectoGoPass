@@ -363,22 +363,36 @@ header {
         background-image: initial;
     }
     .container-description{
-        grid-template-rows: repeat(3, 250px);
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 100vw;
+        margin: 0;
+        padding: 0;
     }
     .container-description-image-responsive{
         display: grid;
-        gap: 50px;
+        justify-items: end;
+        gap: 0;
     }
     .container-description-image-responsive img{
-        width: 433px;
+        width: 420px;
+    }
+    .container-description-title{
+        margin: 0;
+        padding: 0;
     }
     .container-description-title p{
-        font-size: .6em;
+        margin: 0;
+        padding: 3% 2%;
+        font-size: .8em;
         line-height: 85%;
-        padding: 6%;
+      
+    }
+    .container-description-text{
+        margin: 0;
+        padding: 0;
     }
     .container-description-text p{
-        padding: 6%;
+        padding: 0% 2%;
         font-size: 1em;
         text-align: initial;
     }
