@@ -430,10 +430,10 @@ header {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .container-header-button-login a {
-        font-size: 2em;
+        font-size: 1.7em;
     }
     .container-header-nav .nav-header ul li a {
-        font-size: 2em;
+        font-size: 1.7em;
     }
 
 }
