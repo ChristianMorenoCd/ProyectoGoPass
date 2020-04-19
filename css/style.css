@@ -290,7 +290,7 @@ header {
         font-size: 1.2em;
     }
     .home-container-image {
-        padding: 1% 0;
+        padding: 4% 0;
     }
     .home-container-image img {
         width: 250px;
@@ -304,14 +304,17 @@ header {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .container-header-nav .nav-header ul li a {
-        font-size: .5em;
+        font-size: 1.2em;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    container-header-nav .nav-header ul li a {
+    .container-header-nav .nav-header ul li a {
         font-size: 1em;
+    }
+    .container-header-button-login a {
+        font-size: 1rem;
     }
 }
 
