@@ -677,7 +677,7 @@ footer {
 
     .container-description-title {
         margin: 0;
-        padding: 0;
+        padding: 0 5%;
         text-align: center;
     }
 
@@ -691,7 +691,7 @@ footer {
 
     .container-description-text {
         margin: 0;
-        padding: 0;
+        padding: 0 5%;
         text-align: center;
     }
 
