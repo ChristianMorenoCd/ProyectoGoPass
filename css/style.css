@@ -743,7 +743,7 @@ footer {
     }
   
     .footer-container-contact-image img{
-        width: 80%;
+        width: 60%;
     }
     .footer-container-contact-form form{
         margin: 0;
@@ -766,8 +766,11 @@ footer {
         width: 70vw;
     }
     .container-checkbox .checkmark{
-        height: 20%;
+        height: 25%;
         width: 7%;
+    }
+    .footer-container-contact-form form button{
+        width: 50vw;
     }
    
     .footer-container-info-box-data p{
