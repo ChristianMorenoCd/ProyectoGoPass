@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap');
 /* #9be644; */
 
+html{
+    font-size: 16px;
+}
 * {
     box-sizing: content-box;
 }
