@@ -755,7 +755,9 @@ footer {
         color: #fff;
         font-size:  1.5rem;
     }
-
+    .container-items-image{
+        padding: 2% 0;
+    }
     .container-items-image img {
         margin: 0;
         padding: 0;
