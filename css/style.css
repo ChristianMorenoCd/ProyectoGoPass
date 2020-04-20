@@ -302,7 +302,7 @@ header {
     color: #fff;
     font-size: 1.3em;
     font-weight: 500;
-    font-size-adjust: none;
+    text-size-adjust: none;
 }
 .container-items-image {
     margin: 0;
@@ -563,10 +563,11 @@ header {
     }
     .container-items-box-title p {
         font-size: 1em;
+        font-size-adjust: none;
     }
     
     .container-items-box-text p {
-        color: #fff;
+        font-size-adjust: none;
         font-size: .8em;
     }
     .container-items-box-image img {
@@ -613,11 +614,12 @@ header {
     }
     .container-items-box-title p {
         font-size: 1.2em;
+        font-size-adjust: none;
     }
     
     .container-items-box-text p {
-        color: #fff;
-        font-size: 1em;
+               font-size: 1em;
+        font-size-adjust: none;
     }
     .container-items-box-image img {
         width: 100px;
@@ -664,11 +666,13 @@ header {
 
     .container-items-box-title p {
         font-size: 1.5em;
+        font-size-adjust: none;
     }
     
     .container-items-box-text p {
         color: #fff;
         font-size: 1.2em;
+        font-size-adjust: none;
     }
     .container-items-box-image img {
         width: 150px;
