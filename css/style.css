@@ -8,6 +8,7 @@ html{
 }
 * {
     box-sizing: content-box;
+    font-size: 16px;
 }
 
 body {
