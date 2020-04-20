@@ -550,6 +550,7 @@ footer {
     }
 
     .container-header {
+        padding: 0 5%;
         background-color: initial;
         border-bottom: 20px solid transparent;
     }
@@ -626,7 +627,8 @@ footer {
     }
 
     .container-header-text p {
-        font-size: 1.5em;
+        font-size: 1.7em;
+        padding: 0 5%;
     }
 
     .home {
