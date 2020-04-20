@@ -769,14 +769,15 @@ footer {
         height: 20%;
         width: 7%;
     }
-    .footer-container-info-box{
-        justify-content: center;
-    }
-    .footer-container-info-box-image{
-        margin: 2%;
-    }
+   
     .footer-container-info-box-data p{
         font-size: 1em;
+    }
+    .footer-container-info-icons{   
+        width: 100vw;
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
 
     .footer-container-info-icons a {
