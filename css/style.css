@@ -652,8 +652,9 @@ footer {
     }
 
     .home-container-text p {
-        font-size: 1.5em;
+        font-size: 1.58em;
         padding: 0 3%;
+        font-weight: initial;
 
     }
 
