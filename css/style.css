@@ -256,8 +256,70 @@ header {
 .container-description-image img {
     width: 600px;
 }
-
 /* Fin estilos Descripcion */
+
+/* Inicio sección items */
+.items {
+    background-color: #499234;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 120px;
+    padding: 0 5%;
+}
+.container-items {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+}
+.container-items-box-image {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.container-items-box-image img {
+    width: 150px;
+}
+.container-items-box {
+    padding: 10px;
+    text-align: center;
+}
+.image-little img {
+    width: 250px;
+}
+
+.container-items-box-title p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-size-adjust: none;
+}
+
+.container-items-box-text p {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 500;
+    font-size-adjust: none;
+}
+.container-items-image {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-items: end;
+    justify-self: end;
+    align-self: flex-start;
+}
+
+.container-items-image img {
+    margin: 0;
+    padding: 0;
+    width: 550px;
+}
+
+/* Fin estilos items */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .container-header-nav .nav-header ul li a {
@@ -426,7 +488,36 @@ header {
     .container-description-image {
         display: none;
     }
-
+    .items{
+        min-height: 1400px;
+        background-color: initial;
+        background-image: url('../assets/img/responsive/items-fondo-responsive2.png');
+        background-position: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-template-rows: repeat(2, auto);
+        gap: 2%;
+    }
+    .container-items {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        
+    }
+    .container-items-box-title p {
+        font-size: 1.5em;
+    }
+    
+    .container-items-box-text p {
+        color: #fff;
+        font-size: 1.2em;
+    }
+    
+    .container-items-image img {
+        margin: 0;
+        padding: 0;
+        width: 80%;
+    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -440,7 +531,7 @@ header {
     }
 
     .container-header-nav .nav-header ul li a {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .container-description-title p {
