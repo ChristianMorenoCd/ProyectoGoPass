@@ -729,6 +729,8 @@ footer {
         justify-items: center;
         align-items: center;
         padding: 5% 0;
+        padding-top: 5%;
+        padding-bottom: 15%;
     }
     .footer-container-contact {
         display: grid;
