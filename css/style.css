@@ -726,7 +726,7 @@ footer {
     }
 
     .items {
-        min-height: 1830px;
+        min-height: 100%;
         background-color: initial;
         background-image: url('../assets/img/responsive/items-fondo-responsive2.png');
         background-position: cover;
@@ -737,10 +737,10 @@ footer {
     }
 
     .container-items {
+        display: initial;
         grid-template-columns: auto;
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(3, 30%);
         gap: 0;
-
     }
 
     .container-items-box-title p {
