@@ -489,7 +489,7 @@ header {
         display: none;
     }
     .items{
-        min-height: 1400px;
+        min-height: 1630px;
         background-color: initial;
         background-image: url('../assets/img/responsive/items-fondo-responsive2.png');
         background-position: cover;
