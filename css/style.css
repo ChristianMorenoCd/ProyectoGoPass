@@ -706,19 +706,20 @@ footer {
     }
 
     .items {
-        min-height: 1630px;
+        min-height: 1830px;
         background-color: initial;
         background-image: url('../assets/img/responsive/items-fondo-responsive2.png');
         background-position: cover;
         background-repeat: no-repeat;
         background-size: cover;
         grid-template-rows: repeat(2, auto);
-        gap: 2%;
+        gap: 0;
     }
 
     .container-items {
         grid-template-columns: auto;
         grid-template-rows: repeat(3, auto);
+        gap: 0;
 
     }
 
