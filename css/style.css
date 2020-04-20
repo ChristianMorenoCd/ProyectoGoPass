@@ -639,9 +639,17 @@ footer {
         padding: 2% 0;
     }
 
+    .home-container {
+        grid-template-rows: repeat(3, auto);
+        gap: 0;
+        padding: 0;
+        margin: 0;
+    }
+
     .home-container-text p {
-        font-size: 1.2em;
-       
+        font-size: 1.4em;
+        padding: 0 3%;
+
     }
 
     .home-container-text .text-strong strong {
@@ -649,11 +657,15 @@ footer {
     }
 
     .home-container-image {
-        padding: 4% 0;
+        padding: 0;
+        margin: 0;
     }
 
     .home-container-image img {
-        width: 250px;
+        width: 200px;
+    }
+    .home-container-link{
+        margin: 0;
     }
 
     .description {
@@ -700,7 +712,7 @@ footer {
     .container-description-text p {
         padding: 0% 2%;
         font-size: 1em;
-       
+
     }
 
     .container-description-image {
@@ -794,7 +806,7 @@ footer {
         width: 50vw;
     }
 
-    .footer-container-info{
+    .footer-container-info {
         display: grid;
         justify-items: center;
         text-align: center;
@@ -805,7 +817,7 @@ footer {
         font-size: 1em;
     }
 
-    .footer-container-info-box-image{
+    .footer-container-info-box-image {
         display: none;
     }
 
