@@ -652,7 +652,7 @@ footer {
     }
 
     .home-container-text p {
-        font-size: 1.58em;
+        font-size: 1.5rem;
         padding: 0 3%;
         font-weight: initial;
 
@@ -660,7 +660,10 @@ footer {
 
     .home-container-text .text-strong {
         color: gray;
-        font-size: 1.2em;
+        font-size: 1.5rem;
+    }
+    .home-container-text .text-strong strong{
+        font-size: 1.5rem;
     }
 
     .home-container-image {
