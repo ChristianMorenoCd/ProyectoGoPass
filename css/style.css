@@ -635,11 +635,11 @@ footer {
         background-position: center;
         background-size: 100%;
         padding: 2% 0;
-        border: 1px solid #9be644;
     }
 
     .home-container-text p {
         font-size: 1.2em;
+       
     }
 
     .home-container-text .text-strong strong {
@@ -678,6 +678,7 @@ footer {
     .container-description-title {
         margin: 0;
         padding: 0;
+        text-align: center;
     }
 
     .container-description-title p {
@@ -691,12 +692,13 @@ footer {
     .container-description-text {
         margin: 0;
         padding: 0;
+        text-align: center;
     }
 
     .container-description-text p {
         padding: 0% 2%;
         font-size: 1em;
-        text-align: initial;
+       
     }
 
     .container-description-image {
@@ -721,12 +723,12 @@ footer {
     }
 
     .container-items-box-title p {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 
     .container-items-box-text p {
         color: #fff;
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .container-items-image img {
