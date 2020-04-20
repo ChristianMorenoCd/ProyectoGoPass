@@ -658,6 +658,7 @@ footer {
     }
 
     .home-container-text .text-strong strong {
+        color: gray;
         font-size: 1.2em;
     }
 
