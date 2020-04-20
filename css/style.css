@@ -789,6 +789,13 @@ footer {
         width: 50vw;
     }
 
+    .footer-container-info{
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        padding: 5% 0;
+    }
+
     .footer-container-info-box-data p {
         font-size: 1em;
     }
