@@ -517,6 +517,7 @@ header {
         padding: 0;
         width: 80%;
     }
+
     
 }
 
@@ -560,6 +561,21 @@ header {
         width: 450px;
 
     }
+    .container-items-box-title p {
+        font-size: 1em;
+    }
+    
+    .container-items-box-text p {
+        color: #fff;
+        font-size: .8em;
+    }
+    .container-items-box-image img {
+        width: 100px;
+    }
+    .image-little {
+        width: 110px;
+        height: 110px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -595,6 +611,21 @@ header {
     .container-description-image img {
         width: 450px;
     }
+    .container-items-box-title p {
+        font-size: 1.2em;
+    }
+    
+    .container-items-box-text p {
+        color: #fff;
+        font-size: 1em;
+    }
+    .container-items-box-image img {
+        width: 100px;
+    }
+    .image-little {
+        width: 180px;
+        height: 110px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -629,6 +660,22 @@ header {
 
     .container-description-image img {
         width: 650px;
+    }
+
+    .container-items-box-title p {
+        font-size: 1.5em;
+    }
+    
+    .container-items-box-text p {
+        color: #fff;
+        font-size: 1.2em;
+    }
+    .container-items-box-image img {
+        width: 150px;
+    }
+    .image-little {
+        width: 250px;
+        height: 150px;
     }
 
 }
