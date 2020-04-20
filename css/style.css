@@ -700,7 +700,7 @@ footer {
         background-position: cover;
         background-repeat: no-repeat;
         background-size: cover;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
         gap: 2%;
     }
     .container-items {
