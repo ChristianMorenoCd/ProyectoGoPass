@@ -359,9 +359,14 @@ footer {
 }
 
 .footer-container-contact-form form {
-    padding: 1%;
+    padding: 2%;
     display: grid;
-    width: 90%;
+    width: 100%;
+    justify-items: center;
+}
+
+.check{
+    padding: 0 5%;
 }
 
 .footer-container-contact-form form .Inputemail {
@@ -392,7 +397,7 @@ footer {
     text-size-adjust: none;
     font-size: 1.2em;
     text-transform: uppercase;
-    width: 30vw;
+    width: 20vw;
     border: 0;
     height: 150%;
     border-radius: 13px;
@@ -513,7 +518,6 @@ footer {
 .footer-container-info-icons a {
     margin: 2%;
     color: #9be644;
-
 }
 
 .burguer-button {
@@ -696,7 +700,7 @@ footer {
         background-position: cover;
         background-repeat: no-repeat;
         background-size: cover;
-        grid-template-rows: repeat(2, auto);
+        grid-template-rows: repeat(2, 1fr);
         gap: 2%;
     }
     .container-items {
@@ -724,7 +728,7 @@ footer {
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
-        padding: 0;
+        padding: 5% 0;
     }
     .footer-container-contact {
         display: grid;
@@ -735,7 +739,7 @@ footer {
     }
   
     .footer-container-contact-image img{
-        width: 30%;
+        width: 80%;
     }
     .footer-container-contact-form form{
         margin: 0;
@@ -757,7 +761,15 @@ footer {
     .container-checkbox{
         width: 70vw;
     }
+    .container-checkbox .checkmark{
+        height: 20%;
+        width: 7%;
+    }
 
+    .footer-container-info-icons a {
+        font-size: .8em;
+    }
+    
    
 
     
@@ -924,6 +936,16 @@ footer {
     .image-little {
         width: 250px;
         height: 150px;
+    }
+
+    .footer-container-contact-form form .Inputemail {
+        border-radius: 13px;
+        width: 20vw;
+        text-size-adjust: none;
+    }
+    .footer-container-contact-form form textarea {
+        width: 20vw;
+        text-size-adjust: none;
     }
 
 }
