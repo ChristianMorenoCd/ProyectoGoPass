@@ -504,6 +504,7 @@ footer {
 
 .footer-container-info-box-data p {
     line-height: 15%;
+    text-size-adjust: none;
     font-size: 1.5em;
     font-weight: 700;
     color: #9be644;
@@ -511,6 +512,7 @@ footer {
 
 .footer-container-info-icons {
     padding-left: 3%;
+    text-size-adjust: none;
     margin-top: 5%;
     align-items: center;
 }
