@@ -433,6 +433,7 @@ header {
 @media only screen and (min-width: 768px) {
     .container-header-button-login a {
         font-size: 1.2em;
+        text-size-adjust: none;
     }
 
     .container-header-nav .nav-header ul li a {
@@ -444,6 +445,7 @@ header {
         padding: 3% 2%;
         font-size: .5em;
         line-height: 85%;
+        text-size-adjust: none;
 
     }
 
@@ -457,6 +459,7 @@ header {
         font-size: .7em;
         line-height: 85%;
         text-align: initial;
+        text-size-adjust: none;
     }
 
     .container-description-image img {
