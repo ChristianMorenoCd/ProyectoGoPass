@@ -275,6 +275,9 @@ header {
         background-repeat: no-repeat;
         background-size: contain;
     }
+    .container-infogopass{
+        padding: 0 5%;
+    }
     .container-infogopass .container-infogopass-title p{
         font-size: 1.8em;
     }
@@ -315,7 +318,8 @@ header {
     }
     .container-functiongopass-description{
         margin: 0;
-        padding: 2% 10%;
+        padding: 2% 5%;
+        text-align: justify;
     }
     .container-functiongopass-description p{
         font-size: 1.2em;
