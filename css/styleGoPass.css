@@ -397,6 +397,40 @@ header {
     .container-functiongopass-img a img{
         width: 200px;
     }
+    .container-installgopass-title{
+        display: flex;
+        text-align: center;
+        padding: 5% 0;
+    }
+    .container-installgopass-title p{
+        font-size: 1.8em;
+    }
+    .container-installgopass{
+        flex-wrap: wrap;
+    }
+    .container-installgopass-items{
+        max-width: 100vw;
+        margin-bottom: 5%;
+    }
+    .container-installgopass-items-number{
+        font-size: 1.8em;
+    }
+    .container-installgopass-items-img2{
+        width: 300px;
+    }
+    .container-installgopass-items-img3{
+        width: 300px;
+    }
+    .container-installgopass-items-description{
+        margin-top: 2%;
+        font-size: 1.2em;
+    }
+    .container-installgopass-info{
+        display: flex;
+    }
+    .container-installgopass-info p {
+        font-size: .6em;
+    }
 
 }
 
