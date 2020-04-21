@@ -1,0 +1,291 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap');
+/* #9be644; */
+
+/* Estilos Generales */
+* {
+    box-sizing: content-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+div {
+    font-size: 16px;
+}
+
+section {
+    font-size: 16px;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+/* Inicio Estilos Header */
+header {
+    background-image: url('../assets/img/gopass-header-fondo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+.container-header {
+    height: 45vh;
+    padding: 2% 2%;
+    background-color: rgba(0, 0, 0, .8);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+.container-header-logo-gopass img {
+    width: 100px;
+}
+.burguer-button {
+    display: none;
+}
+.container-header-button-login {
+    display: grid;
+    justify-items: center;
+    align-items: top center;
+}
+.container-header-button-login a {
+    color: #9be644;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-size-adjust: none;
+}
+.menu {
+    display: none;
+}
+.container-header-nav .nav-header ul {
+    background-color: rgba(0, 0, 0, .8);
+    margin: 0;
+    padding: 2.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.container-header-nav .nav-header ul li {
+    display: grid;
+    justify-items: center;
+}
+.container-header-nav .nav-header ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #9be644;
+    position: relative;
+    padding-bottom: 10px;
+}
+.container-header-nav .nav-header ul li a::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #9be644;
+    position: absolute;
+    bottom: 0;
+    transition: all 1s;
+}
+.container-header-nav .nav-header ul li a:hover::before {
+    width: 100%;
+}
+/* Fin Estilos Header */
+/* Inicio estilos seccion infogopass */
+.infogopass{
+    height: 80vh;
+    background-image: url('../assets/img/home-fondo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-infogopass{
+    width: 70vw;
+}
+.container-infogopass .container-infogopass-title{
+    text-align: center;
+    margin-bottom: 2%;
+}
+.container-infogopass .container-infogopass-title p{
+    color: #585857;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+}
+.container-infogopass .container-infogopass-description{
+    text-align: justify;
+    padding: 0 10%;
+}
+.container-infogopass .container-infogopass-description p{
+    color: grey;
+    font-size: 1.5em;
+}
+.container-infogopass .container-infogopass-description strong{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #585857;
+}
+/* Fin estilos seccion infogopass */
+/* Inicio estilos seccion functiongopass */
+.functiongopass{
+    padding-right: 20%;
+}
+.functiongopass-img img{
+    width: 90%;
+}
+.functiongopass-img{
+    float: left;
+    shape-outside: polygon(0px 0px, 797px 93px, 385px 470px, 258px 576px, 196px 632px, 0px 617px);
+}
+.container-functiongopass-text{
+    text-align: end;
+    padding: 8% 0;
+}
+.container-functiongopass-title{
+    padding: 3% 0;
+}
+.container-functiongopass-title p{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #585857;
+}
+.container-functiongopass-description p{
+    font-size: 2em;
+    color: gray;
+    
+}
+/* Fin estilos seccion functiongopass */
+@media only screen and (max-width: 600px) {
+    header {
+        margin: 0;
+        padding: 0;
+        background-image: url('../assets/img/responsive/gopass-header-fondo-responsive.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container-header {
+        background-color: initial;
+    }
+
+    .container-header-logo-gopass {
+        z-index: 5;
+    }
+
+    .container-header-logo-gopass img {
+        width: 30%;
+    }
+
+    .container-header-button-login {
+        display: none;
+    }
+
+    .burguer-button {
+        width: 50vw;
+        position: fixed;
+        z-index: 4;
+        display: flex;
+        right: -40vw;
+    }
+
+    .burguer-button i {
+        color: #9be644;
+    }
+
+    .container-header-nav {
+        display: none;
+    }
+
+    .menu {
+        background-color: rgba(0, 0, 0, .9);
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        width: 100vw;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+        transition: .5s;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul li {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .menu ul li a {
+        border-bottom: 1px solid #9be644;
+        margin: 0;
+        padding: 0;
+        color: #9be644;
+        text-transform: uppercase;
+    }
+
+    .menu.is-active {
+        transition: .5s;
+        right: 0;
+    }
+
+    .infogopass{
+        background-image: url('../assets/img/responsive/home-fondo-responsive.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .container-infogopass .container-infogopass-title p{
+        font-size: 1.8em;
+    }
+    .container-infogopass .container-infogopass-description{
+        padding: 0;
+        text-align: center;
+    }
+    .container-infogopass .container-infogopass-description p{
+        font-size: 1.2em;
+    }
+    .container-infogopass .container-infogopass-description strong{
+        font-size: 1.2em;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1200px) {}
