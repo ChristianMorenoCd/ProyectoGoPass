@@ -127,12 +127,14 @@ header {
 .container-infogopass .container-infogopass-title{
     text-align: center;
     margin-bottom: 2%;
+    text-size-adjust: none;
 }
 .container-infogopass .container-infogopass-title p{
     color: #585857;
     text-transform: uppercase;
     font-size: 3em;
     font-weight: bold;
+    text-size-adjust: none;
 }
 .container-infogopass .container-infogopass-description{
     text-align: justify;
@@ -141,6 +143,7 @@ header {
 .container-infogopass .container-infogopass-description p{
     color: grey;
     font-size: 1.5em;
+    text-size-adjust: none;
 }
 .container-infogopass .container-infogopass-description strong{
     margin-top: 1%;
@@ -148,6 +151,7 @@ header {
     justify-content: center;
     font-size: 1.5em;
     color: #585857;
+    text-size-adjust: none;
 }
 /* Fin estilos seccion infogopass */
 /* Inicio estilos seccion functiongopass */
@@ -167,9 +171,11 @@ header {
 .container-functiongopass-text{
     text-align: end;
     padding: 8% 0;
+    text-size-adjust: none;
 }
 .container-functiongopass-title{
     padding: 3% 0;
+    text-size-adjust: none;
 }
 .container-functiongopass-title p{
     font-size: 3em;
@@ -180,6 +186,7 @@ header {
 .container-functiongopass-description p{
     font-size: 1.5em;
     color: gray;
+    text-size-adjust: none;
 }
 .container-functiongopass-img{
    margin-top: 2%;
@@ -270,6 +277,7 @@ header {
     }
 
     .infogopass{
+        height: 60vh;
         background-image: url('../assets/img/responsive/home-fondo-responsive.png');
         background-position: center;
         background-repeat: no-repeat;
@@ -277,6 +285,7 @@ header {
     }
     .container-infogopass{
         padding: 0 5%;
+        width: 100vw;
     }
     .container-infogopass .container-infogopass-title p{
         font-size: 1.8em;
@@ -319,7 +328,7 @@ header {
     .container-functiongopass-description{
         margin: 0;
         padding: 2% 5%;
-        text-align: justify;
+        text-align: center;
     }
     .container-functiongopass-description p{
         font-size: 1.2em;
