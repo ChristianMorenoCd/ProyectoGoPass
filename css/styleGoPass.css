@@ -154,6 +154,9 @@ header {
 .functiongopass{
     padding-right: 22%;
 }
+.gopass-functiongopass-img-responsive{
+    display: none;
+}
 .functiongopass-img img{
     width: 1000px;
 }
@@ -284,6 +287,41 @@ header {
     }
     .container-infogopass .container-infogopass-description strong{
         font-size: 1.2em;
+    }
+    .functiongopass{
+        padding: 0;
+        margin: 0;
+    }
+    .gopass-functiongopass-img-responsive{
+        display: block;
+        width: 100vw;
+    }   
+    .gopass-functiongopass-img-responsive img{
+        width: 100vw;
+    }
+    .functiongopass-img{
+        display: none;
+    }
+    .container-functiongopass-text{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .container-functiongopass-title{
+        border-bottom: 1px solid gray;
+    }
+    .container-functiongopass-title p{
+        font-size: 1.8em;
+    }
+    .container-functiongopass-description{
+        margin: 0;
+        padding: 2% 10%;
+    }
+    .container-functiongopass-description p{
+        font-size: 1.2em;
+    }
+    .container-functiongopass-img a img{
+        width: 200px;
     }
 
 }
