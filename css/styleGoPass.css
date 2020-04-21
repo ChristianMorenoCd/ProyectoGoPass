@@ -298,98 +298,82 @@ header {
 }
 /* Fin estilos seccion installgopass */
 /* Inicio estilos Footer */
-footer {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3%;
-    padding: 2%;
+footer{
     background-color: black;
-    color: #fff;
+    padding: 4vw;
 }
-
-.footer-container-contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    padding: 1%;
-}
-
-.footer-container-contact-image {
-    display: grid;
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
     justify-items: center;
     align-items: center;
 }
-
-.footer-container-contact-form {
-    display: grid;
-    justify-content: center;
-    text-align: center;
+.footer-container-contact-image{
+    padding: 2%;
 }
-
-.footer-container-contact-form p {
+.footer-container-contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 32vw;
+    margin: 0;
+    padding: 1vh 0;
+    text-align: center;
+    display: block;
+}
+.footer-container-contact-form p{
+    color: #fff;
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
     font-weight: bold;
     text-size-adjust: none;
     font-size: 1.5em;
 }
-
-.footer-container-contact-form form {
-    padding: 2%;
-    display: grid;
-    width: 100%;
-    justify-items: center;
-}
-
-.check {
-    padding: 0 5%;
-}
-
 .footer-container-contact-form form .Inputemail {
+    width: 22vw;
     border-radius: 13px;
     text-size-adjust: none;
     padding: 1.5%;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 10px;
     font-family: 'Source Sans Pro', sans-serif;
     outline: none;
 }
-
 .footer-container-contact-form form textarea {
+    width: 22vw;
     outline: none;
     text-size-adjust: none;
     border: 0;
     border-radius: 13px;
     font-family: 'Source Sans Pro', sans-serif;
-    height: 80%;
+    height: 70%;
     padding: 1.5%;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 2%;
 }
-
 .footer-container-contact-form form button {
     background-color: #9be644;
     font-weight: bold;
     text-size-adjust: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-transform: uppercase;
     width: 20vw;
     border: 0;
-    height: 150%;
+    height: 5vh;
     border-radius: 13px;
     margin: 0 10%;
     cursor: pointer;
 }
-
 .footer-container-contact-form form button:hover {
     background-color: rgba(40, 128, 6, 1);
     color: #fff;
 }
-
 .container-checkbox {
+    color: white;
     display: block;
     position: relative;
-    padding-left: 10%;
+    padding-left: 2vw;
     margin-bottom: 18px;
     cursor: pointer;
     text-size-adjust: none;
@@ -419,8 +403,8 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25%;
-    width: 6%;
+    height: 3vh;
+    width: 1.5vw;
     background-color: transparent;
     border: 1px solid #499234;
 }
@@ -456,12 +440,11 @@ footer {
 }
 
 .footer-container-info {
-    display: block;
-    align-self: center;
+    width: 30%;
+    align-items: center;
     padding: 0;
     margin: 0;
 }
-
 .footer-container-info-box {
     display: flex;
     align-items: center;
@@ -469,7 +452,7 @@ footer {
 }
 
 .footer-container-info-box-image {
-    margin: 3%;
+    margin: 5%;
     display: grid;
     justify-content: center;
 }
@@ -485,7 +468,6 @@ footer {
     font-weight: 700;
     color: #9be644;
 }
-
 .footer-container-info-icons {
     padding-left: 3%;
     text-size-adjust: none;
@@ -497,7 +479,6 @@ footer {
     margin: 2%;
     color: #9be644;
 }
-
 /* Fin estilos Footer */
 @media only screen and (max-width: 600px) {
     header {
@@ -703,85 +684,7 @@ footer {
     .container-installgopass-info p {
         font-size: .6em;
     }
-    footer {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        align-items: center;
-        padding: 5% 0;
-        padding-top: 5%;
-        padding-bottom: 15%;
-    }
-
-    .footer-container-contact {
-        display: grid;
-        max-width: 100vw;
-        grid-template-columns: 100vw;
-        grid-template-rows: repeat(2, auto);
-        padding: 0;
-    }
-
-    .footer-container-contact-image img {
-        width: 60%;
-    }
-
-    .footer-container-contact-form form {
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        display: grid;
-        justify-items: center;
-    }
-
-    .footer-container-contact-form form .Inputemail {
-        border-radius: 13px;
-        width: 70vw;
-        text-size-adjust: none;
-    }
-
-    .footer-container-contact-form form textarea {
-        width: 70vw;
-        text-size-adjust: none;
-    }
-
-    .container-checkbox {
-        width: 70vw;
-    }
-
-    .container-checkbox .checkmark {
-        height: 25%;
-        width: 7%;
-    }
-
-    .footer-container-contact-form form button {
-        width: 50vw;
-    }
-
-    .footer-container-info {
-        display: grid;
-        justify-items: center;
-        text-align: center;
-        padding: 5% 0;
-    }
-
-    .footer-container-info-box-data p {
-        font-size: 1em;
-    }
-
-    .footer-container-info-box-image {
-        display: none;
-    }
-
-    .footer-container-info-icons {
-        width: 100vw;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer-container-info-icons a {
-        font-size: .8em;
-    }
+    
 
 }
 
@@ -792,14 +695,4 @@ footer {
 @media only screen and (min-width: 992px) {}
 
 @media only screen and (min-width: 1200px) {
-    .footer-container-contact-form form .Inputemail {
-        border-radius: 13px;
-        width: 20vw;
-        text-size-adjust: none;
-    }
-
-    .footer-container-contact-form form textarea {
-        width: 20vw;
-        text-size-adjust: none;
-    }
 }
