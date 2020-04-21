@@ -422,6 +422,7 @@ header {
         width: 300px;
     }
     .container-installgopass-items-description{
+        display: flex;
         margin-top: 2%;
         font-size: 1.2em;
     }
