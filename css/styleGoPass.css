@@ -177,7 +177,9 @@ header {
 .container-functiongopass-description p{
     font-size: 2em;
     color: gray;
-    
+}
+.container-functiongopass-img a img{
+    width: 400px;
 }
 /* Fin estilos seccion functiongopass */
 @media only screen and (max-width: 600px) {
