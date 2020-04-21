@@ -196,6 +196,61 @@ header {
     width: 300px;
 }
 /* Fin estilos seccion functiongopass */
+/* Inicio estilos seccion installgopass */
+.container-installgopass-title{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+.container-installgopass-title p{
+    color: #585857;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+}
+.container-installgopass{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 2%;
+}
+.container-installgopass-items{
+    max-width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0%;
+}
+.container-installgopass-items-number{
+    color: #585857;
+    font-size: 3em;
+    font-weight: bold;
+}
+.container-installgopass-items-img1{
+    width: 150px;
+    height: 250px; 
+}
+.container-installgopass-items-img2{
+    width: 500px;
+}
+.container-installgopass-items-description{
+    margin: 0;
+    text-align: center;
+    padding: 0 5%;
+    color: gray;
+    font-size: 1.5em;
+}
+.container-installgopass-info{
+    padding: 2%;
+}
+.container-installgopass-info p{
+    color: gray;
+    font-size: 1em;
+}
+
+
+/* Fin estilos seccion installgopass */
 @media only screen and (max-width: 600px) {
     header {
         margin: 0;
@@ -329,7 +384,7 @@ header {
     }
     .container-functiongopass-description{
         margin: 0;
-        padding: 2% 5%;
+        padding: 5%;
         text-align: center;
     }
     .container-functiongopass-description p{
