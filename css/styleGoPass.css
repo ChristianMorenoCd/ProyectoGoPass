@@ -237,6 +237,11 @@ header {
     width: 500px; 
 }
 .container-installgopass-items-description{
+    display: flex;
+    text-align: center;
+    padding: 0 5%;
+}
+.container-installgopass-items-description p{
     margin: 0;
     text-align: center;
     padding: 0 5%;
@@ -421,8 +426,8 @@ header {
     .container-installgopass-items-img3{
         width: 300px;
     }
-    .container-installgopass-items-description{
-        display: flex;
+
+    .container-installgopass-items-description p{
         margin-top: 2%;
         font-size: 1.2em;
     }
