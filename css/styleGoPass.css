@@ -198,7 +198,6 @@ header {
 /* Fin estilos seccion functiongopass */
 /* Inicio estilos seccion installgopass */
 .container-installgopass-title{
-    width: 100vw;
     display: flex;
     justify-content: center;
     padding-bottom: 5%;
@@ -216,7 +215,7 @@ header {
     padding: 0 2%;
 }
 .container-installgopass-items{
-    max-width: 40vw;
+    max-width: 35vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
