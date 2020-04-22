@@ -139,7 +139,9 @@ header {
     font-size: 2em;
     text-align: justify;
 }
-
+.container-seccion-gasolina-img-responsive{
+    display: none;
+}
 .container-seccion-gasolina-img {
     display: flex;
     justify-content: center;
@@ -424,6 +426,146 @@ footer {
 /* Fin estilos footer */
 
 @media only screen and (max-width: 600px) {
+    header {
+        margin: 0;
+        padding: 0;
+        background-image: url('../assets/img/responsive/gasolina-header-fondo-responsive.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container-header {
+        height: 25vh;
+        background-color: initial;
+    }
+
+    .container-header-logo-gopass {
+        z-index: 5;
+    }
+
+    .container-header-logo-gopass img {
+        width: 30%;
+    }
+
+    .container-header-button-login {
+        display: none;
+    }
+
+    .burguer-button {
+        width: 50vw;
+        position: fixed;
+        z-index: 4;
+        display: flex;
+        right: -40vw;
+    }
+
+    .burguer-button i {
+        color: #9be644;
+    }
+    .container-header-text{
+        background-color: initial;
+    }
+    .container-header-text img{
+        width: 60%;
+    }
+
+    .container-header-nav {
+        display: none;
+    }
+
+    .menu {
+        background-color: rgba(0, 0, 0, .9);
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        width: 100vw;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+        transition: .5s;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul li {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .menu ul li a {
+        border-bottom: 1px solid #9be644;
+        margin: 0;
+        padding: 0;
+        color: #9be644;
+        text-transform: uppercase;
+    }
+
+    .menu.is-active {
+        transition: .5s;
+        right: 0;
+    }
+    .container-seccion-gasolina-description{
+        background-image: url('../assets/img/responsive/gasolina-seccion-responsive.png');
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .container-seccion-gasolina-description{
+        padding: 20% 10% ;
+    }
+    .container-seccion-gasolina-description p {
+        color: gray;
+        font-size: 1.2em;
+        text-align: justify;
+    }
+    .container-seccion-gasolina-img {
+        display: none;
+    }
+
+    .container-seccion-gasolina-img-responsive{
+        display: flex;
+        justify-content: center;
+    }
+    .container-seccion-gasolina-img-responsive img{
+        width: 550px; 
+    }
+    .container-seccion-gasolina-title-aliados p {
+        font-size: 1.8em;
+
+    }
+
+    .container-seccion-gasolina-edsHabilitadas-title {
+        font-size: 1.8em;
+    }
+    
+    .container-seccion-gasolina-edsHabilitadas-edifico {
+        font-size: 1.2em;
+
+    }
+    
+    .container-seccion-gasolina-edsHabilitadas-edifico span {
+        font-size: 1.2em;
+    }
+    
+    .container-seccion-gasolina-edsHabilitadas-addres {
+        font-size: 1.2em;
+    }
+
+    .container-seccion-gasolina-imagen-paypal{
+        padding-top: 10%;
+    }
+
+    .container-seccion-gasolina-imagen-paypal img {
+        width: 400px;
+    }
+    
     .footer-container-contact-image img {
         width: 400px;
     }
