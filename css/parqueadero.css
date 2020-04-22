@@ -79,6 +79,7 @@ header {
 }
 
 .container-header-text {
+    padding: 1%;
     background-color: rgba(0, 0, 0, .5);
 }
 

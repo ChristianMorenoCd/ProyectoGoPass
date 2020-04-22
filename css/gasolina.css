@@ -80,6 +80,7 @@ header {
 }
 
 .container-header-text {
+    padding: 2%;
     background-color: rgba(0, 0, 0, .5);
 }
 
