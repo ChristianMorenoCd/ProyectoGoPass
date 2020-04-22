@@ -575,11 +575,16 @@ footer {
         width: 100%;
     }
 
+    .container-parqueadero-comingsoon{
+        padding-top: 3%;
+    }
      .container-parqueadero-comingsoon p {
         font-size: 1.8em;
-
     }
 
+    .container-parqueadero-link-tarifas{
+        padding-top: 3%;
+    }
     .container-parqueadero-link-tarifas a{
         font-size: 1.8em;
     }
