@@ -756,4 +756,8 @@ footer {
 
 @media only screen and (min-width: 992px) {}
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .footer-container-contact-image img {
+        width: 350px;
+    }
+}
