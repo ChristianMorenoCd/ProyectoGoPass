@@ -531,6 +531,14 @@ footer {
         transition: .5s;
         right: 0;
     }
+    .container-faq-text-question p{
+        font-size: 1.8em;
+    }
+    .container-faq-text-answer p{
+        display: flex;
+        font-size: 1.4em;
+        margin-bottom: 5%;
+    }
     .container-seccion-faq-imagen-paypal{
         padding: 5% 0;
     }
