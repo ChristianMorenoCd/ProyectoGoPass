@@ -764,7 +764,9 @@ footer {
         margin-top: 2%;
         font-size: 1.2em;
     }
-
+    .footer-container-contact-image img{
+        width: 300px;
+    }
     .container-installgopass-info {
         display: flex;
     }

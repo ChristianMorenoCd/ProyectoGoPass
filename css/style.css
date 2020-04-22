@@ -834,8 +834,8 @@ footer {
         padding: 0;
     }
 
-    .footer-container-contact-image img {
-        width: 60%;
+    .footer-container-contact-image img{
+        width: 300px;
     }
 
     .footer-container-contact-form form {

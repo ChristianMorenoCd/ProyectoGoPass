@@ -633,8 +633,8 @@ footer {
         width: initial;
     }
 
-    .footer-container-contact-form form button {
-        width: 40%;
+    .footer-container-contact-image img{
+        width: 300px;
     }
 
     .footer-container-info {

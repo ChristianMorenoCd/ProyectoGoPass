@@ -535,10 +535,9 @@ footer {
         width: 400px;
     }
 
-    .footer-container-contact-image img {
-        width: 400px;
+    .footer-container-contact-image img{
+        width: 300px;
     }
-
     .footer-container-contact-form {
         width: initial;
     }
