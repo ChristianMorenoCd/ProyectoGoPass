@@ -151,6 +151,10 @@ header {
     display: none;
 }
 
+.container-header-nav .nav-header ul li .linkServicios::before {
+    display: none;
+}
+
 .nav-header ul li a:hover + ul, .nav-header ul li ul:hover {
     padding: 0;
     margin: 0;
