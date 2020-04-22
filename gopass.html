@@ -33,7 +33,12 @@
                     <a href="#">¿qué es gopass?</a>
                 </li>
                 <li>
-                    <a href="#">nuestros servicios</a>
+                    <a href="#" class="services" id="services">nuestros servicios</a>
+                    <div>
+                        <li><a href="#">Gasolina</a></li>
+                        <li><a href="#">Peajes</a></li>
+                        <li><a href="#">Parqueaderos</a></li>
+                    </div>
                 </li>
                 <li>
                     <a href="#">preguntas frecuentes</a>
@@ -230,6 +235,14 @@
     <script>
         const menu = document.querySelector('.menu');
         const burguerBtn = document.querySelector('#burguer-button');
+
+        const btnServices = document.querySelector('#services');
+        btnServices.addEventListener('click', showMenu);
+
+        function showMenu(){
+            console.log(btnServices);
+        }
+        
 
         burguerBtn.addEventListener('click', showHide);
 
