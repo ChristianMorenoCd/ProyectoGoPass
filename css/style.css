@@ -1062,6 +1062,7 @@ footer {
     .image-little {
         width: 250px;
         height: 150px;
+        justify-content: end;
     }
 
     .footer-container-contact-form form .Inputemail {
