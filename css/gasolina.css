@@ -123,75 +123,90 @@ header {
 .container-header-nav .nav-header ul li a:hover::before {
     width: 100%;
 }
+
 /* Fin Estilos Header */
 /* Inicio estilos container gasolina */
-.container-seccion-gasolina-description{
+.container-seccion-gasolina-description {
     background-image: url('../assets/img/gasolina-container-descripcion-fondo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 8vw 10vw;
 }
-.container-seccion-gasolina-description p{
+
+.container-seccion-gasolina-description p {
     color: gray;
     font-size: 2em;
     text-align: justify;
 }
-.container-seccion-gasolina-img{
+
+.container-seccion-gasolina-img {
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
 }
-.container-seccion-gasolina-img img{
+
+.container-seccion-gasolina-img img {
     width: 60%;
 }
-.container-seccion-gasolina-title-aliados{
+
+.container-seccion-gasolina-title-aliados {
     display: flex;
     justify-content: center;
     padding: 1vw 0;
 }
-.container-seccion-gasolina-title-aliados p{
+
+.container-seccion-gasolina-title-aliados p {
     font-size: 3em;
     text-transform: uppercase;
     font-weight: bold;
     color: #585857;
 }
-.container-seccion-gasolina-title-aliados-img{
+
+.container-seccion-gasolina-title-aliados-img {
     display: flex;
     justify-content: center;
     border: 1px solid red;
 }
-.container-seccion-gasolina-edsHabilitadas{
+
+.container-seccion-gasolina-edsHabilitadas {
     padding: 1vw 10vw;
 }
-.container-seccion-gasolina-edsHabilitadas-title{
+
+.container-seccion-gasolina-edsHabilitadas-title {
     display: flex;
     color: #585857;
     text-transform: uppercase;
     font-size: 2em;
     font-weight: bold;
 }
-.container-seccion-gasolina-edsHabilitadas-edifico{
+
+.container-seccion-gasolina-edsHabilitadas-edifico {
     font-size: 1.5em;
     color: gray;
 }
-.container-seccion-gasolina-edsHabilitadas-edifico span{
+
+.container-seccion-gasolina-edsHabilitadas-edifico span {
     color: #9be644;
     font-size: 1.2em;
 }
-.container-seccion-gasolina-edsHabilitadas-addres{
+
+.container-seccion-gasolina-edsHabilitadas-addres {
     font-size: 1.3em;
     color: gray;
     text-transform: uppercase;
 }
-.container-seccion-gasolina-imagen-paypal{
+
+.container-seccion-gasolina-imagen-paypal {
     display: flex;
     justify-content: flex-end;
 }
-.container-seccion-gasolina-imagen-paypal img{
+
+.container-seccion-gasolina-imagen-paypal img {
     width: 50%;
 }
+
 /* Fin estilos container gasolina */
 
 /* Inicio estilos footer */
@@ -204,8 +219,10 @@ footer {
 }
 
 .footer-container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-content: center;
     align-items: center;
 }
@@ -403,9 +420,10 @@ footer {
     margin: 2%;
     color: #9be644;
 }
+
 /* Fin estilos footer */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .footer-container-contact-image img {
         width: 400px;
     }
@@ -438,6 +456,7 @@ footer {
         width: 5vw;
     }
 }
+
 @media only screen and (min-width: 1200px) {
     .footer-container-contact-image img {
         width: 350px;
