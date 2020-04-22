@@ -536,7 +536,7 @@ footer {
         justify-content: center;
     }
     .container-seccion-gasolina-img-responsive img{
-        width: 550px; 
+        width: 100%; 
     }
     .container-seccion-gasolina-title-aliados p {
         font-size: 1.8em;
