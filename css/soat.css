@@ -199,7 +199,7 @@ header {
 .container-soat-title{
     display: flex;
     justify-content: center;
-    padding: 4%;
+    padding: 0;
 }
 .container-soat-title p{
     font-size: 3em;
@@ -214,6 +214,7 @@ header {
 .container-seccion-soat-imagen-paypal {
     display: flex;
     justify-content: flex-end;
+    padding: 5% 0;
 }
 
 .container-seccion-soat-imagen-paypal img {

@@ -186,7 +186,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 8vw 10vw;
+    padding: 10%;
 }
 
 .container-seccion-gasolina-description p {
@@ -226,7 +226,7 @@ header {
     justify-content: center;
 }
 .container-seccion-gasolina-title-aliados-img img {
-    width: 400px;
+    width: 300px;
 }
 
 .container-seccion-gasolina-edsHabilitadas {
@@ -260,6 +260,7 @@ header {
 .container-seccion-gasolina-imagen-paypal {
     display: flex;
     justify-content: flex-end;
+    padding: 5% 0;
 }
 
 .container-seccion-gasolina-imagen-paypal img {

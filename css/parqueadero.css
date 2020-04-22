@@ -205,6 +205,9 @@ header {
     text-transform: uppercase;
     font-weight: bold;
 }
+.container-parqueadero-logo-aliado-img-aliados{
+    display: none;
+}
 .container-parqueadero-logo-aliado{
     display: flex;
     flex-wrap: wrap;
@@ -242,6 +245,7 @@ header {
 .container-seccion-parqueadero-imagen-paypal {
     display: flex;
     justify-content: flex-end;
+    padding: 5% 0;
 }
 
 .container-seccion-parqueadero-imagen-paypal img {
