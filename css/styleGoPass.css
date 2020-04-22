@@ -301,8 +301,10 @@ header {
 /* Inicio estilos footer */
 footer {
     background-color: black;
-    padding: 1vw;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .footer-container {
@@ -310,10 +312,6 @@ footer {
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-}
-
-.footer-container-contact-image {
-    padding: 2vw;
 }
 
 .footer-container-contact-image img {
