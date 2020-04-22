@@ -86,18 +86,54 @@ header {
 .menu {
     display: none;
 }
+.container-header-nav {
+    background-color: rgba(0, 0, 0, .5);
+}
 
 .container-header-nav .nav-header ul {
-    background-color: rgba(0, 0, 0, .5);
     margin: 0;
     padding: 2.5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.container-header-nav .nav-header ul li ul{
+    display: none;
+}
+
 .container-header-nav .nav-header ul li {
     display: grid;
+    justify-content: center;
     justify-items: center;
+}
+
+.nav-header ul li ul{
+    display: none;
+
+}
+
+.nav-header ul li ul li{
+    width: 100%;
+    background-color: black;
+}
+
+.nav-header ul li ul li:hover{
+    background-color: #9be644;
+    color: black;
+}
+.container-header-nav .nav-header ul li ul li a:hover:hover{
+    color: black;
+}
+
+.container-header-nav .nav-header ul li ul li a{
+    color: #9be644;
+}
+
+.nav-header ul li ul li{
+    padding: 10px;
+}
+.nav-header ul li ul li a{
+    color: black;
 }
 
 .container-header-nav .nav-header ul li a {
@@ -107,6 +143,25 @@ header {
     color: #9be644;
     position: relative;
     padding-bottom: 10px;
+}
+
+.container-header-nav .nav-header ul li ul a::before {
+    display: none;
+}
+
+.container-header-nav .nav-header ul li .linkServicios::before {
+    display: none;
+}
+
+.nav-header ul li a:hover + ul, .nav-header ul li ul:hover {
+    padding: 0;
+    margin: 0;
+    width: 15.5%;
+    position: absolute;
+    display: block;
+    text-align: center;
+    margin: 0 3.5%;
+    margin-top: 35px;
 }
 
 .container-header-nav .nav-header ul li a::before {
@@ -123,7 +178,6 @@ header {
 .container-header-nav .nav-header ul li a:hover::before {
     width: 100%;
 }
-
 /* Fin Estilos Header */
 /* Inicio estilos container gasolina */
 .container-seccion-gasolina-description {
@@ -169,7 +223,9 @@ header {
 .container-seccion-gasolina-title-aliados-img {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
+}
+.container-seccion-gasolina-title-aliados-img img {
+    width: 400px;
 }
 
 .container-seccion-gasolina-edsHabilitadas {
