@@ -296,30 +296,36 @@ header {
     color: gray;
     font-size: 1em;
 }
+
 /* Fin estilos seccion installgopass */
 /* Inicio estilos footer */
-footer{
+footer {
     background-color: black;
     padding: 1vw;
     font-size: 16px;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
 }
-.footer-container-contact-image{
-      padding: 2vw;
+
+.footer-container-contact-image {
+    padding: 2vw;
 }
-.footer-container-contact-image img{
+
+.footer-container-contact-image img {
     width: 450px;
 }
+
 .footer-container-contact-form {
     width: 30vw;
     padding: 2vw;
 }
-.footer-container-contact-form p{
+
+.footer-container-contact-form p {
     display: flex;
     justify-content: center;
     font-size: 2em;
@@ -327,20 +333,23 @@ footer{
     text-transform: uppercase;
     font-weight: bold;
 }
-.footer-container-contact-form form{
+
+.footer-container-contact-form form {
     padding: 2vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.footer-container-contact-form form .footer-container-contact-form-input{
+
+.footer-container-contact-form form .footer-container-contact-form-input {
     width: 100%;
     height: 6vh;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
 }
-.footer-container-contact-form form .footer-container-contact-form-input input{
+
+.footer-container-contact-form form .footer-container-contact-form-input input {
     border-radius: 13px;
     width: 80%;
     text-size-adjust: none;
@@ -349,12 +358,14 @@ footer{
     font-family: 'Source Sans Pro', sans-serif;
     outline: none;
 }
-.footer-container-contact-form-textarea{
+
+.footer-container-contact-form-textarea {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.footer-container-contact-form-textarea textarea{
+
+.footer-container-contact-form-textarea textarea {
     outline: none;
     width: 80%;
     text-size-adjust: none;
@@ -366,9 +377,11 @@ footer{
     font-size: 1.2em;
     margin-bottom: 2%;
 }
-.check{
+
+.check {
     padding: 2% 0;
 }
+
 .container-checkbox {
     color: #fff;
     display: block;
@@ -383,10 +396,12 @@ footer{
     -ms-user-select: none;
     user-select: none;
 }
+
 .container-checkbox a {
     color: rgba(40, 128, 6, 1);
     text-decoration: underline;
 }
+
 .container-checkbox input {
     position: absolute;
     opacity: 0;
@@ -394,6 +409,7 @@ footer{
     height: 0px;
     width: 0;
 }
+
 .container-checkbox .checkmark {
     position: absolute;
     top: 0;
@@ -403,20 +419,25 @@ footer{
     background-color: transparent;
     border: 1px solid #499234;
 }
+
 .container-checkbox:hover input~.checkmark {
     background-color: #ccc;
 }
+
 .container-checkbox input:checked~.checkmark {
     background-color: rgba(40, 128, 6, 1);
 }
+
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
+
 .container-checkbox input:checked~.checkmark:after {
     display: block;
 }
+
 .container-checkbox .checkmark:after {
     left: 9px;
     top: 5px;
@@ -446,22 +467,28 @@ footer{
     background-color: rgba(40, 128, 6, 1);
     color: #fff;
 }
-.footer-container-info{
+
+.footer-container-info {
     padding: 2%;
-    width: 25%; /*Cambiar*/ 
+    width: 25%;
+    /*Cambiar*/
 }
-.footer-container-info-box{
+
+.footer-container-info-box {
     display: flex;
     align-items: center;
     margin-bottom: 2%;
-   
+
 }
-.footer-container-info-box-image{
+
+.footer-container-info-box-image {
     margin-right: 2%;
 }
-.footer-container-info-box-image img{
+
+.footer-container-info-box-image img {
     width: 60px;
 }
+
 .footer-container-info-box-data p {
     line-height: 90%;
     text-size-adjust: none;
@@ -469,6 +496,7 @@ footer{
     font-weight: 700;
     color: #9be644;
 }
+
 .footer-container-info-icons {
     padding-left: 3%;
     text-size-adjust: none;
@@ -476,10 +504,12 @@ footer{
     display: flex;
     justify-content: center;
 }
+
 .footer-container-info-icons a {
     margin: 2%;
     color: #9be644;
 }
+
 /* Fin estilos Footer */
 @media only screen and (max-width: 600px) {
     header {
@@ -492,6 +522,7 @@ footer{
     }
 
     .container-header {
+        height: 25vh;
         background-color: initial;
     }
 
@@ -685,24 +716,34 @@ footer{
     .container-installgopass-info p {
         font-size: .6em;
     }
-    .footer-container-contact-image img{
+
+    .footer-container-contact-image img {
         width: 400px;
     }
+
     .footer-container-contact-form {
         width: initial;
     }
-    .footer-container-info{
+
+    .footer-container-contact-form form button {
+        width: 15vw;
+    }
+
+    .footer-container-info {
         padding: 2%;
-        width: 100%; 
+        width: 100%;
         justify-content: center;
     }
-    .footer-container-info-box{
+
+    .footer-container-info-box {
         justify-content: center;
         text-align: center;
     }
-    .footer-container-info-box-image{
+
+    .footer-container-info-box-image {
         display: none;
     }
+
     .container-checkbox .checkmark {
         height: 5vw;
         width: 5vw;
@@ -715,5 +756,4 @@ footer{
 
 @media only screen and (min-width: 992px) {}
 
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}

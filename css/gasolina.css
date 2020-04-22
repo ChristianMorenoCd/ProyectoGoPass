@@ -1,0 +1,127 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap');
+/* #9be644; */
+
+/* Estilos Generales */
+* {
+    box-sizing: content-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+div {
+    font-size: 16px;
+}
+
+section {
+    font-size: 16px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+/* Inicio Estilos Header */
+header {
+    background-image: url('../assets/img/gasolina-header-fondo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-header {
+    height: 45vh;
+    padding: 2% 2%;
+    background-color: rgba(0, 0, 0, .5);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.container-header-logo-gopass img {
+    width: 100px;
+}
+
+.burguer-button {
+    display: none;
+}
+
+.container-header-button-login {
+    display: grid;
+    justify-items: center;
+    align-items: top center;
+}
+
+.container-header-button-login a {
+    color: #9be644;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-size-adjust: none;
+}
+
+.container-header-text {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu {
+    display: none;
+}
+
+.container-header-nav .nav-header ul {
+    background-color: rgba(0, 0, 0, .5);
+    margin: 0;
+    padding: 2.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container-header-nav .nav-header ul li {
+    display: grid;
+    justify-items: center;
+}
+
+.container-header-nav .nav-header ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #9be644;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.container-header-nav .nav-header ul li a::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #9be644;
+    position: absolute;
+    bottom: 0;
+    transition: all 1s;
+}
+
+.container-header-nav .nav-header ul li a:hover::before {
+    width: 100%;
+}
+
+/* Fin Estilos Header */
