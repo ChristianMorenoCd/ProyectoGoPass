@@ -519,10 +519,10 @@ footer {
     }
     .container-seccion-gasolina-description{
         padding: 0;
-        display: flex;
         padding: 5%;
     }
     .container-seccion-gasolina-description p {
+        display: table-cell;
         color: gray;
         font-size: 1.2em;
         text-align: justify;
@@ -577,7 +577,7 @@ footer {
     }
 
     .footer-container-contact-form form button {
-        width: 15vw;
+        width: 40%;
     }
 
     .footer-container-info {
