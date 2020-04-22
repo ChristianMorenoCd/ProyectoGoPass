@@ -518,7 +518,9 @@ footer {
         background-repeat: no-repeat;
     }
     .container-seccion-gasolina-description{
-        padding: 20% 10% ;
+        padding: 0;
+        display: flex;
+        padding: 5%;
     }
     .container-seccion-gasolina-description p {
         color: gray;
