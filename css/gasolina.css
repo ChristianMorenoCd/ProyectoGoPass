@@ -499,11 +499,13 @@ footer {
 
     .container-header-logo-gopass {
         z-index: 5;
+        width: 10%;
     }
 
     .container-header-logo-gopass img {
-        width: 30%;
+        width: 80px;
     }
+
 
     .container-header-button-login {
         display: none;
