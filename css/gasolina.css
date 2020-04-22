@@ -519,12 +519,12 @@ footer {
     }
     .container-seccion-gasolina-description{
         padding: 0;
-        padding: 5%;
+        padding: 10% 5%;
     }
     .container-seccion-gasolina-description p {
         display: table-cell;
         color: gray;
-        font-size: 1.2em;
+        font-size: 86%;
         text-align: justify;
     }
     .container-seccion-gasolina-img {
