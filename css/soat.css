@@ -517,18 +517,20 @@ footer {
 
     .container-soat-description{
         padding: 0;
-        padding: 10% 5%;
+        padding: 8%;
     }
     .container-soat-description p {
         display: table-cell;
         color: gray;
-        font-size: 86%;
+        font-size: 1.4em;
         text-align: center;
     }
     .container-soat-title p{
         font-size: 1.8em;
     }
-
+    .container-soat-aliados-img img{
+        width: 200px;
+    }
 
     .container-seccion-soat-imagen-paypal{
         padding-top: 10%;

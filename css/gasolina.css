@@ -603,13 +603,16 @@ footer {
 
     }
 
+    .container-seccion-gasolina-title-aliados-img img{
+        width: 250px; 
+    }
+
     .container-seccion-gasolina-edsHabilitadas-title {
         font-size: 1.8em;
     }
     
     .container-seccion-gasolina-edsHabilitadas-edifico {
         font-size: 1.2em;
-
     }
     
     .container-seccion-gasolina-edsHabilitadas-edifico span {

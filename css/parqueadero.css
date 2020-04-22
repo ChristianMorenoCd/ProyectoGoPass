@@ -550,16 +550,29 @@ footer {
 
     .container-parqueadero-description{
         padding: 0;
-        padding: 10% 5%;
+        padding: 8%;
     }
     .container-parqueadero-description p {
         display: table-cell;
         color: gray;
-        font-size: 86%;
+        font-size: 1.4em;
         text-align: justify;
     }
     .container-parqueadero-title p{
         font-size: 1.8em;
+    }
+
+
+    .container-parqueadero-logo-aliado{
+        display: none;
+    }
+    .container-parqueadero-logo-aliado-img-aliados{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-parqueadero-logo-aliado-img-aliados img{
+        width: 100%;
     }
 
      .container-parqueadero-comingsoon p {
