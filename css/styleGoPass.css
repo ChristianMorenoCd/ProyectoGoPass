@@ -374,6 +374,7 @@ header {
 }
 .container-map {
     display: flex;
+    flex-wrap: wrap;
     height: 80%; 
     align-items: center;
 }
@@ -764,9 +765,6 @@ footer {
         text-align: center;
     }
 
-    .container-functiongopass-title {
-        border-bottom: 1px solid gray;
-    }
 
     .container-functiongopass-title p {
         font-size: 1.8em;
@@ -835,6 +833,13 @@ footer {
 
     .container-installgopass-info p {
         font-size: .6em;
+    }
+    .container-map-title{
+        justify-content: center;
+        padding-top: 10%;
+    }
+    .container-map-title p{
+        font-size: 1.8em;
     }
     .footer-container-contact-form {
         width: initial;
