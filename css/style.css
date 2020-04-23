@@ -120,7 +120,7 @@ header {
 }
 
 .nav-header ul li ul li:hover{
-    background-color: #9be644;
+    background-color: #6ce52a;
     color: black;
 }
 .container-header-nav .nav-header ul li ul li a:hover:hover{
@@ -128,7 +128,7 @@ header {
 }
 
 .container-header-nav .nav-header ul li ul li a{
-    color: #9be644;
+    color: #6ce52a;
 }
 
 .nav-header ul li ul li{
@@ -142,7 +142,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5em;
-    color: #9be644;
+    color: #6ce52a;
     position: relative;
     padding-bottom: 10px;
 }
@@ -171,7 +171,7 @@ header {
     display: block;
     width: 50%;
     height: 3px;
-    background-color: #9be644;
+    background-color: #6ce52a;
     position: absolute;
     bottom: 0;
     transition: all 1s;
@@ -217,7 +217,7 @@ header {
 }
 
 .home-container-text .text-strong strong {
-    color: #9be644;
+    color: #6ce52a;
     font-size: 1.4em;
 }
 
@@ -456,7 +456,7 @@ footer {
 }
 
 .footer-container-contact-form form button {
-    background-color: #9be644;
+    background-color: #6ce52a;
     font-weight: bold;
     text-size-adjust: none;
     font-size: 1.2em;
@@ -510,7 +510,7 @@ footer {
     height: 25%;
     width: 6%;
     background-color: transparent;
-    border: 1px solid #499234;
+    border: 1px solid #6ce52a;
 }
 
 .container-checkbox:hover input~.checkmark {
@@ -571,7 +571,7 @@ footer {
     text-size-adjust: none;
     font-size: 1.5em;
     font-weight: 700;
-    color: #9be644;
+    color: #6ce52a;
 }
 
 .footer-container-info-icons {
@@ -583,7 +583,7 @@ footer {
 
 .footer-container-info-icons a {
     margin: 2%;
-    color: #9be644;
+    color: #6ce52a;
 }
 
 .burguer-button {
@@ -634,7 +634,7 @@ footer {
     }
 
     .burguer-button i {
-        color: #9be644;
+        color: #6ce52a;
     }
 
     .container-header-text {
