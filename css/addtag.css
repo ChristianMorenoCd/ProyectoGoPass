@@ -190,7 +190,7 @@ header {
     background-image: url('../assets/img/home-fondo.png');
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: contain%;
+    background-size: 100%;
 }
 .container-adquieretag-text{
     display: flex;
