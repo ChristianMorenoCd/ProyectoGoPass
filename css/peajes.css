@@ -296,6 +296,7 @@ header {
 .container-info-desvinculacion-link{
     display: flex;
     justify-content: center;
+    width: 50%;
 }
 .container-info-desvinculacion-link-box{
     margin-bottom: 1%;
