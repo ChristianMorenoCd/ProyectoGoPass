@@ -656,6 +656,7 @@ footer {
     }
     .container-peajes-container-list-aliados{
         width: 100%;
+        margin: 2%;
     }
     .container-list-aliados{
         width: 100%;
@@ -670,6 +671,27 @@ footer {
     }
     .container-peajes-container-list-aliados-addres{
         justify-content: center;
+    }
+    .container-info-desvinculacion-box{
+        width: 80%;
+        margin-top: 10%;
+    }
+    .container-info-desvinculacion-box p{
+        font-size: 1em;
+        padding: 2%;
+    }
+    .container-info-desvinculacion-link{
+        width: 80%;
+    }
+    .container-seccion-peajes-imagen-paypal{
+        padding: 5% 0;
+    }
+
+    .container-seccion-peajes-imagen-paypal img {
+        width: 400px;
+    }
+    .footer-container-contact-image {
+        padding: 5%;
     }
     .footer-container-contact-image img{
         width: 300px;
