@@ -540,3 +540,114 @@ footer {
 }
 
 /* Fin estilos footer */
+
+@media only screen and (max-width: 600px) {
+    header {
+        margin: 0;
+        padding: 0;
+        background-image: url('../assets/img/responsive/gopass-header-fondo-responsive.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container-header {
+        height: 25vh;
+        background-color: initial;
+    }
+
+    .container-header-logo-gopass {
+        z-index: 10;
+        width: 10%;
+    }
+
+    .container-header-logo-gopass img {
+        width: 80px;
+    }
+
+    .container-header-button-login {
+        display: none;
+    }
+
+    .burguer-button {
+        width: 50vw;
+        position: fixed;
+        z-index: 30;
+        display: flex;
+        right: -40vw;
+    }
+
+    .burguer-button i {
+        color: #9be644;
+    }
+
+    .container-header-nav {
+        display: none;
+    }
+
+    .menu {
+        background-color: rgba(0, 0, 0, .9);
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        width: 100vw;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+        transition: .5s;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul li {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .menu ul li a {
+        border-bottom: 1px solid #9be644;
+        margin: 0;
+        padding: 0;
+        color: #9be644;
+        text-transform: uppercase;
+    }
+
+    .menu.is-active {
+        transition: .5s;
+        right: 0;
+    }
+
+    
+    .footer-container-contact-image img{
+        width: 300px;
+    }
+    .footer-container-contact-form form button {
+        width: 15%;
+    }
+
+    .footer-container-info {
+        padding: 2%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-container-info-box {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-container-info-box-image {
+        display: none;
+    }
+
+    .container-checkbox .checkmark {
+        height: 5vw;
+        width: 5vw;
+    }
+}
