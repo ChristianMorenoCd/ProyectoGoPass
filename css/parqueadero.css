@@ -584,6 +584,9 @@ footer {
      .container-parqueadero-comingsoon p {
         font-size: 1.8em;
     }
+    .container-parqueadero-comingsoon-image{
+        display: none;
+    }
     .container-parqueadero-comingsoon-image-responsive{
         display: flex;
         justify-content: center;
