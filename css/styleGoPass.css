@@ -841,6 +841,18 @@ footer {
     .container-map-title p{
         font-size: 1.8em;
     }
+    .container-map{
+        height: 50%;
+    }
+    .map{
+        width: 100%;
+    }
+    .container-map-img-marquer{
+        padding: 1% 5%;
+    }
+    .container-map-img-marquer img{
+        width: 60%;
+    }
     .footer-container-contact-form {
         width: initial;
     }
