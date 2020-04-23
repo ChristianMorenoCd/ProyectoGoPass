@@ -860,6 +860,20 @@ footer {
     .container-map-img-marquer img:nth-child(2){
         width: 210px;
     }
+    .container-link{
+        padding: 2% 0;
+    }
+    .container-link a{
+        font-size: 1.2em;
+    }
+    .container-seccion-gopass-imagen-paypal img{
+        width: 350px;
+    }
+
+    .footer-container-contact-image{
+        padding: 5% 0;
+    }
+    
     .footer-container-contact-form {
         width: initial;
     }

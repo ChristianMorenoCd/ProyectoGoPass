@@ -269,7 +269,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEp63F9yM27Y93zRHac4XzFciUkqTWhzg&callback=initMap"async defer></script>
+    
 
 
     <script>
@@ -327,7 +327,7 @@
             };           
         }
     </script>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEp63F9yM27Y93zRHac4XzFciUkqTWhzg&callback=initMap" async defer></script>
     <script>
         const menu = document.querySelector('.menu');
         const burguerBtn = document.querySelector('#burguer-button');
@@ -338,14 +338,13 @@
         function showMenu() {
             console.log(btnServices);
         }
-
-
         burguerBtn.addEventListener('click', showHide);
-
         function showHide() {
             menu.classList.toggle('is-active')
         }
     </script>
+
+
 </body>
 
 </html>
