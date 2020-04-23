@@ -573,9 +573,8 @@ footer {
         display: flex;
         justify-content: center;
     }
-
     .container-parqueadero-logo-aliado-img-aliados img{
-        width: 260px;
+        width: 200px;
     }
 
     .container-parqueadero-comingsoon{
@@ -599,14 +598,14 @@ footer {
         padding-top: 3%;
     }
     .container-parqueadero-link-tarifas a{
-        font-size: 1.8em;
+        font-size: 1.2em;
     }
 
-    .container-seccion-gasolina-imagen-paypal{
-        padding-top: 10%;
+    .container-seccion-peajes-imagen-paypal{
+        padding: 5% 0;
     }
 
-    .container-seccion-gasolina-imagen-paypal img {
+    .container-seccion-peajes-imagen-paypal img {
         width: 400px;
     }
     .footer-container-contact-image img{
