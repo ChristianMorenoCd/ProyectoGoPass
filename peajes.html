@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/peajes.css">
+    
      <!-- Iconos -->
      <link rel="stylesheet" href="js/font-awesome/css/font-awesome.css">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+         <link rel="stylesheet" href="css/peajes.css">
     <title>GoPass-Peajes</title>
 </head>
 <body>
@@ -16,9 +18,9 @@
         <div class="container-header">
             <a href="index.html" class="container-header-logo-gopass"> <img src="assets/img/header-logo-gopass.png"
                     alt="logo GoPass"></a>
-            <div class="burguer-button" id="burguer-button">
-                <i class="fas fa-bars  fa-2x"></i>
-            </div>
+                    <div class="burguer-button" id="burguer-button">
+                        <i class="fas fa-bars  fa-2x"></i>
+                    </div>
             <!-- <div class="container-header-button-login">
                 <a href="">iniciar sesión</a>
             </div> -->
@@ -236,13 +238,16 @@
         const menu = document.querySelector('.menu');
         const burguerBtn = document.querySelector('#burguer-button');
 
-        const btnServices = document.querySelector('#services');
-        btnServices.addEventListener('click', showMenu);
+        // const btnServices = document.querySelector('#services');
+        // btnServices.addEventListener('click', showMenu);
 
-        function showMenu() {
-            console.log(btnServices);
-        }
+        // function showMenu(){
+        //     console.log(btnServices);
+        // }
+
+
         burguerBtn.addEventListener('click', showHide);
+
         function showHide() {
             menu.classList.toggle('is-active')
         }
