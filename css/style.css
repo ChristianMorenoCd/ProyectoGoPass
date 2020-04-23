@@ -188,7 +188,7 @@ header {
     background-image: url("../assets/img/home-fondo.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     padding: 25px 0;
     display: grid;
     align-items: center;
@@ -214,6 +214,7 @@ header {
 .home-container-text .text-strong {
     color: gray;
     font-weight: bold;
+   
 }
 
 .home-container-text .text-strong strong {
