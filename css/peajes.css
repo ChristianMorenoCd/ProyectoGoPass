@@ -1,0 +1,537 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap');
+/* #9be644; */
+
+/* Estilos Generales */
+* {
+    box-sizing: content-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+div {
+    font-size: 16px;
+}
+
+section {
+    font-size: 16px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+/* Inicio Estilos Header */
+header {
+    background-image: url('../assets/img/peajes-header-fondo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-header {
+    height: 30vh;
+    padding: 2% 2%;
+    background-color: rgba(0, 0, 0, .5);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.container-header-logo-gopass img {
+    width: 100px;
+}
+
+.burguer-button {
+    display: none;
+}
+
+.container-header-button-login {
+    display: grid;
+    justify-items: center;
+    align-items: top center;
+}
+
+.container-header-button-login a {
+    color: #9be644;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-size-adjust: none;
+}
+
+.container-header-text {
+    padding: 2%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.container-header-text{
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.menu {
+    display: none;
+}
+.container-header-nav {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.container-header-nav .nav-header ul {
+    margin: 0;
+    padding: 2.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container-header-nav .nav-header ul li ul{
+    display: none;
+}
+
+.container-header-nav .nav-header ul li {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.nav-header ul li ul{
+    display: none;
+
+}
+
+.nav-header ul li ul li{
+    width: 100%;
+    background-color: black;
+}
+
+.nav-header ul li ul li:hover{
+    background-color: #9be644;
+    color: black;
+}
+.container-header-nav .nav-header ul li ul li a:hover:hover{
+    color: black;
+}
+
+.container-header-nav .nav-header ul li ul li a{
+    color: #9be644;
+}
+
+.nav-header ul li ul li{
+    padding: 10px;
+}
+.nav-header ul li ul li a{
+    color: black;
+}
+
+.container-header-nav .nav-header ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #9be644;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.container-header-nav .nav-header ul li ul a::before {
+    display: none;
+}
+
+.container-header-nav .nav-header ul li .linkServicios::before {
+    display: none;
+}
+
+.nav-header ul li a:hover + ul, .nav-header ul li ul:hover {
+    padding: 0;
+    margin: 0;
+    width: 15.5%;
+    position: absolute;
+    display: block;
+    text-align: center;
+    margin: 0 3.5%;
+    margin-top: 35px;
+}
+
+.container-header-nav .nav-header ul li a::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #9be644;
+    position: absolute;
+    bottom: 0;
+    transition: all 1s;
+}
+
+.container-header-nav .nav-header ul li a:hover::before {
+    width: 100%;
+}
+/* Fin Estilos Header */
+/* Inicio estilos seccion peajes */
+/* 585857 */
+.seccion-peajes{
+    padding-top: 8%;
+}
+.container-peajes-description-strong{
+    display: flex;
+    justify-content: center;
+}
+.container-peajes-description-strong strong{
+    font-size: 1.5em;
+    color: #585857;
+}
+.container-peajes-description-strong-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.container-peajes-description-strong-text p{
+    font-size: 1.5em;
+    color: gray;
+}
+.container-peajes-img {
+    display: flex;
+    justify-content: center;
+}
+.container-peajes-img img{
+    width: 100%;
+}
+.container-peajes-title-aliados{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+.container-peajes-title-aliados p{
+    font-size: 3em;
+    color: #585857;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.container-peajes-img-aliados{
+    display: flex;
+    justify-content: center;
+}
+.container-peajes-img-aliados img{
+    width: 400px;
+}
+.container-peajes-list-title-aliados{
+    display: flex;
+    justify-content: start;
+    padding-left: 10%;
+}
+.container-peajes-list-title-aliados p{
+    color: #585857;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container-list-aliados {
+    width: 70%;         
+    padding: 2% 5%;
+    padding-left: 6%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-peajes-container-list-aliados {
+    width: 33%;  /* Cambiar*/ 
+    margin: 5%;
+}
+.container-peajes-container-list-aliados-title{
+    display: flex;
+    justify-content: start;
+    font-size: 1.5em;
+    color: #585857;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.container-peajes-container-list-aliados-addres{
+    display: flex;
+    justify-content: start;
+    font-size: 1.5em;
+    color: gray;
+}
+.container-info-desvinculacion{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+.container-info-desvinculacion-box{
+    width: 40%;
+}
+
+.container-info-desvinculacion-box p{
+    padding: 3%;
+    font-size: 1.5em;
+    color: #585857;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #6ce72a;
+    border-radius: 20px;
+}
+.container-info-desvinculacion-link{
+    display: flex;
+    justify-content: center;
+}
+.container-info-desvinculacion-link-box{
+    width: 40%;
+    margin-bottom: 1%;
+}
+.container-info-desvinculacion-link-box p{
+    padding: 3%;
+    font-size: 1em;
+    color: #585857;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #6ce72a;
+    border-radius: 20px;
+}
+
+.container-info-desvinculacion-link-box p a{
+    border-bottom: 1px solid black;
+    color: #585857;
+}
+.container-seccion-peajes-imagen-paypal {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5% 0;
+}
+
+.container-seccion-peajes-imagen-paypal img {
+    width: 50%;
+}
+
+/* Fin estilos seccion peajes */
+/* Inicio estilos footer */
+footer {
+    background-color: black;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.footer-container-contact-image img {
+    width: 450px;
+}
+
+.footer-container-contact-form {
+    width: 30vw;
+    padding: 2vw;
+}
+
+.footer-container-contact-form p {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-container-contact-form form {
+    padding: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-container-contact-form form .footer-container-contact-form-input {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-container-contact-form form .footer-container-contact-form-input input {
+    border-radius: 13px;
+    width: 80%;
+    text-size-adjust: none;
+    padding: 1.5%;
+    font-size: 1.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    outline: none;
+}
+
+.footer-container-contact-form-textarea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container-contact-form-textarea textarea {
+    outline: none;
+    width: 80%;
+    text-size-adjust: none;
+    border: 0;
+    border-radius: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 80%;
+    padding: 1.5%;
+    font-size: 1.2em;
+    margin-bottom: 2%;
+}
+
+.check {
+    padding: 2% 0;
+}
+
+.container-checkbox {
+    color: #fff;
+    display: block;
+    position: relative;
+    padding-left: 10%;
+    margin-bottom: 18px;
+    cursor: pointer;
+    text-align: start;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container-checkbox a {
+    color: rgba(40, 128, 6, 1);
+    text-decoration: underline;
+}
+
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0px;
+    width: 0;
+}
+
+.container-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5vw;
+    width: 1.5vw;
+    background-color: transparent;
+    border: 1px solid #499234;
+}
+
+.container-checkbox:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.container-checkbox input:checked~.checkmark {
+    background-color: rgba(40, 128, 6, 1);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.container-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.footer-container-contact-form form button {
+    background-color: #9be644;
+    width: 40%;
+    padding: 2% 0;
+    font-weight: bold;
+    text-size-adjust: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 13px;
+    margin: 0 10%;
+    cursor: pointer;
+}
+
+.footer-container-contact-form form button:hover {
+    background-color: rgba(40, 128, 6, 1);
+    color: #fff;
+}
+
+.footer-container-info {
+    padding: 2%;
+    width: 25%;
+    /*Cambiar*/
+}
+
+.footer-container-info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+
+}
+
+.footer-container-info-box-image {
+    margin-right: 2%;
+}
+
+.footer-container-info-box-image img {
+    width: 60px;
+}
+
+.footer-container-info-box-data p {
+    line-height: 90%;
+    text-size-adjust: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #9be644;
+}
+
+.footer-container-info-icons {
+    padding-left: 3%;
+    text-size-adjust: none;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container-info-icons a {
+    margin: 2%;
+    color: #9be644;
+}
+
+/* Fin estilos footer */
