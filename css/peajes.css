@@ -659,9 +659,18 @@ footer {
     }
     .container-list-aliados{
         width: 100%;
-
+        padding: 0;
+        margin: 0;
     }
-
+    .container-peajes-container-list-aliados{
+        width: 100%;
+    }
+    .container-peajes-container-list-aliados-title{
+        justify-content: center;
+    }
+    .container-peajes-container-list-aliados-addres{
+        justify-content: center;
+    }
     .footer-container-contact-image img{
         width: 300px;
     }
