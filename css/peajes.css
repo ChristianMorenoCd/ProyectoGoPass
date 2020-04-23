@@ -269,6 +269,11 @@ header {
     font-size: 1.5em;
     color: gray;
 }
+.container-desvinculacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .container-info-desvinculacion{
     display: flex;
     justify-content: center;
@@ -293,7 +298,7 @@ header {
     justify-content: center;
 }
 .container-info-desvinculacion-link-box{
-    width: 40%;
+    width: 80%;
     margin-bottom: 1%;
 }
 .container-info-desvinculacion-link-box p{
