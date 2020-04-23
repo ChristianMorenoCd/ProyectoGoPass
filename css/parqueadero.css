@@ -225,6 +225,9 @@ header {
     color: gray;
     text-transform: uppercase;
 }
+.container-parqueadero-comingsoon-image-responsive{
+    display: none;
+}
 .container-parqueadero-comingsoon-image{
     margin: 2% 0;
     display: flex;
@@ -572,7 +575,7 @@ footer {
     }
 
     .container-parqueadero-logo-aliado-img-aliados img{
-        width: 100%;
+        width: 260px;
     }
 
     .container-parqueadero-comingsoon{
@@ -580,6 +583,13 @@ footer {
     }
      .container-parqueadero-comingsoon p {
         font-size: 1.8em;
+    }
+    .container-parqueadero-comingsoon-image-responsive{
+        display: flex;
+        justify-content: center;
+    }
+    .container-parqueadero-comingsoon-image-responsive img{
+        width: 260px;
     }
 
     .container-parqueadero-link-tarifas{
