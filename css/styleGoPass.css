@@ -355,13 +355,74 @@ header {
 }
 
 /* Fin estilos seccion installgopass */
+/* Inicio estilos seccion map */
+.mapgopass{
+    padding: 1% 5%;
+    height: 80vh;
+}
+.container-map-title{
+    display: flex;
+    justify-content: start;
+    padding: 1% 0;
+  
+}
+.container-map-title p{
+    font-size: 3em;
+    color: #585857;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container-map {
+    display: flex;
+    height: 80%; 
+    align-items: center;
+}
+.map{
+    border-radius: 25px;
+    width: 50%;
+    height: 100%; /*cambiar*/
+}
+.container-map-img{
+    padding: 0 5%;
+}
+
+.container-map-img-marquer:nth-child(1){
+    padding: 0 4.5%;
+}
+
+.link{
+    padding-left: 5%;
+   
+}
+.container-link{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 1%;
+}
+.container-link a{
+    font-size: 2em;
+    border-bottom: 2px solid #9be644;
+    color: #6ce72a;
+    font-weight: bold;
+}
+
+.container-seccion-gopass-imagen-paypal {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1% 0;
+}
+
+.container-seccion-gopass-imagen-paypal img {
+    width: 50%;
+}
+
+/* Fin estilos seccion Map */
 /* Inicio estilos footer */
 footer {
     background-color: black;
     font-size: 16px;
     display: flex;
     justify-content: center;
-
 }
 .footer-container {
     width: 100%;
