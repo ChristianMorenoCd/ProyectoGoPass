@@ -895,7 +895,7 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .container-header-button-login a {
+    /* .container-header-button-login a {
         font-size: 1.2em;
         text-size-adjust: none;
     }
@@ -929,8 +929,7 @@ footer {
         width: 450px;
 
     }
-
-    /* .container-items-box-title p {
+    .container-items-box-title p {
         font-size-adjust: none;
         font-size: 1em;
     }
@@ -938,21 +937,21 @@ footer {
     .container-items-box-text p {
         font-size-adjust: none;
         font-size: .8em;
-    } */
+    } 
 
-    /* .container-items-box-image img {
+ .container-items-box-image img {
         width: 100px;
-    } */
+    } 
 
-    /* .image-little {
+     .image-little {
         width: 200px;
         height: 110px;
-    } */
+    }  */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .container-header-nav .nav-header ul li a {
+    /* .container-header-nav .nav-header ul li a {
         font-size: 1em;
     }
 
@@ -1003,12 +1002,12 @@ footer {
     /* .image-little {
         width: 180px;
         height: 110px;
-    } */
+    } */ 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .container-header-button-login a {
+    /* .container-header-button-login a {
         font-size: 1.7em;
     }
 
@@ -1040,7 +1039,7 @@ footer {
         width: 650px;
     }
 
-    /* .container-items-box-title p {
+     .container-items-box-title p {
         font-size-adjust: none;
         font-size: 1.5em;
 
@@ -1050,7 +1049,7 @@ footer {
         font-size-adjust: none;
         font-size: 1.2em;
 
-    } */
+    } 
 
     /* .container-items-box-image img {
         width: 150px;
@@ -1060,7 +1059,7 @@ footer {
         width: 250px;
         height: 150px;
         justify-content: end;
-    } */
+    } 
 
     .footer-container-contact-form form .Inputemail {
         border-radius: 13px;
@@ -1071,6 +1070,6 @@ footer {
     .footer-container-contact-form form textarea {
         width: 20vw;
         text-size-adjust: none;
-    }
+    } */
 
 }
