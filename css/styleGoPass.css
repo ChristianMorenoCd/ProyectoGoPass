@@ -645,7 +645,7 @@ footer {
     }
 
     .container-header-logo-gopass {
-        z-index: 5;
+        z-index: 10;
         width: 10%;
     }
 
@@ -660,7 +660,7 @@ footer {
     .burguer-button {
         width: 50vw;
         position: fixed;
-        z-index: 4;
+        z-index: 30;
         display: flex;
         right: -40vw;
     }
