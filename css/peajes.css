@@ -280,7 +280,7 @@ header {
     margin-bottom: 1%;
 }
 .container-info-desvinculacion-box{
-    width: 40%;
+    width: 50%;
 }
 
 .container-info-desvinculacion-box p{
@@ -298,7 +298,6 @@ header {
     justify-content: center;
 }
 .container-info-desvinculacion-link-box{
-    width: 80%;
     margin-bottom: 1%;
 }
 .container-info-desvinculacion-link-box p{
