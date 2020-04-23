@@ -317,57 +317,57 @@ header {
 /* Fin estilos Descripcion */
 
 /* Inicio sección items */
-.items {
+.items{
     background-color: #499234;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-rows: 1fr 120px;
-    padding: 0 5%;
+    padding: 1%;
 }
-
 .container-items {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2%;
-}
-
-.container-items-box-image {
-    display: grid;
+    height: auto;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 1%;
+}
+.container-items-box {
+    position: relative;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+}
+.container-items-box-image{
+    height: 45%;  /* Cambiar*/
+    display: grid;
+    justify-items: center;
     align-items: center;
 }
 
-.container-items-box-image img {
-    width: 150px;
+.container-items-box-image img{
+    width: 45%;
 }
 
-.container-items-box {
-    padding: 10px;
-    text-align: center;
+.container-items-box-image.image-little img{
+    width: 70%;
 }
-
-.image-little img {
-    width: 250px;
+.container-items-box-title{
+    padding: 0;
+    
 }
-
-.container-items-box-title p {
+.container-items-box-title p{
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: bold;
-    font-size-adjust: none;
 }
-
+.container-items-box-text{
+    padding: 0 5%;
+}
 .container-items-box-text p {
     color: #fff;
     font-size: 1.3em;
     font-weight: 500;
     text-size-adjust: none;
 }
-
 .container-items-image {
     margin: 0;
     padding: 0;
@@ -376,7 +376,6 @@ header {
     justify-self: end;
     align-self: flex-start;
 }
-
 .container-items-image img {
     margin: 0;
     padding: 0;
@@ -783,37 +782,33 @@ footer {
     }
 
     .items {
-        min-height: 100%;
         background-color: initial;
         background-image: url('../assets/img/responsive/items-fondo-responsive2.png');
         background-repeat: repeat;
         background-size: contain;
-        grid-template-rows: repeat(2, auto);
-        gap: 0;
+   
     }
-
-    .container-items {
-        display: initial;
-        grid-template-columns: auto;
-        grid-template-rows: repeat(3, 30%);
-        gap: 0;
+   
+    .container-items-box {
+        width: 100%;
     }
-
+    .container-items-box-image{
+        height: auto;  /* Cambiar*/
+    }
     .container-items-box-title p {
         font-size:  1.5rem;
     }
-
     .container-items-box-text p {
         color: #fff;
         font-size:  1.5rem;
     }
+
     .container-items-image{
-        padding: 2% 0;
+        padding-top: 10%;
     }
+
     .container-items-image img {
-        margin: 0;
-        padding: 0;
-        width: 80%;
+        width: 400px;
     }
 
     footer {
@@ -933,7 +928,7 @@ footer {
 
     }
 
-    .container-items-box-title p {
+    /* .container-items-box-title p {
         font-size-adjust: none;
         font-size: 1em;
     }
@@ -941,16 +936,16 @@ footer {
     .container-items-box-text p {
         font-size-adjust: none;
         font-size: .8em;
-    }
+    } */
 
-    .container-items-box-image img {
+    /* .container-items-box-image img {
         width: 100px;
-    }
+    } */
 
-    .image-little {
+    /* .image-little {
         width: 200px;
         height: 110px;
-    }
+    } */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -987,7 +982,7 @@ footer {
         width: 450px;
     }
 
-    .container-items-box-title p {
+    /* .container-items-box-title p {
         font-size-adjust: none;
         font-size: 1.2em;
 
@@ -997,16 +992,16 @@ footer {
         font-size-adjust: none;
         font-size: 1em;
 
-    }
+    } */
 
-    .container-items-box-image img {
+    /* .container-items-box-image img {
         width: 100px;
-    }
+    } */
 
-    .image-little {
+    /* .image-little {
         width: 180px;
         height: 110px;
-    }
+    } */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1043,7 +1038,7 @@ footer {
         width: 650px;
     }
 
-    .container-items-box-title p {
+    /* .container-items-box-title p {
         font-size-adjust: none;
         font-size: 1.5em;
 
@@ -1053,17 +1048,17 @@ footer {
         font-size-adjust: none;
         font-size: 1.2em;
 
-    }
+    } */
 
-    .container-items-box-image img {
+    /* .container-items-box-image img {
         width: 150px;
-    }
+    } */
 
-    .image-little {
+    /* .image-little {
         width: 250px;
         height: 150px;
         justify-content: end;
-    }
+    } */
 
     .footer-container-contact-form form .Inputemail {
         border-radius: 13px;
