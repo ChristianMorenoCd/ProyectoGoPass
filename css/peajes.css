@@ -619,6 +619,47 @@ footer {
         transition: .5s;
         right: 0;
     }
+
+    .seccion-peajes{
+        text-align: center;
+    }
+ 
+
+    .container-peajes-description-strong strong{
+        display: flex;
+        font-size: 1.4em;
+        padding: 0 5%;
+    }
+    .container-peajes-description-strong-text{
+        padding-bottom: 10%;
+    }
+    .container-peajes-description-strong-text p{
+        display: flex;
+        font-size: 1.4em;
+        padding: 0 5%;
+    }
+    .container-peajes-title-aliados{
+        padding: 8%;
+    }
+    .container-peajes-title-aliados p{
+        font-size: 1.5em;
+    }
+    .container-peajes-img-aliados{
+        margin-bottom: 5%   ;
+    }
+    .container-peajes-img-aliados img{
+        width: 270px;
+    }
+    .container-peajes-list-title-aliados{
+        justify-content: center;
+        padding: 0;
+    }
+    .container-list-aliados{
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+
     .footer-container-contact-image img{
         width: 300px;
     }
