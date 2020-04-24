@@ -326,12 +326,10 @@ header {
 .container-items {
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 1%;
 }
 .container-items-box {
-    position: relative;
     width: 30%;
     height: auto;
     text-align: center;
@@ -353,7 +351,7 @@ header {
 }
 .container-items-box-title{
     padding: 0;
-    margin: 0;
+    margin: 3%;
 }
 .container-items-box-title p{
     padding: 0;
