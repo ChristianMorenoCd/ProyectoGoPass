@@ -600,24 +600,26 @@ footer {
     }
 
     .container-parqueadero-link-tarifas{
-        padding-top: 3%;
+        padding: 3% 0;
     }
     .container-parqueadero-link-tarifas a{
         font-size: 1.2em;
     }
 
-    .container-seccion-peajes-imagen-paypal{
-        padding: 5% 0;
+
+    .container-seccion-parqueadero-imagen-paypal img {
+        width: 400px;
     }
 
-    .container-seccion-peajes-imagen-paypal img {
-        width: 400px;
+    .footer-container-contact-image {
+        padding: 5% 0;
     }
     .footer-container-contact-image img{
         width: 300px;
     }
     .footer-container-contact-form {
         width: initial;
+        padding: 0 2%;
     }
 
     .footer-container-contact-form form button {
@@ -642,6 +644,9 @@ footer {
     .container-checkbox .checkmark {
         height: 5vw;
         width: 5vw;
+    }
+    .footer-container-contact-form form button {
+        margin-bottom: 5%;
     }
 }
 @media only screen and (min-width: 1200px){}
