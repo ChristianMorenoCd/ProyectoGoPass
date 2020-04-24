@@ -562,11 +562,15 @@ footer {
     }
     .container-faq-text-question p{
         font-size: 1.8em;
+        border: none;
+        text-decoration: underline;
+        padding: 0 5%;
     }
     .container-faq-text-answer p{
         display: flex;
         font-size: 1.4em;
         margin-bottom: 5%;
+        padding: 0 5%;
     }
     .container-faq-text{
         padding: 0;
