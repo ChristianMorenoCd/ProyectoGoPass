@@ -586,7 +586,7 @@ footer {
     .container-seccion-gasolina-description p {
         display: table-cell;
         color: gray;
-        font-size: 115%;
+        font-size: 1.3rem;
         text-align: justify;
     }
     .container-seccion-gasolina-img {
@@ -614,24 +614,26 @@ footer {
     }
     
     .container-seccion-gasolina-edsHabilitadas-edifico {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     
     .container-seccion-gasolina-edsHabilitadas-edifico span {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     
     .container-seccion-gasolina-edsHabilitadas-addres {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
-    .container-seccion-gasolina-imagen-paypal{
-        padding-top: 10%;
+
+    .container-seccion-gopass-imagen-paypal{
+        padding: 5% 0;
     }
 
-    .container-seccion-gasolina-imagen-paypal img {
+    .ccontainer-seccion-gopass-imagen-paypal img {
         width: 400px;
     }
+   
     .footer-container-contact-image {
         padding: 5% 0;
     }
