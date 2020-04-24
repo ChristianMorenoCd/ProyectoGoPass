@@ -568,6 +568,9 @@ footer {
         font-size: 1.4em;
         margin-bottom: 5%;
     }
+    .container-faq-text{
+        padding: 0;
+    }
     .container-seccion-faq-imagen-paypal img {
         width: 400px;
     }
