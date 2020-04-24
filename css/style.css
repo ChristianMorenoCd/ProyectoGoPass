@@ -497,12 +497,13 @@ footer {
     width: 0;
 }
 
+
 .container-checkbox .checkmark {
     position: absolute;
     top: 0;
     left: 0;
-    height: 35%;
-    width: 5%;
+    height: 1.5vw;
+    width: 1.5vw;
     background-color: transparent;
     border: 1px solid #499234;
 }
