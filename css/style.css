@@ -330,10 +330,12 @@ header {
     flex-wrap: wrap;
 }
 .container-items-box {
+    flex-grow: 1;
     width: 30%;
     height: auto;
     text-align: center;
     align-items: center;
+    padding: 1%;
 }
 .container-items-box-image{
     height: 45%;  /* Cambiar*/
