@@ -195,22 +195,46 @@ header {
     background-size: 100%;
     padding: 2% 15%;
 }
+.container-faq-box{
+    margin-bottom: 2%;
+}
 .container-faq-text-question{
     display: flex;
     justify-content: center;
     text-align: center  ;
-    cursor: pointer;
 }
 .container-faq-text-question p{
     font-size: 2em;
     color: #6ce52a;
     font-weight: bold;
+    border-bottom: 2px solid #6ce52a;
 }
+
+.Container-icon-question{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 0;
+}
+.Container-icon-question a{
+    color: #6ce52a;
+    cursor: pointer;
+}
+.Container-icon-answer{
+    display: none;
+    justify-content: center;
+    padding: 0;
+    padding-bottom:0;
+}
+.Container-icon-answer a {
+    color: #6ce52a;
+    cursor: pointer;
+}
+
 .container-faq-text-answer{
     display: none;
-    cursor: pointer;
     justify-content: center;
-    padding-bottom: 1%;
+    padding-bottom: 0;
     text-align: center;
     transition: .5s;
 }
@@ -544,25 +568,23 @@ footer {
         font-size: 1.4em;
         margin-bottom: 5%;
     }
-    .container-seccion-faq-imagen-paypal{
-        padding: 5% 0;
-    }
-
     .container-seccion-faq-imagen-paypal img {
         width: 400px;
     }
     
-    
-    .footer-container-contact-image img {
-        width: 400px;
+    .footer-container-contact-image {
+        padding: 5% 0;
     }
-
-    .footer-container-contact-form {
-        width: initial;
-    }
-
     .footer-container-contact-image img{
         width: 300px;
+    }
+    .footer-container-contact-form {
+        width: initial;
+        padding: 0 2%;
+    }
+
+    .footer-container-contact-form form button {
+        width: 40%;
     }
 
     .footer-container-info {
@@ -583,5 +605,8 @@ footer {
     .container-checkbox .checkmark {
         height: 5vw;
         width: 5vw;
+    }
+    .footer-container-contact-form form button {
+        margin-bottom: 5%;
     }
 }
