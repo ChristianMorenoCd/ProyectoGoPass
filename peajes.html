@@ -18,9 +18,9 @@
         <div class="container-header">
             <a href="index.html" class="container-header-logo-gopass"> <img src="assets/img/header-logo-gopass.png"
                     alt="logo GoPass"></a>
-                    <div class="burguer-button" id="burguer-button">
-                        <i class="fas fa-bars  fa-2x"></i>
-                    </div>
+            <div class="burguer-button" id="burguer-button">
+                <i class="fas fa-bars  fa-2x"></i>
+            </div>
             <!-- <div class="container-header-button-login">
                 <a href="">iniciar sesión</a>
             </div> -->
@@ -31,26 +31,25 @@
         <nav class="menu" id="menu">
             <ul>
                 <li>
-                    <a href="#">¿qué es gopass?</a>
+                    <a href="gopass.html">¿qué es gopass?</a>
                 </li>
                 <li>
-                    <a href="#">nuestros servicios</a>
+                 <a href="#">nuestros servicios</a>
                     <div>
                         <li><a href="gasolina.html">Gasolina</a></li>
                         <li><a href="peajes.html">Peajes</a></li>
                         <li><a href="parqueaderos.html">Parqueaderos</a></li>
                         <li><a href="soat.html">SOAT</a></li>
-                       
                     </div>
                 </li>
                 <li>
                     <a href="faq.html">preguntas frecuentes</a>
                 </li>
                 <li>
-                    <a href="addtag.html">adquiere tu tag</a>
+                    <a href="#">adquiere tu tag</a>
                 </li>
                 <li>
-                    <a href="#">iniciar sesión</a>
+                    <a href="addtag.html">adquiere tu tag</a>
                 </li>
             </ul>
         </nav>
@@ -59,21 +58,27 @@
                 <ul>
                     <li>
                         <a href="gopass.html">¿qué es gopass?</a>
+                        <ul class="subMenu">
+                            <li><a href="gopass.html#infogopass">¿Qué es GoPass?</a></li>
+                            <li><a href="gopass.html#functiongopass">¿Cómo Funciona?</a></li>
+                            <li><a href="gopass.html#installgopass">¿Donde instalar tu tag?</a></li>
+                            <li><a href="gopass.html#ScrollMap">¿Dónde  encontrarnos?</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a class="linkServicios" href="#">nuestros servicios</a>
-                        <ul class="subMenu"> 
+                        <ul class="subMenu">
                             <li><a href="gasolina.html">Gasolina</a></li>
                             <li><a href="peajes.html">Peajes</a></li>
                             <li><a href="parqueaderos.html">Parqueaderos</a></li>
-                            <li><a href="parqueaderos.html">SOAT</a></li>
-                        </ul> 
+                            <li><a href="soat.html">SOAT</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faq.html">preguntas frecuentes</a>
                     </li>
                     <li>
                         <a href="addtag.html">adquiere tu tag</a>
-                    </li>
-                    <li>
-                        <a href="#">adquiere tu tag</a>
                     </li>
                 </ul>
             </nav>
@@ -150,11 +155,39 @@
             <div class="container-info-desvinculacion-link">
                 <div class="container-info-desvinculacion-link-box">
                     <p>
-                        Para desvincularte de tu prestador de servicios de pago electronico de peaje actual <a href="formularioFlyPass.php">Haz clic aqui</a>. 
+                        Para desvincularte de tu prestador de servicios de pago electronico de peaje actual <a id="myBtn" >Haz clic aqui</a>. 
                     </p>
                 </div>
             </div>
         </div>
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+              <div class="modal-body">
+                  <div class="container-modal-img">
+                    <img src="assets/img/desviculacionFlyPassImg/Logo-gopass-desvinculate.png" alt="">
+                  </div>
+                  <div class="container-modal-options">
+                      <div class="container-modal-options-box">
+                        <a href="formularioFlyPass.php">
+                            <p class="container-modal-options-title"> desvincularse de</p>
+                            <p class="container-modal-options-company"> Flypass</p>
+                        </a> 
+                      </div>
+                      <div class="container-modal-options-box">
+                        <a href="">
+                            <p class="container-modal-options-title"> desvincularse de</p>
+                            <p class="container-modal-options-company"> Copiloto</p>
+                        </a>
+                     </div>
+                  </div>  
+              </div>
+            </div>
+
+          </div>
 
         <div class="container-seccion-peajes-imagen-paypal">
             <img class="img-big" src="assets/img/gasolina-paypal-imagen.png" alt="Medios-de-pago">
@@ -253,5 +286,33 @@
         }
     </script>
 
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    
 </body>
 </html>

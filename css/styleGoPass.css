@@ -356,6 +356,10 @@ header {
     padding: 1% 5%;
     height: 80vh;
 }
+
+.container-icons-mapa-responsive{
+    display: none;
+}
 .container-map-title{
     display: flex;
     justify-content: start;
@@ -406,7 +410,8 @@ header {
 .container-seccion-gopass-imagen-paypal {
     display: flex;
     justify-content: flex-end;
-    padding: 1% 0;
+    padding: 0;
+    padding-top: 3%;
 }
 
 .container-seccion-gopass-imagen-paypal img {
