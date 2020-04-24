@@ -299,7 +299,6 @@ header {
 .container-description-text p {
     font-size: 1.5em;
     color: gray;
-    line-height: 100%;
     text-align: justify;
     text-size-adjust: none;
     margin: 0;
