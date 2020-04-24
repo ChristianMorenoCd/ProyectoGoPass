@@ -58,18 +58,24 @@
                 <ul>
                     <li>
                         <a href="gopass.html">¿qué es gopass?</a>
+                        <ul class="subMenu">
+                            <li><a href="gopass.html#infogopass">¿Qué es GoPass?</a></li>
+                            <li><a href="gopass.html#functiongopass">¿Cómo Funciona?</a></li>
+                            <li><a href="gopass.html#installgopass">¿cómo instalar tu tag?</a></li>
+                            <li><a href="gopass.html#ScrollMap">¿Dónde encontrarnos?</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a class="linkServicios" href="#">nuestros servicios</a>
-                        <ul class="subMenu"> 
+                        <ul class="subMenu">
                             <li><a href="gasolina.html">Gasolina</a></li>
                             <li><a href="peajes.html">Peajes</a></li>
                             <li><a href="parqueaderos.html">Parqueaderos</a></li>
-                            <li><a href="parqueaderos.html">SOAT</a></li>
-                        </ul> 
+                            <li><a href="soat.html">SOAT</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#">preguntas frecuentes</a>
+                        <a href="faq.html">preguntas frecuentes</a>
                     </li>
                     <li>
                         <a href="addtag.html">adquiere tu tag</a>
@@ -110,20 +116,42 @@
                 </div>
                 <div class="container-adquieretag-form-data">
                     <label for="">¿Cuántos tags necesitas?</label>
-                    <input type="text" required>
+                    <select name="select">
+                        <option value="0" selected>Seleccione una opción</option> 
+                        <option value="1">1</option> 
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+
+                      </select>
                 </div>
-                <input class="btn-info" type="submit" value="enviar información">
+
+                <div class="check">
+                    <label class="container-checkbox" required>He leído, comprendo y acepto la política de privacidad y de
+                        tratamiento de datos que
+                        se encuentra en el documento de <a href="https://terminos.gopass.com.co"
+                            target="_blank">términos y condiciones</a>.
+                        <input type="checkbox" required>
+                        <span class="checkmark" required></span>
+                    </label>
+                </div>
+                <input class="btn"  type="submit" value="enviar informacion">
+               <!-- <a class="btn" href="">Enviar Informacion</a> -->
             </form>
         </div>
-    
+    </section>
 
-
+    <section class="adquieretag-text-info">
         <div class="container-adquieretag-text-info">
             <p>Nos pondremos en contacto contigo lo más pronto posible para acordar la entrega de tu tag, GRACIAS.</p>
         </div>
-    
     </section>
-
     
 
     <div class="container-seccion-faq-imagen-paypal">

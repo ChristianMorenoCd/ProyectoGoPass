@@ -516,7 +516,7 @@ footer {
     }
     .container-header-text p{
         display: flex;
-        font-size: 0.8em;
+        font-size: 2rem;
     }
 
     .container-header-nav {
