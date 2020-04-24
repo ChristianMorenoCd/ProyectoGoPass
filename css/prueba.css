@@ -22,90 +22,32 @@ li {
     list-style: none;
 }
 
-.items{
-    background-color: #499234;
+.container-icons-mapa-responsive{
     padding: 1%;
 }
-.container-items {
-    height: auto;
+
+.container-icons-mapa-responsive-box{
+
     display: flex;
+}
+.container-icons-mapa-responsive-box-img{
+    width: 20%;
+    display: grid;
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 1%;
+    align-items: center; 
 }
-.container-items-box {
-    position: relative;
-    width: 30%;
-    height: auto;
-    text-align: center;
-    align-items: center;
+.container-icons-mapa-responsive-box-img img{
+    /* width: 50%; */
 }
-.container-items-box-image{
-    height: 45%;  /* Cambiar*/
-    display: grid;
-    justify-items: center;
-    align-items: center;
+.container-icons-mapa-responsive-box-title{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
 }
-
-.container-items-box-image img{
-    width: 45%;
-}
-
-.container-items-box-image.image-little img{
-    width: 70%;
-}
-.container-items-box-title{
-    padding: 1%;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.8em;
-    font-weight: bold;
-    font-size-adjust: none;
-}
-.container-items-box-text{
-    padding: 0 5%;
-}
-.container-items-box-text p {
-    color: #fff;
+.container-icons-mapa-responsive-box-title p{
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.3em;
-    font-weight: 500;
-    text-size-adjust: none;
+    color: #575756;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-.container-items-image {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    justify-items: end;
-    justify-self: end;
-    align-self: flex-start;
-}
-.container-items-image img {
-    margin: 0;
-    padding: 0;
-    width: 550px;
-}
-@media only screen and (max-width: 600px){
-
-    .items {
-        background-color: initial;
-        background-image: url('../assets/img/responsive/items-fondo-responsive2.png');
-        background-repeat: repeat;
-        background-size: contain;
-   
-    }
-   
-    .container-items-box {
-        width: 100%;
-    }
-    .container-items-box-image{
-        height: auto;  /* Cambiar*/
-    }
-    .container-items-box-title p {
-        font-size:  1.5rem;
-    }
-    .container-items-box-text p {
-        color: #fff;
-        font-size:  1.5rem;
-    }
-}
- 
