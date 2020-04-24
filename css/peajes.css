@@ -736,6 +736,15 @@ footer {
     }
  
 
+    .modal-content{
+        width: 90%;
+    }
+    .container-modal-options{
+        flex-direction: column;
+    }
+    .container-modal-options-box{
+        margin: 4%;
+    }
     .container-peajes-description-strong strong{
         display: flex;
         font-size: 1.4em;
@@ -746,20 +755,23 @@ footer {
     }
     .container-peajes-description-strong-text p{
         display: flex;
-        font-size: 1.2em;
+        font-size: 1.4em;
         padding: 0 5%;
     }
     .container-peajes-title-aliados{
         padding: 8%;
     }
     .container-peajes-title-aliados p{
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
     .container-peajes-img-aliados{
         margin-bottom: 5%   ;
     }
     .container-peajes-img-aliados img{
         width: 270px;
+    }
+    .container-peajes-list-title-aliados p{
+        font-size: 1.8em;
     }
     .container-peajes-list-title-aliados{
         justify-content: center;
