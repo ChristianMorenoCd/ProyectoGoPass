@@ -7,6 +7,20 @@
 
     <link rel="stylesheet" href="css/styleGoPass.css">
 
+
+    <!-- Scroll -->
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+        smoothScroll.init({
+            selector: '[data-scroll]',
+            selectorHeader: null,
+            speed: 2000,
+            easing: 'easeInOutCubic',
+            offset: 0,
+            callback: function (anchor, toggle) {}
+        });
+    </script>
+
     <!-- Iconos -->
     <link rel="stylesheet" href="js/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -58,6 +72,12 @@
                 <ul>
                     <li>
                         <a href="gopass.html">¿qué es gopass?</a>
+                        <ul class="subMenu">
+                            <li><a data-scroll href="#infogopass">¿Qué es GoPass?</a></li>
+                            <li><a data-scroll href="#functiongopass">¿Cómo Funciona?</a></li>
+                            <li><a data-scroll href="#installgopass">¿Donde instalar tu tag?</a></li>
+                            <li><a data-scroll href="#ScrollMap">¿Dónde  encontrarnos?</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a class="linkServicios" href="#">nuestros servicios</a>
@@ -79,7 +99,7 @@
         </div>
     </header>
 
-    <section class="infogopass">
+    <section class="infogopass" id="infogopass">
         <div class="container-infogopass">
             <div class="container-infogopass-title">
                 <p>
@@ -99,7 +119,7 @@
         </div>
     </section>
 
-    <section class="functiongopass">
+    <section class="functiongopass" id="functiongopass">
         <div class="gopass-functiongopass-img-responsive">
             <img src="assets/img/responsive/gopass-functiongopass-img-responsive.png" alt="Tag-GoPass">
         </div>
@@ -122,7 +142,7 @@
         </div>
     </section>
 
-    <section class="installgopass">
+    <section class="installgopass" id="installgopass">
         <div class="container-installgopass-title">
             <p>¿cómo instalar tu tag?</p>
         </div>
@@ -164,7 +184,7 @@
         </div>
     </section>
 
-    <section class="mapgopass">
+    <section class="mapgopass" id="ScrollMap">
         <div class="container-map-title">
             <p>
                 ¿dónde encontrarnos?
