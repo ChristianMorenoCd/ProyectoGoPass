@@ -52,7 +52,7 @@ header {
 .container-header {
     height: 30vh;
     padding: 2% 2%;
-    background-color: rgba(0, 0, 0, .5);
+    /* background-color: rgba(0, 0, 0, .5); */
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
@@ -81,7 +81,7 @@ header {
 
 .container-header-text {
     padding: 2%;
-    background-color: rgba(0, 0, 0, .5);
+    /* background-color: rgba(0, 0, 0, .5); */
 }
 .container-header-text{
     font-size: 3em;
@@ -93,7 +93,7 @@ header {
     display: none;
 }
 .container-header-nav {
-    background-color: rgba(0, 0, 0, .5);
+    /* background-color: rgba(0, 0, 0, .4); */
 }
 
 .container-header-nav .nav-header ul {
@@ -113,18 +113,17 @@ header {
     justify-items: center;
 }
 
-.nav-header ul li ul{
-    display: none;
 
-}
 
 .nav-header ul li ul li{
     width: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, .9);
+    color: #fff;
 }
 
+
 .nav-header ul li ul li:hover{
-    background-color: #9be644;
+    background-color: #6ce52a;
     color: black;
 }
 .container-header-nav .nav-header ul li ul li a:hover:hover{
@@ -132,7 +131,9 @@ header {
 }
 
 .container-header-nav .nav-header ul li ul li a{
-    color: #9be644;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .nav-header ul li ul li{
@@ -146,7 +147,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5em;
-    color: #9be644;
+    color: #6ce52a;
     position: relative;
     padding-bottom: 10px;
 }
@@ -155,9 +156,9 @@ header {
     display: none;
 }
 
-.container-header-nav .nav-header ul li .linkServicios::before {
+/* .container-header-nav .nav-header ul li .linkServicios::before {
     display: none;
-}
+} */
 
 .nav-header ul li a:hover + ul, .nav-header ul li ul:hover {
     padding: 0;
@@ -175,7 +176,7 @@ header {
     display: block;
     width: 50%;
     height: 3px;
-    background-color: #9be644;
+    background-color: #6ce52a;
     position: absolute;
     bottom: 0;
     transition: all 1s;
@@ -192,23 +193,26 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 5%;
+    padding: 2% 15%;
 }
 .container-faq-text-question{
     display: flex;
     justify-content: center;
     text-align: center  ;
+    cursor: pointer;
 }
 .container-faq-text-question p{
     font-size: 2em;
-    color: #9be644;
+    color: #6ce52a;
     font-weight: bold;
 }
 .container-faq-text-answer{
-    display: flex;
+    display: none;
+    cursor: pointer;
     justify-content: center;
     padding-bottom: 1%;
     text-align: center;
+    transition: .5s;
 }
 .container-faq-text-answer p{
     font-size: 1.5em;
@@ -223,10 +227,11 @@ header {
 .container-faq-img img{
     width: 100%;
 }
-.container-seccion-faq-imagen-paypal {
+.container-seccion-faq-imagen-paypal{
     display: flex;
     justify-content: flex-end;
-    padding: 1% 0;
+    padding: 0;
+    padding-top: 3%;
 }
 
 .container-seccion-faq-imagen-paypal img {
