@@ -375,13 +375,13 @@ header {
     font-weight: 500;
     text-size-adjust: none;
 }
-.container-seccion-peajes-imagen-paypal {
+.container-seccion-home-imagen-paypal {
     display: flex;
     justify-content: flex-end;
     padding: 0;
 }
 
-.container-seccion-peajes-imagen-paypal img {
+.container-seccion-home-imagen-paypal img {
     width: 50%;
 }
 /* Fin estilos items */
@@ -391,7 +391,7 @@ footer {
     background-color: black;
     display: flex;
     justify-content: center;
-    padding-bottom: 2%;
+    padding: 1% 0;
 }
 .footer-container {
     width: 100%;
@@ -819,6 +819,14 @@ footer {
         width: 400px;
     }
 
+    .container-seccion-home-imagen-paypal{
+        padding: 5% 0;
+    }
+
+    .container-seccion-home-imagen-paypal img {
+        width: 400px;
+    }
+
     .footer-container-contact-image {
         padding: 5% 0;
     }
@@ -827,6 +835,7 @@ footer {
     }
     .footer-container-contact-form {
         width: initial;
+        padding: 0 2%;
     }
 
     .footer-container-contact-form form button {
@@ -851,6 +860,9 @@ footer {
     .container-checkbox .checkmark {
         height: 5vw;
         width: 5vw;
+    }
+    .footer-container-contact-form form button {
+        margin-bottom: 5%;
     }
 }
 
