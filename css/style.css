@@ -765,7 +765,7 @@ footer {
     }
 
     .container-description-image-responsive img {
-        width: 400px;
+        width: 100%;
     }
 
     .container-description-title {
@@ -872,6 +872,9 @@ footer {
     }
     .footer-container-contact-form form button {
         margin-bottom: 5%;
+    }
+    .footer-container-info-icons{
+        justify-content: center;
     }
 
 }

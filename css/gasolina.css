@@ -676,6 +676,9 @@ footer {
     .footer-container-contact-form form button {
         margin-bottom: 5%;
     }
+    .footer-container-info-icons{
+        justify-content: center;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
