@@ -51,7 +51,7 @@ header {
 .container-header {
     height: 30vh;
     padding: 2% 2%;
-    background-color: rgba(0, 0, 0, .5);
+    /* background-color: rgba(0, 0, 0, .5); */
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
@@ -80,33 +80,8 @@ header {
 
 .container-header-text {
     padding-left: 2%;
-    background-color: rgba(0, 0, 0, .5);
+    /* background-color: rgba(0, 0, 0, .5); */
 }
-
-.menu {
-    display: none;
-}
-.container-header-nav {
-    background-color: rgba(0, 0, 0, .5);
-}
-
-.container-header-nav .nav-header ul {
-    margin: 0;
-    padding: 2.5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.container-header-nav .nav-header ul li ul{
-    display: none;
-}
-
-.container-header-nav .nav-header ul li {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-}
-
 
 .menu {
     display: none;
@@ -119,6 +94,7 @@ header {
     margin: 0;
     padding: 2.5%;
     display: grid;
+    justify-content: start;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -128,7 +104,13 @@ header {
 
 .container-header-nav .nav-header ul li {
     display: grid;
-    justify-content: center;
+    justify-content: start;
+    justify-items: center;
+}
+
+.container-header-nav .nav-header ul li:nth-child(1) {
+    display: grid;
+    justify-content: start;
     justify-items: center;
 }
 
@@ -186,7 +168,7 @@ header {
     position: absolute;
     display: block;
     text-align: center;
-    margin: 0 3.5%;
+    margin: 0;
     margin-top: 35px;
 }
 
@@ -204,6 +186,7 @@ header {
 .container-header-nav .nav-header ul li a:hover::before {
     width: 100%;
 }
+
 /* Fin Estilos Header */
 /* Inicio estilos seccion SOAT */
 .container-soat-description{
@@ -268,10 +251,11 @@ footer {
 }
 
 .footer-container-contact-image img {
-    width: 450px;
+    width: 350px;
 }
 
 .footer-container-contact-form {
+    order: 3;
     width: 30vw;
     padding: 2vw;
 }
@@ -420,8 +404,8 @@ footer {
 }
 
 .footer-container-info {
-    padding: 2%;
-    width: 25%;
+    padding: 0 5%;
+    width: 20%;
     /*Cambiar*/
 }
 
@@ -441,26 +425,24 @@ footer {
 }
 
 .footer-container-info-box-data p {
+    margin: 0;
     line-height: 90%;
     text-size-adjust: none;
     font-size: 1.5em;
-    font-weight: 700;
+  
     color: #9be644;
 }
 
 .footer-container-info-icons {
-    padding-left: 3%;
     text-size-adjust: none;
     margin-top: 5%;
     display: flex;
-    justify-content: center;
 }
 
 .footer-container-info-icons a {
     margin: 2%;
     color: #9be644;
 }
-
 /* Fin estilos footer */
 @media only screen and (max-width: 600px){
     .container-header {

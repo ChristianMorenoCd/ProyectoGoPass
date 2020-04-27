@@ -101,6 +101,7 @@ header {
     margin: 0;
     padding: 2.5%;
     display: grid;
+    justify-content: start;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -110,7 +111,13 @@ header {
 
 .container-header-nav .nav-header ul li {
     display: grid;
-    justify-content: center;
+    justify-content: start;
+    justify-items: center;
+}
+
+.container-header-nav .nav-header ul li:nth-child(1) {
+    display: grid;
+    justify-content: start;
     justify-items: center;
 }
 
@@ -168,7 +175,7 @@ header {
     position: absolute;
     display: block;
     text-align: center;
-    margin: 0 3.5%;
+    margin: 0;
     margin-top: 35px;
 }
 
@@ -186,6 +193,7 @@ header {
 .container-header-nav .nav-header ul li a:hover::before {
     width: 100%;
 }
+
 /* Fin Estilos Header */
 /* Inicio estilos seccion peajes */
 /* 585857 */
@@ -275,53 +283,31 @@ header {
     color: gray;
 }
 .container-desvinculacion{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
 }
-.container-info-desvinculacion{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1%;
-}
-.container-info-desvinculacion-box{
+.container-info-desvinculacion, .container-info-desvinculacion-link{
     width: 50%;
-}
-
-.container-info-desvinculacion-box p{
-    padding: 3%;
+    padding: 1%;
+    text-align: center;
+    margin: 1% 0;
+    background-color: #6ce72a;
+    border-radius: 20px;
     font-size: 1.5em;
     color: #585857;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: center;
-    background-color: #6ce72a;
-    border-radius: 20px;
-}
-.container-info-desvinculacion-link{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
-.container-info-desvinculacion-link-box{
-    margin-bottom: 1%;
-}
-.container-info-desvinculacion-link-box p{
-    padding: 3%;
-    font-size: 1em;
-    color: #585857;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    background-color: #6ce72a;
-    border-radius: 20px;
 }
 
 .container-info-desvinculacion-link-box p a{
     border-bottom: 1px solid black;
     color: #585857;
 }
-.container-seccion-peajes-imagen-paypal {
+
+
+.container-seccion-peajes-imagen-paypal {  
     display: flex;
     justify-content: flex-end;
     padding: 0;
@@ -450,10 +436,11 @@ footer {
 }
 
 .footer-container-contact-image img {
-    width: 400px;
+    width: 350px;
 }
 
 .footer-container-contact-form {
+    order: 3;
     width: 30%;
     padding: 0;
 }
@@ -606,8 +593,8 @@ footer {
 }
 
 .footer-container-info {
-    padding: 2%;
-    width: 25%;
+    padding: 0 5%;
+    width: 20%;
     /*Cambiar*/
 }
 
@@ -631,16 +618,14 @@ footer {
     line-height: 90%;
     text-size-adjust: none;
     font-size: 1.5em;
-    font-weight: 700;
+  
     color: #9be644;
 }
 
 .footer-container-info-icons {
-    padding-left: 3%;
     text-size-adjust: none;
     margin-top: 5%;
     display: flex;
-    justify-content: center;
 }
 
 .footer-container-info-icons a {
@@ -795,15 +780,8 @@ footer {
     .container-peajes-container-list-aliados-addres{
         justify-content: center;
     }
-    .container-info-desvinculacion-box{
-        width: 80%;
-        margin-top: 10%;
-    }
-    .container-info-desvinculacion-box p{
-        font-size: 1em;
-        padding: 2%;
-    }
-    .container-info-desvinculacion-link{
+
+    .container-info-desvinculacion, .container-info-desvinculacion-link{
         width: 80%;
     }
    

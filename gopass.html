@@ -327,7 +327,6 @@
         
         function initMap() {
             var Novus = {lat: 4.628540, lng: -74.111953};
-    
             map = new google.maps.Map(document.getElementById('maps'), {
                 center: {lat: 4.6097102, lng: -74.081749},
                 zoom: 10, 
@@ -335,7 +334,7 @@
 
             var icons = {
                  gasolina :{
-                     icon: 'assets/img/marker-gasolina-map.png'
+                     icon: 'assets/img/marker-gasolina-map.png',
                  },
                  parqueadero :{
                      icon: 'assets/img/marker-parqueadero-map.png'
@@ -344,6 +343,7 @@
                      icon: 'assets/img/marker-peaje-map.png'
                  },
             };
+
              var lugares = [
                 {
                     position: new google.maps.LatLng(4.819509, -74.034672),
@@ -372,7 +372,9 @@
                 var marker = new  google.maps.Marker({
                     position: lugares[i].position,
                     icon: icons[lugares[i].type].icon,
-                    map: map
+                    map: map, 
+                    size: new google.maps.Size(49, 40),
+                    animation: google.maps.Animation.DROP,
                 });
             };           
         }

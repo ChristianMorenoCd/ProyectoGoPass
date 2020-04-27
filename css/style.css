@@ -29,7 +29,7 @@ li {
 
 /* Inicio Estilos Header */
 header {
-    padding: 0;
+    padding: 0 2%;
     margin: 0;
     background-image: url("../assets/img/header-fondo.png");
     background-position: center;
@@ -96,6 +96,7 @@ header {
     margin: 0;
     padding: 2.5%;
     display: grid;
+    justify-content: start;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -105,7 +106,13 @@ header {
 
 .container-header-nav .nav-header ul li {
     display: grid;
-    justify-content: center;
+    justify-content: start;
+    justify-items: center;
+}
+
+.container-header-nav .nav-header ul li:nth-child(1) {
+    display: grid;
+    justify-content: start;
     justify-items: center;
 }
 
@@ -163,7 +170,7 @@ header {
     position: absolute;
     display: block;
     text-align: center;
-    margin: 0 3.5%;
+    margin: 0;
     margin-top: 35px;
 }
 
@@ -258,8 +265,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0;
-    padding: 0;
     padding: 30px 0;
+    padding-left: 2%;
     align-items: center;
 }
 
@@ -321,7 +328,7 @@ header {
 /* Inicio sección items */
 .items{
     background-color: #499234;
-    padding: 1%;
+    padding: 1% 2%;
 }
 .container-items {
     height: auto;
@@ -379,10 +386,11 @@ header {
     display: flex;
     justify-content: flex-end;
     padding: 0;
+    padding-top: 3%;
 }
 
 .container-seccion-home-imagen-paypal img {
-    width: 50%;
+    width: 40%;
 }
 /* Fin estilos items */
 
@@ -559,8 +567,8 @@ footer {
 }
 
 .footer-container-info {
-    padding: 2%;
-    width: 25%;
+    padding: 0 5%;
+    width: 20%;
     /*Cambiar*/
 }
 
@@ -589,11 +597,9 @@ footer {
 }
 
 .footer-container-info-icons {
-    padding-left: 3%;
     text-size-adjust: none;
     margin-top: 5%;
     display: flex;
-    justify-content: center;
 }
 
 .footer-container-info-icons a {
@@ -656,6 +662,7 @@ footer {
         top: 0;
         left: -100vw;
         width: 100vw;
+        height: 50vh;
         margin: 0;
         padding: 10px 0;
         display: flex;
@@ -866,6 +873,7 @@ footer {
     .footer-container-contact-form form button {
         margin-bottom: 5%;
     }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
