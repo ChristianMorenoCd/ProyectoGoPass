@@ -48,9 +48,6 @@
                 <li>
                     <a href="addtag.html">adquiere tu tag</a>
                 </li>
-                <li>
-                    <a href="#">iniciar sesión</a>
-                </li>
             </ul>
         </nav>
         <div class="container-header-nav">
@@ -226,5 +223,16 @@
         </div>
 
     </footer>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        const burguerBtn = document.querySelector('#burguer-button');
+
+        burguerBtn.addEventListener('click', showHide);
+
+        function showHide() {
+            menu.classList.toggle('is-active')
+        }
+    </script>
 </body>
 </html>
