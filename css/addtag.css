@@ -616,12 +616,14 @@ footer {
     .container-adquieretag-form form .container-adquieretag-form-data{
         flex-direction: column;
         margin-bottom: 5%;
+        padding: 0;
     }
     .container-adquieretag-form form .container-adquieretag-form-data label{
         text-align: center;
         width: 100%;
     }
     .container-adquieretag-form form .container-adquieretag-form-data input{
+        text-align: center;
         width: 100%;
     }
     .container-adquieretag-form form .container-adquieretag-form-data select{
