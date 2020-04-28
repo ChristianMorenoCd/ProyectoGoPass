@@ -51,7 +51,7 @@ header {
 .container-header {
     height: 30vh;
     padding: 2% 2%;
-    background-color: rgba(0, 0, 0, .5);
+    /* background-color: rgba(0, 0, 0, .5); */
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
@@ -80,7 +80,7 @@ header {
 
 .container-header-text {
     padding: 1%;
-    background-color: rgba(0, 0, 0, .5);
+    /* background-color: rgba(0, 0, 0, .5); */
 }
 
 .menu {
