@@ -225,7 +225,7 @@ header {
     padding-bottom: 0;
 }
 .Container-icon-question a{
-    color: #6ce52a;
+    color: gray;
     cursor: pointer;
 }
 .Container-icon-answer{
@@ -235,7 +235,7 @@ header {
     padding-bottom:0;
 }
 .Container-icon-answer a {
-    color: #6ce52a;
+    color: gray;
     cursor: pointer;
 }
 

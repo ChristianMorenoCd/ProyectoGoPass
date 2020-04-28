@@ -637,6 +637,15 @@ footer {
 
 @media only screen and (max-width: 600px){
 
+    header {
+        margin: 0;
+        padding: 0;
+        background-image: url("../assets/img/responsive/parqueader-header-fondo-responsive.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .container-header {
         height: 25vh;
         background-color: initial;
