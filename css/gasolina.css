@@ -550,8 +550,9 @@ footer {
         background-color: rgba(0, 0, 0, .9);
         position: fixed;
         top: 0;
-        right: -100vw;
+        left: -100vw;
         width: 100vw;
+        height: 35vh;
         margin: 0;
         padding: 10px 0;
         display: flex;
@@ -566,12 +567,14 @@ footer {
         padding: 0;
     }
 
+
     .menu ul li {
         margin: 5px 0;
         padding: 0;
     }
 
     .menu ul li a {
+        font-size: 1.5rem;
         border-bottom: 1px solid #9be644;
         margin: 0;
         padding: 0;
@@ -581,7 +584,7 @@ footer {
 
     .menu.is-active {
         transition: .5s;
-        right: 0;
+        left: 0;
     }
     .container-seccion-gasolina-description{
         background-image: url('../assets/img/responsive/gasolina-seccion-responsive.png');

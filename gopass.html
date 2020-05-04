@@ -44,26 +44,21 @@
         <nav class="menu" id="menu">
             <ul>
                 <li>
-                    <a href="#">¿qué es gopass?</a>
+                    <a href="gopass.html">¿qué es gopass?</a>
                 </li>
                 <li>
-                    <a href="#" class="services" id="services">nuestros servicios</a>
-                    <div>
-                <li><a href="gasolina.html">Gasolina</a></li>
-                <li><a href="peajes.html">Peajes</a></li>
-                <li><a href="parqueaderos.html">Parqueaderos</a></li>
-                <li><a href="soat.html">SOAT</a></li>
-
-                </div>
+                    <div class="subMenu_Responsive">
+                        <li><a href="gasolina.html">Gasolina</a></li>
+                        <li><a href="peajes.html">Peajes</a></li>
+                        <li><a href="parqueaderos.html">Parqueaderos</a></li>
+                        <li><a href="soat.html">SOAT</a></li>
+                    </div>
                 </li>
                 <li>
                     <a href="faq.html">preguntas frecuentes</a>
                 </li>
                 <li>
                     <a href="addtag.html">adquiere tu tag</a>
-                </li>
-                <li>
-                    <a href="#">iniciar sesión</a>
                 </li>
             </ul>
         </nav>
@@ -320,6 +315,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
+    <script>
+        const menu = document.querySelector('.menu');
+        const burguerBtn = document.querySelector('#burguer-button');
+
+        const btnServices = document.querySelector('#services');
+        burguerBtn.addEventListener('click', showMenu);
+
+        function showMenu() {
+            console.log(btnServices);
+        }
+        burguerBtn.addEventListener('click', showHide);
+        function showHide() {
+            menu.classList.toggle('is-active')
+        }
+    </script>
 
 
     <script>
@@ -380,21 +390,7 @@
         }
     </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9BN2M2d6aJIlUvMEFe6s7p2NNDrXd0do&callback=initMap" async defer></script>
-    <script>
-        const menu = document.querySelector('.menu');
-        const burguerBtn = document.querySelector('#burguer-button');
-
-        const btnServices = document.querySelector('#services');
-        btnServices.addEventListener('click', showMenu);
-
-        function showMenu() {
-            console.log(btnServices);
-        }
-        burguerBtn.addEventListener('click', showHide);
-        function showHide() {
-            menu.classList.toggle('is-active')
-        }
-    </script>
+   
 
 
 </body>

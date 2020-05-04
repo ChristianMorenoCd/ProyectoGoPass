@@ -662,7 +662,7 @@ footer {
         top: 0;
         left: -100vw;
         width: 100vw;
-        height: 50vh;
+        height: 35vh;
         margin: 0;
         padding: 10px 0;
         display: flex;
@@ -684,6 +684,7 @@ footer {
     }
 
     .menu ul li a {
+        font-size: 1.5rem;
         border-bottom: 1px solid #9be644;
         margin: 0;
         padding: 0;
