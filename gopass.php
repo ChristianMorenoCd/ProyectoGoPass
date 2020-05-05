@@ -233,7 +233,7 @@
 
     <section class="link">
         <div class="container-link">
-            <a href="">Términos y condiciones</a>
+            <a href="markes.php">Términos y condiciones</a>
         </div>
 
         <div class="container-seccion-gopass-imagen-paypal">
@@ -314,6 +314,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <!-- <script type="text/javascript">
+	    $.ajax({
+	      url: "markes.php", 
+          dataType: 'json'
+	    })
+	    .done(function(data) {
+	        console.log(data["data"].length);
+            $.each(data["data"], function( key, value) {
+                console.log(value['nombre']);
+            }); 
+	    })
+	    .fail(function(data) {
+            console.log('Hola y chaoooosssss');
+	      console.log(data);
+	    })
+	    .always(function(data) {
+	      console.log(data);
+	    });
+    </script> -->
     
     <script>
         const menu = document.querySelector('.menu');
@@ -334,73 +355,151 @@
 
     <script>
         var map;
+        var contentString
+        var nombrePunto;
+        var direccion;
+        var latitud;
+        var longitud;
+        var urlumg;
+        var servicio;
+        var tarifa;
+        var horario;
         
-        function initMap() {
+            function initMap() {
             var Novus = {lat: 4.628540, lng: -74.111953};
             map = new google.maps.Map(document.getElementById('maps'), {
                 center: {lat: 4.6097102, lng: -74.081749},
-                zoom: 10, 
+                zoom: 11, 
             });
 
+           
+
             var icons = {
-                 gasolina :{
+                Gasolina :{
                      icon: 'assets/img/marker-gasolina-map.png',
                  },
-                 parqueadero :{
+                 Parqueaderos :{
                      icon: 'assets/img/marker-parqueadero-map.png'
                  },
-                 peaje :{
+                 Peajes :{
+                     icon: 'assets/img/marker-peaje-map.png'
+                 },
+                 Lavafante :{
+                     icon: 'assets/img/marker-peaje-map.png'
+                 },
+                 SOAT :{
                      icon: 'assets/img/marker-peaje-map.png'
                  },
             };
 
-             var lugares = [
-                {
-                    position: new google.maps.LatLng(4.819509, -74.034672),
-                    type: 'gasolina'
-                },
-                {
-                    position: new google.maps.LatLng(4.830347, -74.033032),
-                    type: 'peaje'
-                },
-                {
-                    position: new google.maps.LatLng(4.780530, -74.184912),
-                    type: 'peaje'
-                },
-                {
-                    position: new google.maps.LatLng(4.835824, -74.028909),
-                    type: 'peaje'
-                }, 
-                {
-                    position: new google.maps.LatLng(4.614651, -74.070867),
-                    type: 'parqueadero'
-                },
+            //  var lugares = [
+            //     {
+            //         position: new google.maps.LatLng(4.819509, -74.034672),
+            //         type: 'gasolina'
+            //     },
+            //     {
+            //         position: new google.maps.LatLng(4.830347, -74.033032),
+            //         type: 'peaje'
+            //     },
+            //     {
+            //         position: new google.maps.LatLng(4.780530, -74.184912),
+            //         type: 'peaje'
+            //     },
+            //     {
+            //         position: new google.maps.LatLng(4.835824, -74.028909),
+            //         type: 'peaje'
+            //     }, 
+            //     {
+            //         position: new google.maps.LatLng(4.614651, -74.070867),
+            //         type: 'parqueadero'
+            //     },
                 
-             ]
+            //  ]
 
-            for(var i = 0; i < lugares.length; i++){
-                var marker = new  google.maps.Marker({
-                    position: lugares[i].position,
-                    icon: icons[lugares[i].type].icon,
+             $.ajax({
+            url: "markes.php", 
+            dataType: 'json'
+            })
+            .done(function(data) {
+                console.log(data["data"].length);
+                $.each(data["data"], function( key, value) {
+                    nombre = (value['nombre']);
+                    direccion = (value['direccion']);
+                    latitud = (value['latitud']);
+                    longitud = (value['longitud']);
+                    urlumg = (value['image']);
+                    servicio = (value['servicio']);
+                    tarifa = (value['tarifa']);
+                    horario = (value['horario']);
+
+                    console.log(nombre);
+                    console.log(direccion);
+                    console.log(latitud);
+                    console.log(longitud);
+                    console.log(urlumg);
+                    console.log(servicio);
+                    console.log(tarifa);
+                    console.log(horario);
+                    console.log('***********');
+
+                    var contentString = '<div class="container-info-map">'+
+                        '<h1>'+nombre+'</h1>'+
+                        '<div class="container-info-map-box">'+
+                        '<div class="container-info-map-img">'+
+                        '<img src="'+ urlumg +'" alt="">' +
+                        '</div>' +
+                        '<div class="container-info-map-text">' +
+                        '<p>' +
+                        '<span class="icons fa fa-location-arrow fa-1x fa-sm"></span>'+ direccion +'<br>' +
+                        '<span class="icons fa fa-car fa-1x fa-sm"></span>'+ servicio +'<br>' +
+                        '<span class="icons fa fa-usd fa-1x fa-sm"></span>'+ tarifa +'<br>' +
+                        '<span class="icons fa fa-clock-o fa-1x fa-sm"></span>'+ horario +'<br>' +
+                        '</p>'+
+                        '</div>'+
+                        '</div>'+  
+                        '</div>';    
+
+                    var marker = new  google.maps.Marker({
+                    position: new google.maps.LatLng(latitud, longitud),
+                    icon: icons[value['servicio']].icon,
                     map: map, 
                     size: new google.maps.Size(49, 40),
                     animation: google.maps.Animation.DROP,
+                    
+                    });
+
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString
+                    });
+
+                    marker.addListener('click', function() {
+                    infowindow.open(map, marker);
                 });
-            };           
+                    
+
+                }); 
+            })
+            .fail(function(data) {
+                console.log('Hola y chaoooosssss');
+            console.log(data);
+            })
+            .always(function(data) {
+            console.log(data);
+            });
+
+            // for(var i = 0; i < lugares.length; i++){
+            //     var marker = new  google.maps.Marker({
+            //         position: lugares[i].position,
+            //         icon: icons[lugares[i].type].icon,
+            //         map: map, 
+            //         size: new google.maps.Size(49, 40),
+            //         animation: google.maps.Animation.DROP,
+            //     });
+            // };           
         }
     </script>
 
-    <script>
-        var request = new XMLHttpRequest()
-        console.log('Validando la peticion http');
-        request.open('GET', 'https://api.gopass.com.co/maps/serviceWeb', true);
 
-        request.onload = function() {
-            // Begin accessing JSON data here
-        }
-
-        request.send();
-    </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9BN2M2d6aJIlUvMEFe6s7p2NNDrXd0do&callback=initMap" async defer></script>
    
 
