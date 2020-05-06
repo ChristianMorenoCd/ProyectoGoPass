@@ -44,7 +44,7 @@
         <nav class="menu" id="menu">
             <ul>
                 <li>
-                    <a href="gopass.html">¿qué es gopass?</a>
+                    <a href="gopass.php">¿qué es gopass?</a>
                 </li>
                 <li>
                     <div class="subMenu_Responsive">
@@ -66,7 +66,7 @@
             <nav class="nav-header">
                 <ul>
                     <li>
-                        <a href="gopass.html">¿qué es gopass?</a>
+                        <a href="gopass.php">¿qué es gopass?</a>
                         <ul class="subMenu">
                             <li><a data-scroll href="#infogopass">¿Qué es GoPass?</a></li>
                             <li><a data-scroll href="#functiongopass">¿Cómo Funciona?</a></li>
@@ -464,8 +464,7 @@
                     icon: icons[value['servicio']].icon,
                     map: map, 
                     size: new google.maps.Size(49, 40),
-                    animation: google.maps.Animation.DROP,
-                    
+                    animation: google.maps.Animation.DROP,     
                     });
 
                     var infowindow = new google.maps.InfoWindow({
