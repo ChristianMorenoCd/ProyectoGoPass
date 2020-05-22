@@ -17,6 +17,8 @@ body {
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
+    background-image: linear-gradient(to bottom right, rgb(32, 32, 36), rgb(30, 29, 33), rgb(27, 27, 30), rgb(25, 24, 26), rgb(22, 22, 23), rgb(20, 19, 20), rgb(18, 17, 17), rgb(15, 14, 15), rgb(13, 12, 12), rgb(10, 9, 9), rgb(8, 7, 7), rgb(5, 4, 4));
+
 }
 
 div {
@@ -146,7 +148,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5em;
-    color: #6ce52a;
+    color: white;
     position: relative;
     padding-bottom: 10px;
 }
@@ -189,8 +191,8 @@ header {
 /* Fin Estilos Header */
 /* Inicio estilos seccion infogopass */
 .infogopass {
-    height: 80vh;
-    background-image: url('../assets/img/home-fondo.png');
+    height: 50vh;
+    /* background-image: url('../assets/img/home-fondo.png'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,7 +212,7 @@ header {
 }
 
 .container-infogopass .container-infogopass-title p {
-    color: #585857;
+    color:white;
     text-transform: uppercase;
     font-size: 3em;
     font-weight: bold;
@@ -223,7 +225,7 @@ header {
 }
 
 .container-infogopass .container-infogopass-description p {
-    color: grey;
+    color: white;
     font-size: 1.5em;
     text-size-adjust: none;
 }
@@ -233,32 +235,45 @@ header {
     display: flex;
     justify-content: center;
     font-size: 1.7em;
-    color: #585857;
+    color: #9be644;
     text-size-adjust: none;
 }
 
 /* Fin estilos seccion infogopass */
 /* Inicio estilos seccion functiongopass */
 .functiongopass {
-    padding-right: 22%;
+    padding-right: 0%;
+    display: flex;
+    justify-content: start;
+
 }
 
 .gopass-functiongopass-img-responsive {
     display: none;
 }
 
-.functiongopass-img img {
-    width: 1000px;
+.functiongopass-img{
+    width: 40vw;
+    height: 45vh;
+    background-image: url('../assets/img/gopass-functiongopass-img.png');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 }
 
-.functiongopass-img {
+.functiongopass-img img {
+    width: 110%;
+}
+
+/* .functiongopass-img {
     float: left;
     shape-outside: polygon(0px 0px, 283px 3px, 356px 111px, 346px 193px, 428px 291px, 558px 262px, 375px 412px, 127px 602px, 0px 599px);
-}
+} */
 
 .container-functiongopass-text {
-    text-align: end;
-    padding: 8% 0;
+    width: 37vw;
+    text-align: center;
     text-size-adjust: none;
 }
 
@@ -271,22 +286,24 @@ header {
     font-size: 3em;
     text-transform: uppercase;
     font-weight: bold;
-    color: #585857;
+    color: white;
 }
 
 .container-functiongopass-description p {
+    text-align: justify;
     font-size: 1.5em;
-    color: gray;
+    color: white;
     text-size-adjust: none;
 }
 
 .container-functiongopass-img {
-    margin-top: 2%;
+    display: flex;
+    justify-content: center;
 }
 
 .container-functiongopass-img a img {
     cursor: pointer;
-    width: 300px;
+    width: 100%;
 }
 
 /* Fin estilos seccion functiongopass */
@@ -294,11 +311,12 @@ header {
 .container-installgopass-title {
     display: flex;
     justify-content: center;
+    padding-top: 2%;
     padding-bottom: 5%;
 }
 
 .container-installgopass-title p {
-    color: #585857;
+    color: white;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 3em;
@@ -319,19 +337,13 @@ header {
     padding: 2%;
 }
 
-.container-installgopass-items-number {
-    color: #585857;
-    font-size: 3em;
-    font-weight: bold;
-}
 
 .container-installgopass-items-img1 {
-    width: 150px;
-    height: 250px;
+    width: 50%;
 }
 
 .container-installgopass-items-img2 {
-    width: 100%;
+    width: 80%;
 }
 
 .container-installgopass-items-img3 {
@@ -348,7 +360,7 @@ header {
     margin: 0;
     text-align: center;
     padding: 0 5%;
-    color: gray;
+    color:white;
     font-size: 1.5em;
 }
 
@@ -358,14 +370,14 @@ header {
 }
 
 .container-installgopass-info p {
-    color: gray;
+    color: white;
     font-size: 1em;
 }
 
 /* Fin estilos seccion installgopass */
 /* Inicio estilos seccion map */
 .mapgopass{
-    padding: 1% 5%;
+    padding: 1% 10%;
     height: 80vh;
 }
 
@@ -380,7 +392,7 @@ header {
 }
 .container-map-title p{
     font-size: 3em;
-    color: #585857;
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -433,36 +445,37 @@ header {
 /* Fin estilos seccion Map */
 /* Inicio estilos footer */
 footer {
-    background-color: black;
     display: flex;
-    justify-content: center;
-    padding: 1% 0;
+    padding: 2%;
 }
 .footer-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-content: flex-start;
 }
 
 .footer-container-contact-image img {
-    width: 350px;
+    width: 100%;
 }
 
 .footer-container-contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     order: 3;
-    width: 30%;
+    width: 40%;
     padding: 0;
 }
 
 .footer-container-contact-form p {
-    margin: 2%;
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     font-size: 2em;
-    color: #fff;
+    color: #6ce52a;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -485,7 +498,7 @@ footer {
     border-radius: 13px;
     width: 80%;
     text-size-adjust: none;
-    padding: 1.5%;
+    padding: 1%;
     font-size: 1.5em;
     font-family: 'Source Sans Pro', sans-serif;
     outline: none;
@@ -504,14 +517,16 @@ footer {
     border: 0;
     border-radius: 13px;
     font-family: 'Source Sans Pro', sans-serif;
-    height: 80%;
+
     padding: 1.5%;
     font-size: 1.5em;
     margin-bottom: 2%;
 }
 
 .check {
-    padding: 2% 0;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
 }
 
 .container-checkbox {
@@ -586,7 +601,7 @@ footer {
 
 .footer-container-contact-form form button {
     background-color: #9be644;
-    padding: 2% 10%;
+    padding: 2%;
     font-weight: bold;
     text-size-adjust: none;
     font-family: 'Source Sans Pro', sans-serif;
@@ -594,7 +609,7 @@ footer {
     text-transform: uppercase;
     border: 0;
     border-radius: 13px;
-    margin: 0 10%;
+    width: 30%;
     cursor: pointer;
 }
 
@@ -604,8 +619,11 @@ footer {
 }
 
 .footer-container-info {
-    padding: 0 5%;
-    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2%;
+    padding-left: 3%;
+    width: 30%;
     /*Cambiar*/
 }
 
