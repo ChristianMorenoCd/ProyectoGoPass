@@ -365,6 +365,7 @@ footer {
 }
 
 .footer-container-contact-image{
+    width: 20vw;
     display: flex;
     align-self: flex-start;
 
