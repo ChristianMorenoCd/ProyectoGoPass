@@ -72,6 +72,7 @@ header {
 
 .container-header-text {
     margin: 0;
+    width: 70vw;
     /* background-color: rgba(0, 0, 0, .8); */
     padding: 5% 0;
 }
@@ -570,6 +571,7 @@ footer {
 @media only screen and (max-width: 600px) {
    
     header {
+        height: 40vh;
         margin: 0;
         padding: 0;
         background-image: url("../assets/img/responsive/header-fondo-responsive.png");
@@ -579,9 +581,9 @@ footer {
     }
 
     .container-header {
-        padding: 2% 5%;
+        padding: 1% 5%;
         background-color: initial;
-        border-bottom: 20px solid transparent;
+
     }
 
     .container-header-logo-gopass {
@@ -615,11 +617,12 @@ footer {
 
     .menu {
         background-color: rgba(0, 0, 0, .9);
+        
         position: fixed;
         top: 0;
         left: -100vw;
         width: 100vw;
-        height: 35vh;
+        height: 37.5vh;
         margin: 0;
         padding: 10px 0;
         display: flex;
@@ -662,28 +665,27 @@ footer {
     .container-header-nav {
         display: none;
     }
-
+    .container-header-text{
+        width: 65vw;
+    }
     .container-header-text p {
-        font-size: 1.7em;
+        font-size: 1.5em;
         padding: 0 5%;
     }
 
     .home {
-        background-image: url("../assets/img/responsive/home-fondo-responsive.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
-        padding: 2% 0;
+        background-image: none;
+        height: auto;
+        padding: 5% 0;
     }
 
     .home-container {
-        grid-template-rows: repeat(3, auto);
-        gap: 0;
-        padding: 0;
-        margin: 0;
+        display: flex;
+        align-content: center;
     }
 
     .home-container-text p {
+        
         font-size: 1.5rem;
         padding: 0 3%;
         font-weight: initial;
@@ -691,7 +693,7 @@ footer {
     }
 
     .home-container-text .text-strong {
-        color: gray;
+        color: white;
         font-size: 1.5rem;
     }
     .home-container-text .text-strong strong{
@@ -704,7 +706,7 @@ footer {
     }
 
     .home-container-image img {
-        width: 200px;
+        width: 100%;
     }
     .home-container-link{
         margin: 0;
@@ -713,11 +715,11 @@ footer {
     .description {
         background-image: initial;
         font-size: 16px;
+        padding: 2% 0 ;
     }
 
     .container-description {
-        grid-template-rows: repeat(3, auto);
-        grid-template-columns: 100vw;
+        width: 100vw;
         margin: 0;
         padding: 0;
     }
@@ -734,7 +736,7 @@ footer {
 
     .container-description-title {
         margin: 0;
-        padding: 0 5%;
+        padding: 5% 2%;
         text-align: center;
     }
 
@@ -749,6 +751,7 @@ footer {
     .container-description-text {
         margin: 0;
         padding: 0 5%;
+        padding-bottom: 5%;
         text-align: center;
     }
 
@@ -761,35 +764,18 @@ footer {
     .container-description-image {
         display: none;
     }
-
-    .items {
-        background-color: initial;
-        background-image: url('../assets/img/responsive/items-fondo-responsive2.png');
-        background-repeat: repeat;
-        background-size: contain;
-   
+    .container-items{
+        flex-direction: column;
+        padding: 2%;
     }
-   
-    .container-items-box {
-        width: 100%;
-    }
-    .container-items-box-image{
-        height: auto;  /* Cambiar*/
-    }
-    .container-items-box-title p {
-        font-size:  1.5rem;
-    }
-    .container-items-box-text p {
-        color: #fff;
-        font-size:  1rem;
+    .container-items-box{
+        padding-left: 15px;
+        justify-content: center;
+        width: 100vw;
     }
 
-    .container-items-image{
-        padding-top: 10%;
-    }
-
-    .container-items-image img {
-        width: 400px;
+    .container-items-box img{
+        width: 80%;
     }
 
     .container-seccion-home-imagen-paypal{
@@ -802,9 +788,11 @@ footer {
 
     .footer-container-contact-image {
         padding: 5% 0;
+        width: 100vw;
+        justify-content: center;
     }
     .footer-container-contact-image img{
-        width: 300px;
+        width: 100%;
     }
     .footer-container-contact-form {
         width: initial;
