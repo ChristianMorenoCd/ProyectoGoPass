@@ -310,6 +310,7 @@ header {
 
 .container-description-image {  
     padding: 0;
+    width: 50vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
