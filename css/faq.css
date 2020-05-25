@@ -17,6 +17,8 @@ body {
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
+    background: rgb(33,33,33);
+    background: radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(56,56,56,1) 50%, rgba(40,40,40,1) 100%);
 }
 
 div {
@@ -197,10 +199,10 @@ header {
 /* Inicio seccion FAQ */
 
 .container-faq-text{
-    background-image: url('../assets/img/faq-seccion-fondo.png');
+    /* background-image: url('../assets/img/faq-seccion-fondo.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%; */
     padding: 2% 15%;
 }
 .container-faq-box{
@@ -225,7 +227,7 @@ header {
     padding-bottom: 0;
 }
 .Container-icon-question a{
-    color: gray;
+    color: #6ce52a;
     cursor: pointer;
 }
 .Container-icon-answer{
@@ -235,7 +237,7 @@ header {
     padding-bottom:0;
 }
 .Container-icon-answer a {
-    color: gray;
+    color: #6ce52a;
     cursor: pointer;
 }
 
@@ -248,7 +250,7 @@ header {
 }
 .container-faq-text-answer p{
     font-size: 1.5em;
-    color: grey;
+    color: white;
 }
 .container-faq-img {
     display: flex;
@@ -274,73 +276,77 @@ header {
 
 /* Inicio estilos footer */
 footer {
-    background-color: black;
-    font-size: 16px;
     display: flex;
     justify-content: center;
-
+    padding: 0 5%;
 }
-
 .footer-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    justify-content: space-around;
+
+}
+
+.footer-container-contact-image{
+    width: 20vw;
+    display: flex;
+    align-self: flex-start;
+
 }
 
 .footer-container-contact-image img {
-    width: 350px;
+    width: 100%;
 }
 
-.footer-container-contact-form {
-    order: 3;
-    width: 30vw;
-    padding: 2vw;
-}
-
-.footer-container-contact-form p {
+.footer-container-contact-form{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    order: 3;
+    width: 30vw;
+}
+
+.footer-container-contact-form p{
+
+    text-align: center;
     font-size: 2em;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
-
-.footer-container-contact-form form {
-    padding: 2vw;
+.footer-container-contact-form form{
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.footer-container-contact-form form .footer-container-contact-form-input {
+.footer-container-contact-form form .footer-container-contact-form-input{
     width: 100%;
-    height: 40%;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 3%;
 }
 
-.footer-container-contact-form form .footer-container-contact-form-input input {
-    border-radius: 13px;
+.footer-container-contact-form form .footer-container-contact-form-input input{
     width: 80%;
     text-size-adjust: none;
-    padding: 1.5%;
-    font-size: 1.2em;
+    padding: 1%;
+    font-size: 1.5em;
     font-family: 'Source Sans Pro', sans-serif;
     outline: none;
+    border-radius: 10px;   
 }
-
-.footer-container-contact-form-textarea {
+.footer-container-contact-form-textarea{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center;  
+    margin-bottom: 1%;
 }
-
-.footer-container-contact-form-textarea textarea {
+.footer-container-contact-form-textarea textarea{
     outline: none;
     width: 80%;
     text-size-adjust: none;
@@ -349,12 +355,14 @@ footer {
     font-family: 'Source Sans Pro', sans-serif;
     height: 80%;
     padding: 1.5%;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 2%;
 }
 
+
+
 .check {
-    padding: 2% 0;
+    padding: 1%;
 }
 
 .container-checkbox {
@@ -364,6 +372,7 @@ footer {
     padding-left: 10%;
     margin-bottom: 18px;
     cursor: pointer;
+    font-size: 1.2em;
     text-align: start;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -374,6 +383,7 @@ footer {
 .container-checkbox a {
     color: rgba(40, 128, 6, 1);
     text-decoration: underline;
+    font-size: 1rem;
 }
 
 .container-checkbox input {
@@ -383,6 +393,7 @@ footer {
     height: 0px;
     width: 0;
 }
+
 
 .container-checkbox .checkmark {
     position: absolute;
@@ -424,34 +435,26 @@ footer {
     transform: rotate(45deg);
 }
 
-.footer-container-contact-form form button {
-    background-color: #9be644;
-    width: 40%;
-    padding: 2% 0;
-    font-weight: bold;
-    text-size-adjust: none;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    border: 0;
-    border-radius: 13px;
-    margin: 0 10%;
-    cursor: pointer;
+.footer-container-contact-form form .buttonSend{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-self: center;
 }
 
-.footer-container-contact-form form button:hover {
-    background-color: rgba(40, 128, 6, 1);
-    color: #fff;
+.footer-container-contact-form form .buttonSend img{
+    width: 80%;
 }
 
 .footer-container-info {
-    padding: 0 5%;
-    width: 20%;
+    width: 30vw;
+    padding: 1%;
     /*Cambiar*/
 }
 
 .footer-container-info-box {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 2%;
 
 }
