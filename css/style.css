@@ -725,9 +725,10 @@ footer {
     }
 
     .container-description-image-responsive {
-        display: grid;
-        justify-items: end;
-        gap: 0;
+        display: flex;
+        justify-items: center;
+        padding: 0;
+        margin: 0;
     }
 
     .container-description-image-responsive img {
