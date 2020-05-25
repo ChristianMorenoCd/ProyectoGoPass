@@ -17,6 +17,8 @@ body {
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
+    background: rgb(33,33,33);
+    background: radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(56,56,56,1) 50%, rgba(40,40,40,1) 100%);
 }
 
 div {
@@ -84,9 +86,7 @@ header {
 .menu {
     display: none;
 }
-.container-header-nav {
-    /* background-color: rgba(0, 0, 0, .4); */
-}
+
 
 .container-header-nav .nav-header ul {
     margin: 0;
@@ -189,8 +189,7 @@ header {
 /* Fin Estilos Header */
 /* Inicio estilos seccion infogopass */
 .infogopass {
-    height: 80vh;
-    background-image: url('../assets/img/home-fondo.png');
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,7 +199,7 @@ header {
 }
 
 .container-infogopass {
-    width: 70vw;
+    width: 60vw;
 }
 
 .container-infogopass .container-infogopass-title {
@@ -210,7 +209,7 @@ header {
 }
 
 .container-infogopass .container-infogopass-title p {
-    color: #585857;
+    color: white;
     text-transform: uppercase;
     font-size: 3em;
     font-weight: bold;
@@ -223,7 +222,7 @@ header {
 }
 
 .container-infogopass .container-infogopass-description p {
-    color: grey;
+    color: white;
     font-size: 1.5em;
     text-size-adjust: none;
 }
@@ -233,14 +232,17 @@ header {
     display: flex;
     justify-content: center;
     font-size: 1.7em;
-    color: #585857;
+    color: #9be644;
     text-size-adjust: none;
 }
 
 /* Fin estilos seccion infogopass */
 /* Inicio estilos seccion functiongopass */
 .functiongopass {
-    padding-right: 22%;
+    height: 50vh;
+    width: 75vw;
+    display: flex;
+    
 }
 
 .gopass-functiongopass-img-responsive {
@@ -248,17 +250,17 @@ header {
 }
 
 .functiongopass-img img {
-    width: 1000px;
+    width: 100%;
 }
 
 .functiongopass-img {
-    float: left;
-    shape-outside: polygon(0px 0px, 283px 3px, 356px 111px, 346px 193px, 428px 291px, 558px 262px, 375px 412px, 127px 602px, 0px 599px);
+    width: 50vw;
 }
 
 .container-functiongopass-text {
-    text-align: end;
-    padding: 8% 0;
+    width: 50vw;
+    text-align: center;
+    padding: 0 2%;
     text-size-adjust: none;
 }
 
@@ -271,22 +273,27 @@ header {
     font-size: 3em;
     text-transform: uppercase;
     font-weight: bold;
-    color: #585857;
+    color: white;
 }
 
 .container-functiongopass-description p {
     font-size: 1.5em;
-    color: gray;
+    color: white;
     text-size-adjust: none;
+    text-align: justify;
 }
 
 .container-functiongopass-img {
-    margin-top: 2%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
 }
 
 .container-functiongopass-img a img {
     cursor: pointer;
-    width: 300px;
+    width: 100%;
 }
 
 /* Fin estilos seccion functiongopass */
@@ -298,7 +305,7 @@ header {
 }
 
 .container-installgopass-title p {
-    color: #585857;
+    color: white;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 3em;
@@ -320,22 +327,21 @@ header {
 }
 
 .container-installgopass-items-number {
-    color: #585857;
+    color: white;
     font-size: 3em;
     font-weight: bold;
 }
 
 .container-installgopass-items-img1 {
-    width: 150px;
-    height: 250px;
+    width: 50%;
 }
 
 .container-installgopass-items-img2 {
-    width: 100%;
+    width: 70%;
 }
 
 .container-installgopass-items-img3 {
-    width: 100%;
+    width: 70%;
 }
 
 .container-installgopass-items-description {
@@ -348,59 +354,79 @@ header {
     margin: 0;
     text-align: center;
     padding: 0 5%;
-    color: gray;
+    color:white;
     font-size: 1.5em;
 }
 
 .container-installgopass-info {
+    
+    justify-items: center;
     display: flex;
-    padding: 2% 8%;
+    justify-content: center;
 }
 
 .container-installgopass-info p {
-    color: gray;
+    width: 75vw;
+    text-align: center;
+    color: white;
     font-size: 1em;
+    margin-bottom: 5%;
 }
 
 /* Fin estilos seccion installgopass */
 /* Inicio estilos seccion map */
 .mapgopass{
-    padding: 1% 5%;
-    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: start;
+    height: 70vh;
 }
 
 .container-icons-mapa-responsive{
     display: none;
 }
 .container-map-title{
-    display: flex;
-    justify-content: start;
-    padding: 1% 0;
+    width: 70vw;
+    text-align: start;
+    padding: 2% 0;
+ 
   
 }
 .container-map-title p{
     font-size: 3em;
-    color: #585857;
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
 }
 .container-map {
     display: flex;
     flex-wrap: wrap;
-    height: 80%; 
+    height: auto; 
     align-items: center;
+    align-items: flex-start;
+    justify-content: space-around;
 }
 .map{
     border-radius: 25px;
     width: 50%;
-    height: 100%; /*cambiar*/
+    height: 100% /*cambiar*/
 }
 .container-map-img{
     padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .container-map-img-marquer:nth-child(1){
     padding: 0 4.5%;
+}
+
+.container-map-img-marquer img{
+    width: 80%;
 }
 
 .link{
@@ -422,8 +448,7 @@ header {
 .container-seccion-gopass-imagen-paypal {
     display: flex;
     justify-content: flex-end;
-    padding: 0;
-    padding-top: 3%;
+    margin-bottom: 5%;
 }
 
 .container-seccion-gopass-imagen-paypal img {
@@ -433,71 +458,77 @@ header {
 /* Fin estilos seccion Map */
 /* Inicio estilos footer */
 footer {
-    background-color: black;
     display: flex;
     justify-content: center;
-    padding: 1% 0;
+    padding: 0 5%;
 }
 .footer-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+
+}
+
+.footer-container-contact-image{
+    width: 20vw;
+    display: flex;
+    align-self: flex-start;
+
 }
 
 .footer-container-contact-image img {
-    width: 350px;
+    width: 100%;
 }
 
-.footer-container-contact-form {
-    order: 3;
-    width: 30%;
-    padding: 0;
-}
-
-.footer-container-contact-form p {
-    margin: 2%;
-    padding: 0;
+.footer-container-contact-form{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    order: 3;
+    width: 30vw;
+}
+
+.footer-container-contact-form p{
+
+    text-align: center;
     font-size: 2em;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
-
-.footer-container-contact-form form {
+.footer-container-contact-form form{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.footer-container-contact-form form .footer-container-contact-form-input {
+.footer-container-contact-form form .footer-container-contact-form-input{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 3%;
 }
 
-.footer-container-contact-form form .footer-container-contact-form-input input {
-    border-radius: 13px;
+.footer-container-contact-form form .footer-container-contact-form-input input{
     width: 80%;
     text-size-adjust: none;
-    padding: 1.5%;
+    padding: 1%;
     font-size: 1.5em;
     font-family: 'Source Sans Pro', sans-serif;
     outline: none;
+    border-radius: 10px;   
 }
-
-.footer-container-contact-form-textarea {
+.footer-container-contact-form-textarea{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center;  
+    margin-bottom: 1%;
 }
-
-.footer-container-contact-form-textarea textarea {
+.footer-container-contact-form-textarea textarea{
     outline: none;
     width: 80%;
     text-size-adjust: none;
@@ -510,8 +541,10 @@ footer {
     margin-bottom: 2%;
 }
 
+
+
 .check {
-    padding: 2% 0;
+    padding: 1%;
 }
 
 .container-checkbox {
@@ -584,34 +617,26 @@ footer {
     transform: rotate(45deg);
 }
 
-.footer-container-contact-form form button {
-    background-color: #9be644;
-    padding: 2% 10%;
-    font-weight: bold;
-    text-size-adjust: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    border: 0;
-    border-radius: 13px;
-    margin: 0 10%;
-    cursor: pointer;
+.footer-container-contact-form form .buttonSend{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-self: center;
 }
 
-.footer-container-contact-form form button:hover {
-    background-color: rgba(40, 128, 6, 1);
-    color: #fff;
+.footer-container-contact-form form .buttonSend img{
+    width: 80%;
 }
 
 .footer-container-info {
-    padding: 0 5%;
-    width: 20%;
+    width: 30vw;
+    padding: 1%;
     /*Cambiar*/
 }
 
 .footer-container-info-box {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 2%;
 
 }
