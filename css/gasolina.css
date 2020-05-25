@@ -17,6 +17,8 @@ body {
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
+    background: rgb(33,33,33);
+    background: radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(56,56,56,1) 50%, rgba(40,40,40,1) 100%);
 }
 
 div {
@@ -191,18 +193,24 @@ header {
 
 /* Fin Estilos Header */
 /* Inicio estilos container gasolina */
+
+.container-seccion-gasolina{
+    display: flex;  
+    padding: 5% 0;
+}
 .container-seccion-gasolina-description {
-    background-image: url('../assets/img/gasolina-container-descripcion-fondo.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 12%;
+    display: flex;
 }
 
 .container-seccion-gasolina-description p {
-    color: gray;
+    color: white;
     font-size: 2em;
     text-align: justify;
+    padding: 5% 4%;
+}
+
+.container-seccion-gasolina-description img{
+    width: 10%;
 }
 .container-seccion-gasolina-img-responsive{
     display: none;
@@ -215,7 +223,7 @@ header {
 }
 
 .container-seccion-gasolina-img img {
-    width: 60%;
+    width: 100%;
 }
 
 .container-seccion-gasolina-title-aliados {
@@ -228,7 +236,7 @@ header {
     font-size: 3em;
     text-transform: uppercase;
     font-weight: bold;
-    color: #585857;
+    color: white;
 }
 
 .container-seccion-gasolina-title-aliados-img {
@@ -245,7 +253,7 @@ header {
 
 .container-seccion-gasolina-edsHabilitadas-title {
     display: flex;
-    color: #585857;
+    color: white;
     text-transform: uppercase;
     font-size: 2em;
     font-weight: bold;
@@ -253,7 +261,7 @@ header {
 
 .container-seccion-gasolina-edsHabilitadas-edifico {
     font-size: 1.5em;
-    color: gray;
+    color: white;
 }
 
 .container-seccion-gasolina-edsHabilitadas-edifico span {
@@ -263,7 +271,7 @@ header {
 
 .container-seccion-gasolina-edsHabilitadas-addres {
     font-size: 1.3em;
-    color: gray;
+    color: white;
     text-transform: uppercase;
 }
 
@@ -282,71 +290,77 @@ header {
 
 /* Inicio estilos footer */
 footer {
-    background-color: black;
     display: flex;
     justify-content: center;
-    padding: 1% 0;
+    padding: 0 5%;
 }
 .footer-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+
+}
+
+.footer-container-contact-image{
+    width: 20vw;
+    display: flex;
+    align-self: flex-start;
+
 }
 
 .footer-container-contact-image img {
-    width: 350px;
+    width: 100%;
 }
 
-.footer-container-contact-form {
-    order: 3;
-    width: 30%;
-    padding: 0;
-}
-
-.footer-container-contact-form p {
-    margin: 2%;
-    padding: 0;
+.footer-container-contact-form{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    order: 3;
+    width: 30vw;
+}
+
+.footer-container-contact-form p{
+
+    text-align: center;
     font-size: 2em;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
-
-.footer-container-contact-form form {
+.footer-container-contact-form form{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.footer-container-contact-form form .footer-container-contact-form-input {
+.footer-container-contact-form form .footer-container-contact-form-input{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 3%;
 }
 
-.footer-container-contact-form form .footer-container-contact-form-input input {
-    border-radius: 13px;
+.footer-container-contact-form form .footer-container-contact-form-input input{
     width: 80%;
     text-size-adjust: none;
-    padding: 1.5%;
+    padding: 1%;
     font-size: 1.5em;
     font-family: 'Source Sans Pro', sans-serif;
     outline: none;
+    border-radius: 10px;   
 }
-
-.footer-container-contact-form-textarea {
+.footer-container-contact-form-textarea{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center;  
+    margin-bottom: 1%;
 }
-
-.footer-container-contact-form-textarea textarea {
+.footer-container-contact-form-textarea textarea{
     outline: none;
     width: 80%;
     text-size-adjust: none;
@@ -359,8 +373,10 @@ footer {
     margin-bottom: 2%;
 }
 
+
+
 .check {
-    padding: 2% 0;
+    padding: 1%;
 }
 
 .container-checkbox {
@@ -433,34 +449,26 @@ footer {
     transform: rotate(45deg);
 }
 
-.footer-container-contact-form form button {
-    background-color: #9be644;
-    padding: 2% 10%;
-    font-weight: bold;
-    text-size-adjust: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    border: 0;
-    border-radius: 13px;
-    margin: 0 10%;
-    cursor: pointer;
+.footer-container-contact-form form .buttonSend{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-self: center;
 }
 
-.footer-container-contact-form form button:hover {
-    background-color: rgba(40, 128, 6, 1);
-    color: #fff;
+.footer-container-contact-form form .buttonSend img{
+    width: 80%;
 }
 
 .footer-container-info {
-    padding: 0 5%;
-    width: 20%;
+    width: 30vw;
+    padding: 1%;
     /*Cambiar*/
 }
 
 .footer-container-info-box {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 2%;
 
 }
