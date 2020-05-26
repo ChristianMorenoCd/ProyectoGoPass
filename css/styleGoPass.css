@@ -435,7 +435,44 @@ header {
 .container-map-img-marquer:nth-child(2){
     padding-left: 0;
 } */
+/* Estilo InfoWindows Map */
+.container-info-map{
+    padding: 1%;
+    text-align: start;
+}
+.container-info-map h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #9be644;
+    text-transform: uppercase;
+}
+.container-info-map-box{
+    display: flex;
+    align-items: center;
+}
+.container-info-map-text{
+    width: 80%;
+    padding: 0 1%;
+}
 
+.container-info-map-text p{
+    text-overflow: ellipsis;
+}
+
+.container-info-map-text p span{
+    font-size: 1.5em;
+    width: 10%;
+    text-align: center;
+    color: #9be644;
+    text-overflow: ellipsis;
+}
+.container-info-map-img{
+    width: 30%;
+}
+.container-info-map-img img{
+    border-radius: 8px;
+    width: 100%;
+}
 .container-map-img-marquer img{
     width: 65%;
 }
@@ -679,44 +716,7 @@ footer {
     margin: 2%;
     color: #9be644;
 }
-/* Estilo InfoWindows Map */
-.container-info-map{
-    padding: 1%;
-    text-align: start;
-}
-.container-info-map h1{
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #9be644;
-    text-transform: uppercase;
-}
-.container-info-map-box{
-    display: flex;
-    align-items: center;
-}
-.container-info-map-text{
-    width: 80%;
-    padding: 0 1%;
-}
 
-.container-info-map-text p{
-    text-overflow: ellipsis;
-}
-
-.container-info-map-text p span{
-    font-size: 1.5em;
-    width: 10%;
-    text-align: center;
-    color: #9be644;
-    text-overflow: ellipsis;
-}
-.container-info-map-img{
-    width: 30%;
-}
-.container-info-map-img img{
-    border-radius: 8px;
-    width: 100%;
-}
 /* Fin estilos footer */
 @media only screen and (max-width: 600px) {
 
