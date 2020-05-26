@@ -278,6 +278,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 2%;
+    margin-bottom: 5%;
 }
 .container-parqueadero-link-tarifas a{
     text-transform: uppercase;
@@ -516,6 +517,16 @@ footer {
 /* Fin estilos footer */
 
 @media only screen and (max-width: 600px){
+
+    header {
+        margin: 0;
+        padding: 0;
+        height: 37vh;
+        background-image: url('../assets/img/responsive/PARQUEADEROS-A.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     .container-header {
         height: 25vh;

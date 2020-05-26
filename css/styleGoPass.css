@@ -309,9 +309,15 @@ header {
     margin-bottom: 2%;
 }
 
+.container-functiongopass-img a{
+    display: flex;
+    justify-content: center;
+    cursor: initial;
+}
+
 .container-functiongopass-img a img {
     cursor: pointer;
-    width: 100%;
+    width: 65%;
 }
 
 /* Fin estilos seccion functiongopass */
@@ -351,8 +357,13 @@ header {
     font-weight: bold;
 }
 
+.container-img-installGopass{
+    display: flex;
+    clear: both;
+}
+
 .container-installgopass-items-img1 {
-    width: 50%;
+    width: 70%;
 }
 
 .container-installgopass-items-img2 {
@@ -491,6 +502,7 @@ header {
 
 .link{
     padding-left: 5%;
+    margin-bottom: 5%   ;
    
 }
 .container-link{

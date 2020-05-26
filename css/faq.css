@@ -492,6 +492,15 @@ footer {
 
 @media only screen and (max-width: 600px) {
 
+    header {
+        height: 37vh;
+        margin: 0;
+        padding: 0;
+        background-image: url('../assets/img/responsive/P-FRECUENTES-A.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     .container-header {
         height: 25vh;

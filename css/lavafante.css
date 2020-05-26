@@ -60,7 +60,7 @@ li {
 /* Inicio Estilos Header */
 header {
     background-image: url('../assets/img/lavafante-header-fondo.png');
-    background-position: center;
+    background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
 }

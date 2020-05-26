@@ -238,17 +238,21 @@ header {
     text-align: justify;
 }
 
-.button{
-    display: flex;
-    justify-content: center;
-}
 
 .button-container{
     display: flex;
+    justify-content: center;
 }
+.button-container > a{
 
-.button-container img{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: initial;
+}
+.button-container a img{
+    width: 60%;
+    cursor: pointer;
+    
 }
 
 /* Fin estilos seccion hero */
@@ -524,3 +528,143 @@ footer {
 }
 
 /* Fin estilos footer */
+
+@media only screen and (max-width: 600px){
+    header {
+        height: 40vh;
+        margin: 0;
+        padding: 0;
+        background-image: url('../assets/img/responsive/PARKING-A.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container-header {
+        height: 25vh;
+        background-color: initial;
+    }
+
+    .container-header-logo-gopass {
+        z-index: 5;
+        width: 10%;
+    }
+
+    .container-header-logo-gopass img {
+        width: 80px;
+    }
+
+
+    .container-header-button-login {
+        display: none;
+    }
+
+    .burguer-button {
+        width: 50vw;
+        position: fixed;
+        z-index: 4;
+        display: flex;
+        right: -40vw;
+    }
+
+    .burguer-button i {
+        color: #9be644;
+    }
+    .container-header-text{
+        background-color: initial;
+    }
+    .container-header-text img{
+        width: 60%;
+    }
+
+    .container-header-nav {
+        display: none;
+    }
+
+    .menu {
+        background-color: rgba(0, 0, 0, .9);
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 35vh;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+        transition: .5s;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .menu ul li {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .menu ul li a {
+        font-size: 1.5rem;
+        border-bottom: 1px solid #9be644;
+        margin: 0;
+        padding: 0;
+        color: #9be644;
+        text-transform: uppercase;
+    }
+
+    .menu.is-active {
+        transition: .5s;
+        left: 0;
+    }
+
+
+
+    .footer-container-contact-image {
+        padding: 5% 0;
+        width: 100vw;
+        justify-content: center;
+    }
+    .footer-container-contact-image img{
+        width: 100%;
+    }
+    .footer-container-contact-form {
+        width: initial;
+        padding: 0 2%;
+    }
+
+    .footer-container-contact-form form button {
+        width: 40%;
+    }
+
+    .footer-container-info {
+        padding: 2%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-container-info-box {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-container-info-box-image {
+        display: none;
+    }
+
+    .container-checkbox .checkmark {
+        height: 5vw;
+        width: 5vw;
+    }
+    .footer-container-contact-form form button {
+        margin-bottom: 5%;
+    }
+    .footer-container-info-icons{
+        justify-content: center;
+    }
+
+}

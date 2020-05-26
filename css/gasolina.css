@@ -200,6 +200,9 @@ header {
 /* Fin Estilos Header */
 /* Inicio estilos container gasolina */
 
+.seccion-gasolina{
+    margin-bottom: 5%;
+}
 .container-seccion-gasolina{
     display: flex;  
     padding: 5% 0;
@@ -311,6 +314,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 0 5%;
+    
 }
 .footer-container {
     width: 100%;
