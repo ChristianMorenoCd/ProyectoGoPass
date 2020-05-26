@@ -240,6 +240,10 @@ header {
 .container-peajes-img img{
     width: 100%;
 }
+
+.container-peajes-img-responsive{
+    display: none;
+}
 .container-peajes-title-aliados{
     display: flex;
     justify-content: center;
@@ -803,6 +807,22 @@ footer {
         font-size: 1.4em;
         padding: 0 5%;
     }
+
+    .container-peajes-img{
+        display: none;
+    }
+
+    .container-peajes-img-responsive{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .container-peajes-img-responsive{
+        width: 100%;
+    }
+
+
     .container-peajes-title-aliados{
         padding: 8%;
     }
@@ -813,7 +833,7 @@ footer {
         margin-bottom: 5%   ;
     }
     .container-peajes-img-aliados img{
-        width: 270px;
+        width: 25%;
     }
     .container-peajes-list-title-aliados p{
         font-size: 1.8em;
@@ -824,35 +844,44 @@ footer {
     }
     .container-peajes-container-list-aliados{
         width: 100%;
+        
         margin: 2%;
     }
     .container-list-aliados{
         width: 100%;
         padding: 0;
         margin: 0;
+        margin-bottom: 5%;
     }
     .container-peajes-container-list-aliados{
         width: 100%;
+        padding: 1% 5%;
     }
     .container-peajes-container-list-aliados-title{
-        justify-content: center;
+        justify-content: flex-start;
     }
     .container-peajes-container-list-aliados-addres{
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .container-info-desvinculacion, .container-info-desvinculacion-link{
         width: 80%;
     }
+
+    .buton-open-modal a img{
+        width: 100%;
+    }
    
     .container-seccion-peajes-imagen-paypal img {
-        width: 400px;
+        width: 80%;
     }
     .footer-container-contact-image {
         padding: 5% 0;
+        width: 100vw;
+        justify-content: center;
     }
     .footer-container-contact-image img{
-        width: 300px;
+        width: 100%;
     }
     .footer-container-contact-form {
         width: initial;
