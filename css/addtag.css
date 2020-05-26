@@ -17,8 +17,14 @@ body {
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
-    background: rgb(33,33,33);
-    background: radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(56,56,56,1) 50%, rgba(40,40,40,1) 100%);
+    background: #1c1c1c; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #1c1c1c 1%, #010101 15%, #121212 30%, #121212 30%, #010101 42%, #121212 49%, #121212 49%, #121212 57%, #0a0a0a 70%, #0a0a0a 77%, #191919 90%, #131313 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(1%,#1c1c1c), color-stop(15%,#010101), color-stop(30%,#121212), color-stop(30%,#121212), color-stop(42%,#010101), color-stop(49%,#121212), color-stop(49%,#121212), color-stop(57%,#121212), color-stop(70%,#0a0a0a), color-stop(77%,#0a0a0a), color-stop(90%,#191919), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* IE10+ */
+    background: linear-gradient(135deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 div {
@@ -161,7 +167,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5em;
-    color: #6ce52a;
+    color: white;
     position: relative;
     padding-bottom: 10px;
 }
@@ -204,7 +210,7 @@ header {
 /* Fin Estilos Header */
 /* Inicio estilos seccion Adquiere tu tag */
 .seccion-adquieretag {
-    padding: 0 12%;
+    padding: 0% 12%;
 
 }
 
@@ -222,12 +228,18 @@ header {
 }
 
 .container-adquieretag-form {
+    /* background-image: url("../assets/img/ADQUIERE-TU-TAG-D.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
     display: flex;
     justify-content: center;
     justify-content: center;
 }
 
 .container-adquieretag-form form {
+   
+    /* height: auto; */
     width: 90%;
     flex-direction: column;
     justify-content: space-around;
@@ -241,7 +253,7 @@ header {
 }
 
 .container-adquieretag-form form .container-adquieretag-form-data label {
-    color: #585857;
+    color: white;
     padding: 1%;
     font-size: 1.5em;
     margin-right: 3%;
@@ -279,6 +291,22 @@ header {
     color: white;
 }
 
+.container-button-form{
+      display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.container-button-form a{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.container-button-form a img{
+    cursor: pointer;
+    width: 65%;
+}
+
 .container-adquieretag-form form .btn {
     background-color: #9be644;
     padding: 1% 2%;
@@ -300,13 +328,13 @@ header {
 .container-adquieretag-text-info {
     display: flex;
     justify-content: center;
-    padding: 10% 20%;
+    /* padding: 10% 20%; */
     text-align: center;
 }
 
 .container-adquieretag-text-info p {
     color: white;
-    padding-bottom: 25%;
+    padding: 5% 10%;
     font-size: 2em;
     font-weight: bold;
 }
@@ -316,6 +344,7 @@ header {
     justify-content: flex-end;
     padding: 0;
     padding-top: 3%;
+    margin-bottom: 5%;
 }
 
 .container-seccion-faq-imagen-paypal img {
@@ -324,12 +353,12 @@ header {
 
 
 
-.adquieretag-text-info {
+/* .adquieretag-text-info {
     background-image: url('../assets/img/home-fondo.png');
     background-size: 100%;
     background-position: bottom;
     background-repeat: no-repeat;
-}
+} */
 
 /* Fin estilos seccion Adquiere tu tag */
 /* Inicio estilos footer */
@@ -548,6 +577,15 @@ footer {
 
 @media only screen and (max-width: 600px) {
 
+    header {
+        margin: 0;
+        padding: 0;
+        background-image: url('../assets/img/responsive/ADQUIERE-TU-TAG-A.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .container-header {
         height: 25vh;
         background-color: initial;
@@ -578,14 +616,11 @@ footer {
     .burguer-button i {
         color: #9be644;
     }
-
-    .container-header-text {
+    .container-header-text{
         background-color: initial;
     }
-
-    .container-header-text p {
-        display: flex;
-        font-size: 2rem;
+    .container-header-text img{
+        width: 60%;
     }
 
     .container-header-nav {
@@ -688,12 +723,12 @@ footer {
 
     .footer-container-contact-image {
         padding: 5% 0;
+        width: 100vw;
+        justify-content: center;
     }
-
-    .footer-container-contact-image img {
-        width: 300px;
+    .footer-container-contact-image img{
+        width: 100%;
     }
-
     .footer-container-contact-form {
         width: initial;
         padding: 0 2%;
@@ -722,12 +757,10 @@ footer {
         height: 5vw;
         width: 5vw;
     }
-
     .footer-container-contact-form form button {
         margin-bottom: 5%;
     }
-
-    .footer-container-info-icons {
+    .footer-container-info-icons{
         justify-content: center;
     }
 }
