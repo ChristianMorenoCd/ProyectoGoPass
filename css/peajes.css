@@ -818,8 +818,8 @@ footer {
         align-content: center;
     }
 
-    .container-peajes-img-responsive{
-        width: 100%;
+    .container-peajes-img-responsive img{
+        width: 80%;
     }
 
 
@@ -862,6 +862,10 @@ footer {
     }
     .container-peajes-container-list-aliados-addres{
         justify-content: flex-start;
+    }
+
+    .container-info-desvinculacion-box p{
+        font-size: .6em;
     }
 
     .container-info-desvinculacion, .container-info-desvinculacion-link{
