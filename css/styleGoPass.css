@@ -937,8 +937,10 @@ footer {
 
    
     .container-map-title{
+        display: flex;
         justify-content: center;
-        padding-top: 10%;
+        align-content: center;
+        width: 100%;
     }
     .container-map-title p{
         font-size: 1.8em;
@@ -948,6 +950,9 @@ footer {
     }
     .container-map{
         height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+
     }
     .map{
         width: 100%;
@@ -960,8 +965,10 @@ footer {
     }
 
     .container-map-img img{
-        width: 50%;
+        width: 80%;
     }
+
+
     .container-icons-mapa-responsive{
       
         display: none;
