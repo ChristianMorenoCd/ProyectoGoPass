@@ -832,6 +832,8 @@ footer {
     .container-infogopass .container-infogopass-description {
         padding: 0;
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .container-infogopass .container-infogopass-description p {
