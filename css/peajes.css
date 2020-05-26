@@ -17,8 +17,14 @@ body {
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
-    background: rgb(33,33,33);
-    background: radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(56,56,56,1) 50%, rgba(40,40,40,1) 100%);
+    background: #1c1c1c; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #1c1c1c 1%, #010101 15%, #121212 30%, #121212 30%, #010101 42%, #121212 49%, #121212 49%, #121212 57%, #0a0a0a 70%, #0a0a0a 77%, #191919 90%, #131313 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(1%,#1c1c1c), color-stop(15%,#010101), color-stop(30%,#121212), color-stop(30%,#121212), color-stop(42%,#010101), color-stop(49%,#121212), color-stop(49%,#121212), color-stop(57%,#121212), color-stop(70%,#0a0a0a), color-stop(77%,#0a0a0a), color-stop(90%,#191919), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* IE10+ */
+    background: linear-gradient(135deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 div {
@@ -157,7 +163,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5em;
-    color: #6ce52a;
+    color: white;
     position: relative;
     padding-bottom: 10px;
 }
@@ -300,19 +306,28 @@ header {
 }
 .container-info-desvinculacion, .container-info-desvinculacion-link{
     border: 1px solid #6ce52a;
-    width: 30%;
+    width: 50%;
     padding: 1%;
     text-align: center;
     margin: 1% 0;
-    background: rgb(33,33,33);
-    background: radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(56,56,56,1) 50%, rgba(40,40,40,1) 100%);
+    background: #1c1c1c; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #1c1c1c 1%, #010101 15%, #121212 30%, #121212 30%, #010101 42%, #121212 49%, #121212 49%, #121212 57%, #0a0a0a 70%, #0a0a0a 77%, #191919 90%, #131313 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(1%,#1c1c1c), color-stop(15%,#010101), color-stop(30%,#121212), color-stop(30%,#121212), color-stop(42%,#010101), color-stop(49%,#121212), color-stop(49%,#121212), color-stop(57%,#121212), color-stop(70%,#0a0a0a), color-stop(77%,#0a0a0a), color-stop(90%,#191919), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* IE10+ */
+    background: linear-gradient(135deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     border-radius: 20px;
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
 }
 
+.container-info-desvinculacion-box p{
+    font-size: 1.5em;
+}
 .buton-open-modal{
     margin: 0;
     padding: 0;
@@ -344,6 +359,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 5%;
 }
 
 .container-seccion-peajes-imagen-paypal img {
