@@ -212,13 +212,15 @@ header {
 
 .container-seccion-gasolina-description p {
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: justify;
     padding: 5% 4%;
 }
 
 .container-seccion-gasolina-description-img{
     border: 1px solid red;
+    display: flex;
+    justify-content: center;
     width: 50%;
 }
 
