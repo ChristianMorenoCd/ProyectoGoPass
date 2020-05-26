@@ -104,9 +104,7 @@ header {
     display: none;
 }
 
-.container-header-nav {
-    /* background-color: rgba(0, 0, 0, .4); */
-}
+
 
 .container-header-nav .nav-header ul {
     margin: 0;
@@ -274,6 +272,10 @@ header {
     width: 100%;
 }
 
+.img-responsive{
+    display: none;
+}
+
 .catalogo-tip {
     display: flex;
     justify-content: center;
@@ -315,11 +317,9 @@ header {
     display: flex;
 }
 
-.direcciones-datos-box {
-    width: 50%;
-}
 
 .direcciones-datos-box {
+    width: 50%;
     color: white;
     font-size: 1.5em;
     padding: 2% 0;
@@ -564,3 +564,179 @@ footer {
 }
 
 /* Fin estilos footer */
+
+@media only screen and (max-width: 600px){
+    header {
+        margin: 0;
+        padding: 0;
+        background-image: url('../assets/img/responsive/lavafante-header-fondo-responsive.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container-header {
+        height: 25vh;
+        background-color: initial;
+    }
+
+    .container-header-logo-gopass {
+        z-index: 5;
+        width: 10%;
+    }
+
+    .container-header-logo-gopass img {
+        width: 80px;
+    }
+
+
+    .container-header-button-login {
+        display: none;
+    }
+
+    .burguer-button {
+        width: 50vw;
+        position: fixed;
+        z-index: 4;
+        display: flex;
+        right: -40vw;
+    }
+
+    .burguer-button i {
+        color: #9be644;
+    }
+    .container-header-text{
+        background-color: initial;
+    }
+    .container-header-text img{
+        width: 60%;
+    }
+
+    .container-header-nav {
+        display: none;
+    }
+
+    .menu {
+        background-color: rgba(0, 0, 0, .9);
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 35vh;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+        transition: .5s;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .menu ul li {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .menu ul li a {
+        font-size: 1.5rem;
+        border-bottom: 1px solid #9be644;
+        margin: 0;
+        padding: 0;
+        color: #9be644;
+        text-transform: uppercase;
+    }
+
+    .menu.is-active {
+        transition: .5s;
+        left: 0;
+    }
+
+    
+    .hero-container {
+        color: white;
+        font-size: 1.3em;
+        text-align: justify;
+    }
+
+    .catalogo-titulo{
+        justify-content: center;
+    }
+
+    .catalogo-tip p{
+        color: white;
+        font-size: 1.3em;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .img-desktop{
+        display: none;
+    }
+
+    .img-responsive{
+        display: flex;
+    }
+    .direcciones-datos{
+        flex-wrap: wrap;
+    }
+    .direcciones-datos-box{
+        width: 100%;
+    }
+
+    .container-paypal{
+        padding: 5% 0;
+    }
+
+    .container-paypal img {
+        width: 80%;
+    }
+
+    .footer-container-contact-image {
+        padding: 5% 0;
+        width: 100vw;
+        justify-content: center;
+    }
+    .footer-container-contact-image img{
+        width: 100%;
+    }
+    .footer-container-contact-form {
+        width: initial;
+        padding: 0 2%;
+    }
+
+    .footer-container-contact-form form button {
+        width: 40%;
+    }
+
+    .footer-container-info {
+        padding: 2%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-container-info-box {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-container-info-box-image {
+        display: none;
+    }
+
+    .container-checkbox .checkmark {
+        height: 5vw;
+        width: 5vw;
+    }
+    .footer-container-contact-form form button {
+        margin-bottom: 5%;
+    }
+    .footer-container-info-icons{
+        justify-content: center;
+    }
+}
