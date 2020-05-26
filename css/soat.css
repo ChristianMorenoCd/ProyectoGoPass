@@ -231,6 +231,7 @@ header {
 .container-soat-aliados-img{
     display: flex;
     justify-content: center;
+    margin-bottom: 5%;
 }
 .container-seccion-soat-imagen-paypal  {
     display: flex;
