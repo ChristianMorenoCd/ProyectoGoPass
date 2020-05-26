@@ -731,7 +731,6 @@ footer {
     }
 
     .container-description-image-responsive {
-        border: 1px solid red;
         display: flex;
         justify-items: center;
         align-content: center;
