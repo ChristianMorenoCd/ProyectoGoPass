@@ -837,7 +837,7 @@ footer {
     }
 
     .container-infogopass .container-infogopass-description p {
-        font-size: 1.3em;
+        font-size: 12px;
         display: flex;
         justify-content: center;
     }
@@ -937,6 +937,9 @@ footer {
 
     .container-installgopass-info p {
         font-size: .6em;
+        width: 100%;
+        padding: 0 5%;
+        text-align: justify;
     }
 
    
