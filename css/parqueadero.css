@@ -17,8 +17,14 @@ body {
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
-    background: rgb(33,33,33);
-    background: radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(56,56,56,1) 50%, rgba(40,40,40,1) 100%);
+    background: #1c1c1c; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #1c1c1c 1%, #010101 15%, #121212 30%, #121212 30%, #010101 42%, #121212 49%, #121212 49%, #121212 57%, #0a0a0a 70%, #0a0a0a 77%, #191919 90%, #131313 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(1%,#1c1c1c), color-stop(15%,#010101), color-stop(30%,#121212), color-stop(30%,#121212), color-stop(42%,#010101), color-stop(49%,#121212), color-stop(49%,#121212), color-stop(57%,#121212), color-stop(70%,#0a0a0a), color-stop(77%,#0a0a0a), color-stop(90%,#191919), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* IE10+ */
+    background: linear-gradient(135deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 div {
@@ -224,12 +230,28 @@ header {
 .container-parqueadero-logo-aliado{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
 }
 .container-parqueadero-logo-aliado img{
     margin: 2%;
-    width: 200px;
+    width: 10%;
 }
+
+.container-parqueadero-logo-aliado-fontanar{
+    display: flex;
+    margin: 0 2%;
+
+}
+
+.container-parqueadero-logo-aliado-fontanar img{
+    width: 100%;
+}
+
+/* .container-parqueadero-logo-aliado img:nth-child(3){
+    width: 15%;
+} */
 .container-parqueadero-comingsoon{
     display: flex;
     justify-content: center;
@@ -257,7 +279,7 @@ header {
     text-transform: uppercase;
     font-size: 2em;
     color: white;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #6ce52a;
 }
 
 .container-seccion-parqueadero-imagen-paypal  {
@@ -265,6 +287,7 @@ header {
     justify-content: flex-end;
     padding: 0;
     padding-top: 3%;
+    margin-bottom: 5%;
 }
 
 .container-seccion-parqueadero-imagen-paypal  img {
@@ -629,9 +652,11 @@ footer {
 
     .footer-container-contact-image {
         padding: 5% 0;
+        width: 100vw;
+        justify-content: center;
     }
     .footer-container-contact-image img{
-        width: 300px;
+        width: 100%;
     }
     .footer-container-contact-form {
         width: initial;
