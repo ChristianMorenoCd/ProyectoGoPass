@@ -1,11 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="js/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/lavafante.css">
+
+
     <title>GoPass - Lavafante</title>
 </head>
 <body>
-    <h1>Bienvenido</h1>
+    <header>
+        <div class="container-header">
+            <a href="index.html" class="container-header-logo-gopass"> <img src="assets/img/header-logo-gopass.png"
+                    alt="logo GoPass"></a>
+            <div class="burguer-button" id="burguer-button">
+                <i class="fas fa-bars  fa-2x"></i>
+            </div>
+            <!-- <div class="container-header-button-login">
+                <a href="">iniciar sesión</a>
+            </div> -->
+        </div>
+        <div class="container-header-text">
+            <img src="assets/img/lavafante-header-img.png" alt="Pago-de-Gasolina">
+        </div>
+        <nav class="menu" id="menu">
+            <ul>
+                <li>
+                    <a href="gopass.html">¿qué es gopass?</a>
+                </li>
+                <li>
+                    <div class="subMenu_Responsive">
+                        <li><a href="gasolina.html">Gasolina</a></li>
+                        <li><a href="peajes.html">Peajes</a></li>
+                        <li><a href="parqueaderos.html">Parqueaderos</a></li>
+                        <li><a href="soat.html">SOAT</a></li>
+                        <li><a href="lavafante.html">Lavafante</a></li>
+                    </div>
+                </li>
+                <li>
+                    <a href="faq.html">preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a href="addtag.html">adquiere tu tag</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-header-nav">
+            <nav class="nav-header">
+                <ul>
+                    <li>
+                        <a href="gopass.html">¿qué es gopass?</a>
+                        <ul class="subMenu">
+                            <li><a href="gopass.html#infogopass">¿Qué es GoPass?</a></li>
+                            <li><a href="gopass.html#functiongopass">¿Cómo Funciona?</a></li>
+                            <li><a href="gopass.html#installgopass">¿cómo instalar tu tag?</a></li>
+                            <li><a href="gopass.html#ScrollMap">¿Dónde  encontrarnos?</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="linkServicios" href="#">nuestros servicios</a>
+                        <ul class="subMenu">
+                            <li><a href="gasolina.html">Gasolina</a></li>
+                            <li><a href="peajes.html">Peajes</a></li>
+                            <li><a href="parqueaderos.html">Parqueaderos</a></li>
+                            <li><a href="soat.html">SOAT</a></li>
+                            <li><a href="lavafante.html">Lavafante</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faq.html">preguntas frecuentes</a>
+                    </li>
+                    <li>
+                        <a href="addtag.html">adquiere tu tag</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <p>
+                ¿Quieres lavar tu carro de manera biosegura y sin efectivo? con LAVAFANTE y GoPass es posible, acercate a los establecimientos de lavafante e informa que GoPass es tu medio de pago. Si aún no tienes tu tag no te preocupes, solicitalo haciendo clic en el boton de "Adquirir tu Tag" y programa tu envio o reclama el tuyo en los establecimiento de LAVAFANTE. 
+            </p>
+        </div>
+    </section>
+
+    <section class="button">
+        <a href=""><img src="assets/img/container-button-lavafante.png" alt=""></a>
+    </section>
+
+    <section class="catalogo">
+        <div class="catalogo-titulo">
+            <p>lavado</p>
+        </div>
+        <div class="catalogo-precios">
+            <div class="catalogo-precios--items">
+                <img src="assets/img/lavante-lavadado-carro.png" alt="precio-lavado-carro">
+            </div>
+            <div class="catalogo-precios--items">
+                <img src="assets/img/lavante-lavadado-camioneta.png" alt="precio-lavado-camioneta">
+            </div>
+        </div>
+        <div class="catalogo-tip">
+            <p>incluye lavado exterior e interior con aspirada.</p>
+        </div>
+
+        <div class="catalogo-titulo">
+            <p>lavado + polinchado</p>
+        </div>
+        <div class="catalogo-precios">
+            <div class="catalogo-precios--items">
+                <img src="assets/img/lavante-lavadado+pol-carro.png" alt="precio-lavado-carro">
+            </div>
+            <div class="catalogo-precios--items">
+                <img src="assets/img/lavante-lavadado+pol-camioneta.png" alt="precio-lavado-camioneta">
+            </div>
+        </div>
+        <div class="catalogo-tip">
+            <p>Polichado con maquina y las mejores ceras para la mejor protección y brillo.</p>
+        </div>
+    </section>
+
+    <section class="direcciones">
+        <div class="direcciones-tiulo">
+            <p>sedes</p>
+        </div>
+        <div class="direcciones-datos">
+           <div class="direcciones-datos-box">
+                <p class="direcciones-datos-box-direcion"><span>1. </span>Av Suba "125-59, Bogotá</p>
+                <p>Tel: 320 897 8403</p>
+           </div> 
+           <div class="direcciones-datos-box">
+                <p class="direcciones-datos-box-direcion"><span>2. </span>Calle 94 #21 - 10</p>
+                <p>Tel: 320 436 3289</p>
+           </div>
+        </div>
+        <div class="direcciones-datos">
+            <div class="direcciones-datos-box">
+                 <p class="direcciones-datos-box-direcion"><span>3. </span>NQS Av 9 # 140 - 49</p>
+                 <p>Tel: 317 377 7699</p>
+            </div> 
+            <div class="direcciones-datos-box">
+                 <p class="direcciones-datos-box-direcion"><span>4. </span>Avenida 7ma # 127 - 08</p>
+                 <p>Tel: 320 752 471</p>
+            </div>
+         </div>
+         <div class="direcciones-datos">
+            <div class="direcciones-datos-box">
+                 <p class="direcciones-datos-box-direcion"><span>5. </span>Paralela Autonorte 127 A 31</p>
+                 <p>Tel: 318 671 59 07</p>
+            </div> 
+            <div class="direcciones-datos-box">
+                 <p class="direcciones-datos-box-direcion"><span>6. </span>Calle 73 # 14 - 32</p>
+                 <p>Tel: 322 704 4262</p>
+            </div>
+         </div>
+    </section>
+
+    <section class="paypal">
+        <div class="container-paypal">
+            <img class="img-big" src="assets/img/items-image.png" alt="">
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container-contact-image">
+                <img src="assets/img/footer-image.png" alt="">
+            </div>
+            <div class="footer-container-contact-form">
+                <p>
+                    contáctanos:
+                </p>
+                <form action="">
+                    <div class="footer-container-contact-form-input">
+                        <input class="Inputemail" type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="footer-container-contact-form-textarea">
+                        <textarea name="mensaje" placeholder="Mensaje" id="" cols="10" rows="1"></textarea>
+                    </div>
+
+                    <div class="check">
+                        <label class="container-checkbox">He leído, comprendo y acepto la política de privacidad y de
+                            tratamiento de datos que
+                            se encuentra en el documento de <a href="https://terminos.gopass.com.co"
+                                target="_blank">términos y condiciones</a>.
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <a class="buttonSend" type="submit" href="#"><img src="assets/img/footer-buttom-send.png" alt=""></a>
+<!-- 
+                    <button type="submit">
+                        <img src="assets/img/footer-buttom-send.png" alt="">
+                    </button> -->
+                </form>
+            </div>
+            <div class="footer-container-info">
+                <div class="footer-container-info-box">
+                    <div class="footer-container-info-box-image">
+                        <img src="assets/img/footer-contact-phone.png" alt="">
+                    </div>
+                    <div class="footer-container-info-box-data">
+                        <p>Líneas de atención al cliente</p>
+                        <p>(+571) 432 2230</p>
+                    </div>
+                </div>
+                <div class="footer-container-info-box">
+                    <div class="footer-container-info-box-image">
+                        <img src="assets/img/footer-contact-adress.png" alt="">
+                    </div>
+                    <div class="footer-container-info-box-data">
+                        <p>Carrera 56# 9-09, Of 504</p>
+                        <p>Bogotá, Colombia</p>
+                    </div>
+                </div>
+                <div class="footer-container-info-box">
+                    <div class="footer-container-info-box-image">
+                        <img src="assets/img/footer-contact-email.png" alt="">
+                    </div>
+                    <div class="footer-container-info-box-data">
+                        <p>Info@GoPass.com.co</p>
+                    </div>
+                </div>
+                <div class="footer-container-info-icons">
+                    <a href=""><span class="icons fab fa-facebook fa-3x fa-sm"></span></a>
+                    <a href=""><span class="icons fab fa-instagram fa-3x fa-sm"></span></a>
+                    <a href=""><span class="icons fab fa-youtube fa-3x fa-sm"></span></a>
+                    <a href=""><span class="icons fab fa-google-play fa-3x fa-sm"></span></a>
+                    <a href=""><span class="icons fab fa-apple fa-3x fa-sm"></span></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
 </body>
 </html>

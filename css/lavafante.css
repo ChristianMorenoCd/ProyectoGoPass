@@ -1,0 +1,566 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap');
+/* #9be644; */
+
+/* Estilos Generales */
+* {
+    box-sizing: content-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    background: #1c1c1c;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #1c1c1c 1%, #010101 15%, #121212 30%, #121212 30%, #010101 42%, #121212 49%, #121212 49%, #121212 57%, #0a0a0a 70%, #0a0a0a 77%, #191919 90%, #131313 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(1%, #1c1c1c), color-stop(15%, #010101), color-stop(30%, #121212), color-stop(30%, #121212), color-stop(42%, #010101), color-stop(49%, #121212), color-stop(49%, #121212), color-stop(57%, #121212), color-stop(70%, #0a0a0a), color-stop(77%, #0a0a0a), color-stop(90%, #191919), color-stop(100%, #131313));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #1c1c1c 1%, #010101 15%, #121212 30%, #121212 30%, #010101 42%, #121212 49%, #121212 49%, #121212 57%, #0a0a0a 70%, #0a0a0a 77%, #191919 90%, #131313 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #1c1c1c 1%, #010101 15%, #121212 30%, #121212 30%, #010101 42%, #121212 49%, #121212 49%, #121212 57%, #0a0a0a 70%, #0a0a0a 77%, #191919 90%, #131313 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #1c1c1c 1%, #010101 15%, #121212 30%, #121212 30%, #010101 42%, #121212 49%, #121212 49%, #121212 57%, #0a0a0a 70%, #0a0a0a 77%, #191919 90%, #131313 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #1c1c1c 1%, #010101 15%, #121212 30%, #121212 30%, #010101 42%, #121212 49%, #121212 49%, #121212 57%, #0a0a0a 70%, #0a0a0a 77%, #191919 90%, #131313 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c', endColorstr='#131313', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+div {
+    font-size: 16px;
+}
+
+section {
+    font-size: 16px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+/* Inicio Estilos Header */
+header {
+    background-image: url('../assets/img/lavafante-header-fondo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-header {
+    height: 30vh;
+    padding: 2% 2%;
+    /* background-color: rgba(0, 0, 0, .5); */
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.container-header-logo-gopass img {
+    width: 100px;
+}
+
+.burguer-button {
+    display: none;
+}
+
+.container-header-button-login {
+    display: grid;
+    justify-items: center;
+    align-items: top center;
+}
+
+.container-header-button-login a {
+    color: #9be644;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-size-adjust: none;
+}
+
+.container-header-text {
+    padding: 2%;
+    /* background-color: rgba(0, 0, 0, .5); */
+}
+
+.menu {
+    display: none;
+}
+
+.container-header-nav {
+    /* background-color: rgba(0, 0, 0, .4); */
+}
+
+.container-header-nav .nav-header ul {
+    margin: 0;
+    padding: 2.5%;
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container-header-nav .nav-header ul li ul {
+    display: none;
+}
+
+.container-header-nav .nav-header ul li {
+    display: grid;
+    justify-content: start;
+    justify-items: center;
+}
+
+.container-header-nav .nav-header ul li:nth-child(1) {
+    display: grid;
+    justify-content: start;
+    justify-items: center;
+}
+
+
+
+.nav-header ul li ul li {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    color: #fff;
+}
+
+
+.nav-header ul li ul li:hover {
+    background-color: #6ce52a;
+    color: black;
+}
+
+.container-header-nav .nav-header ul li ul li a:hover:hover {
+    color: black;
+}
+
+.container-header-nav .nav-header ul li ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.nav-header ul li ul li {
+    padding: 10px;
+}
+
+.nav-header ul li ul li a {
+    color: black;
+}
+
+.container-header-nav .nav-header ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.container-header-nav .nav-header ul li ul a::before {
+    display: none;
+}
+
+/* .container-header-nav .nav-header ul li .linkServicios::before {
+    display: none;
+} */
+
+.nav-header ul li a:hover+ul,
+.nav-header ul li ul:hover {
+    padding: 0;
+    margin: 0;
+    width: 15.5%;
+    position: absolute;
+    display: block;
+    text-align: center;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.container-header-nav .nav-header ul li a::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #6ce52a;
+    position: absolute;
+    bottom: 0;
+    transition: all 1s;
+}
+
+.container-header-nav .nav-header ul li a:hover::before {
+    width: 100%;
+}
+
+/* Fin Estilos Header */
+/* Inicio estilo seccion Hero */
+
+.hero {
+    display: flex;
+    align-content: center;
+    padding: 0 15%;
+    padding-top: 10%;
+}
+
+.hero-container {
+    color: white;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+/* Din estilo seccion Hero */
+/* Inicio estilos Button */
+.button {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.button a {
+    display: flex;
+    align-content: center;
+}
+
+.button a img {
+    width: 100%;
+}
+
+/* Fin estilos button */
+
+/* Inicio estilos catalogo */
+.catalogo {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalogo-titulo {
+    display: flex;
+}
+
+.catalogo-titulo p {
+    color: #6ce52a;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.catalogo-precios {
+    display: flex;
+    justify-content: space-around;
+}
+
+.catalogo-precios--items {
+    display: flex;
+}
+
+.catalogo-precios--items img {
+    width: 100%;
+}
+
+.catalogo-tip {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+.catalogo-tip p {
+    display: flex;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+/* Fin estilos catalogo */
+
+/* Inicion estilos direcciones */
+
+.direcciones {
+    padding: 0 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.direcciones-tiulo {
+    display: flex;
+}
+
+.direcciones-tiulo p {
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.direcciones-datos {
+    display: flex;
+}
+
+.direcciones-datos-box {
+    width: 50%;
+}
+
+.direcciones-datos-box {
+    color: white;
+    font-size: 1.5em;
+    padding: 2% 0;
+}
+
+
+.direcciones-datos-box-direcion span {
+    color: #6ce52a;
+    font-size: 1.5em;
+}
+
+/* Fin estilos direcciones */
+
+/* Inicio estilos paypal */
+.container-paypal {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin-bottom: 5%;
+}
+
+.container-paypal img {
+    width: 50%;
+}
+
+/* Fin estilos paypal */
+
+/* Inicio estilos footer */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.footer-container-contact-image {
+    width: 20vw;
+    display: flex;
+    align-self: flex-start;
+
+}
+
+.footer-container-contact-image img {
+    width: 100%;
+}
+
+.footer-container-contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    order: 3;
+    width: 30vw;
+}
+
+.footer-container-contact-form p {
+
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-container-contact-form form {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-container-contact-form form .footer-container-contact-form-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.footer-container-contact-form form .footer-container-contact-form-input input {
+    width: 80%;
+    text-size-adjust: none;
+    padding: 1%;
+    font-size: 1.5em;
+    font-family: 'Source Sans Pro', sans-serif;
+    outline: none;
+    border-radius: 10px;
+}
+
+.footer-container-contact-form-textarea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.footer-container-contact-form-textarea textarea {
+    outline: none;
+    width: 80%;
+    text-size-adjust: none;
+    border: 0;
+    border-radius: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 80%;
+    padding: 1.5%;
+    font-size: 1.5em;
+    margin-bottom: 2%;
+}
+
+
+
+.check {
+    padding: 1%;
+}
+
+.container-checkbox {
+    color: #fff;
+    display: block;
+    position: relative;
+    padding-left: 10%;
+    margin-bottom: 18px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: start;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container-checkbox a {
+    color: rgba(40, 128, 6, 1);
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0px;
+    width: 0;
+}
+
+
+.container-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5vw;
+    width: 1.5vw;
+    background-color: transparent;
+    border: 1px solid #499234;
+}
+
+.container-checkbox:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.container-checkbox input:checked~.checkmark {
+    background-color: rgba(40, 128, 6, 1);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.container-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.footer-container-contact-form form .buttonSend {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-self: center;
+}
+
+.footer-container-contact-form form .buttonSend img {
+    width: 80%;
+}
+
+.footer-container-info {
+    width: 30vw;
+    padding: 1%;
+    /*Cambiar*/
+}
+
+.footer-container-info-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2%;
+
+}
+
+.footer-container-info-box-image {
+    margin-right: 2%;
+}
+
+.footer-container-info-box-image img {
+    width: 60px;
+}
+
+.footer-container-info-box-data p {
+    margin: 0;
+    line-height: 90%;
+    text-size-adjust: none;
+    font-size: 1.5em;
+    color: #9be644;
+}
+
+.footer-container-info-icons {
+    text-size-adjust: none;
+    margin-top: 5%;
+    display: flex;
+}
+
+.footer-container-info-icons a {
+    margin: 2%;
+    color: #9be644;
+}
+
+/* Fin estilos footer */
