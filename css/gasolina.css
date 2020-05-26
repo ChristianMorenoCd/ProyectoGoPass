@@ -205,7 +205,6 @@ header {
     padding: 5% 0;
 }
 .container-seccion-gasolina-description {
-    border: 1px solid red;
     display: flex;
     width: 80%;
 }
@@ -218,7 +217,6 @@ header {
 }
 
 .container-seccion-gasolina-description-img{
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     width: 50%;
@@ -299,6 +297,7 @@ header {
     justify-content: flex-end;
     padding: 0;
     padding-top: 3%;
+    margin-bottom: 5%;
 }
 
 .container-seccion-gasolina-imagen-paypal img {
@@ -666,14 +665,16 @@ footer {
     }
 
     .container-seccion-gasolina-imagen-paypal img {
-        width: 400px;
+        width: 80%;
     }
    
     .footer-container-contact-image {
         padding: 5% 0;
+        width: 100vw;
+        justify-content: center;
     }
     .footer-container-contact-image img{
-        width: 300px;
+        width: 100%;
     }
     .footer-container-contact-form {
         width: initial;
@@ -709,10 +710,9 @@ footer {
     .footer-container-info-icons{
         justify-content: center;
     }
+
 }
 
 @media only screen and (min-width: 1200px) {
-    .footer-container-contact-image img {
-        width: 350px;
-    }
+  
 }
