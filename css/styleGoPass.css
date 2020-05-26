@@ -840,6 +840,7 @@ footer {
         font-size: 12px;
         display: flex;
         justify-content: center;
+        text-align: justify;
     }
 
     .container-infogopass .container-infogopass-description strong {

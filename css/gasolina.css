@@ -17,8 +17,14 @@ body {
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
-    background: rgb(33,33,33);
-    background: radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(56,56,56,1) 50%, rgba(40,40,40,1) 100%);
+    background: #1c1c1c; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #1c1c1c 1%, #010101 15%, #121212 30%, #121212 30%, #010101 42%, #121212 49%, #121212 49%, #121212 57%, #0a0a0a 70%, #0a0a0a 77%, #191919 90%, #131313 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(1%,#1c1c1c), color-stop(15%,#010101), color-stop(30%,#121212), color-stop(30%,#121212), color-stop(42%,#010101), color-stop(49%,#121212), color-stop(49%,#121212), color-stop(57%,#121212), color-stop(70%,#0a0a0a), color-stop(77%,#0a0a0a), color-stop(90%,#191919), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* IE10+ */
+    background: linear-gradient(135deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 div {
@@ -151,7 +157,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5em;
-    color: #6ce52a;
+    color: white;
     position: relative;
     padding-bottom: 10px;
 }
@@ -199,7 +205,9 @@ header {
     padding: 5% 0;
 }
 .container-seccion-gasolina-description {
+    border: 1px solid red;
     display: flex;
+    width: 80%;
 }
 
 .container-seccion-gasolina-description p {
@@ -209,8 +217,17 @@ header {
     padding: 5% 4%;
 }
 
+.container-seccion-gasolina-description-img{
+    border: 1px solid red;
+    width: 50%;
+}
+
+.container-seccion-gasolina-description-img img{
+    width: 100%;
+}
+
 .container-seccion-gasolina-description img{
-    width: 10%;
+    width: 11%;
 }
 .container-seccion-gasolina-img-responsive{
     display: none;
