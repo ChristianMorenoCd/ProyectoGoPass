@@ -1012,9 +1012,11 @@ footer {
 
     .footer-container-contact-image {
         padding: 5% 0;
+        width: 100vw;
+        justify-content: center;
     }
     .footer-container-contact-image img{
-        width: 300px;
+        width: 100%;
     }
     .footer-container-contact-form {
         width: initial;
