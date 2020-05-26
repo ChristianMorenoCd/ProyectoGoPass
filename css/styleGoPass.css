@@ -17,6 +17,7 @@ body {
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
+<<<<<<< HEAD
     background: #1c1c1c; /* Old browsers */
     background: -moz-linear-gradient(-45deg, #1c1c1c 1%, #010101 15%, #121212 30%, #121212 30%, #010101 42%, #121212 49%, #121212 49%, #121212 57%, #0a0a0a 70%, #0a0a0a 77%, #191919 90%, #131313 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right bottom, color-stop(1%,#1c1c1c), color-stop(15%,#010101), color-stop(30%,#121212), color-stop(30%,#121212), color-stop(42%,#010101), color-stop(49%,#121212), color-stop(49%,#121212), color-stop(57%,#121212), color-stop(70%,#0a0a0a), color-stop(77%,#0a0a0a), color-stop(90%,#191919), color-stop(100%,#131313)); /* Chrome,Safari4+ */
@@ -25,6 +26,10 @@ body {
     background: -ms-linear-gradient(-45deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* IE10+ */
     background: linear-gradient(135deg, #1c1c1c 1%,#010101 15%,#121212 30%,#121212 30%,#010101 42%,#121212 49%,#121212 49%,#121212 57%,#0a0a0a 70%,#0a0a0a 77%,#191919 90%,#131313 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+=======
+    background-image: linear-gradient(to bottom right, rgb(32, 32, 36), rgb(30, 29, 33), rgb(27, 27, 30), rgb(25, 24, 26), rgb(22, 22, 23), rgb(20, 19, 20), rgb(18, 17, 17), rgb(15, 14, 15), rgb(13, 12, 12), rgb(10, 9, 9), rgb(8, 7, 7), rgb(5, 4, 4));
+
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
 }
 
 div {
@@ -196,6 +201,10 @@ header {
 /* Inicio estilos seccion infogopass */
 .infogopass {
     height: 50vh;
+<<<<<<< HEAD
+=======
+    /* background-image: url('../assets/img/home-fondo.png'); */
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -216,7 +225,11 @@ header {
 }
 
 .container-infogopass .container-infogopass-title p {
+<<<<<<< HEAD
     color: white;
+=======
+    color:white;
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
     text-transform: uppercase;
     font-size: 3em;
     font-weight: bold;
@@ -246,17 +259,35 @@ header {
 /* Fin estilos seccion infogopass */
 /* Inicio estilos seccion functiongopass */
 .functiongopass {
+<<<<<<< HEAD
     height: 50vh;
     width: 75vw;
     display: flex;
     
+=======
+    padding-right: 0%;
+    display: flex;
+    justify-content: start;
+
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
 }
 
 .gopass-functiongopass-img-responsive {
     display: none;
 }
 
+.functiongopass-img{
+    width: 40vw;
+    height: 45vh;
+    background-image: url('../assets/img/gopass-functiongopass-img.png');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
 .functiongopass-img img {
+<<<<<<< HEAD
     width: 100%;
 }
 
@@ -268,6 +299,19 @@ header {
     width: 50vw;
     text-align: center;
     padding: 0 2%;
+=======
+    width: 110%;
+}
+
+/* .functiongopass-img {
+    float: left;
+    shape-outside: polygon(0px 0px, 283px 3px, 356px 111px, 346px 193px, 428px 291px, 558px 262px, 375px 412px, 127px 602px, 0px 599px);
+} */
+
+.container-functiongopass-text {
+    width: 37vw;
+    text-align: center;
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
     text-size-adjust: none;
 }
 
@@ -284,6 +328,7 @@ header {
 }
 
 .container-functiongopass-description p {
+    text-align: justify;
     font-size: 1.5em;
     color: white;
     text-size-adjust: none;
@@ -291,11 +336,16 @@ header {
 }
 
 .container-functiongopass-img {
+<<<<<<< HEAD
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     margin-bottom: 2%;
+=======
+    display: flex;
+    justify-content: center;
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
 }
 
 .container-functiongopass-img a img {
@@ -308,6 +358,7 @@ header {
 .container-installgopass-title {
     display: flex;
     justify-content: center;
+    padding-top: 2%;
     padding-bottom: 5%;
 }
 
@@ -333,18 +384,25 @@ header {
     padding: 2%;
 }
 
+<<<<<<< HEAD
 .container-installgopass-items-number {
     color: white;
     font-size: 3em;
     font-weight: bold;
 }
+=======
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
 
 .container-installgopass-items-img1 {
     width: 50%;
 }
 
 .container-installgopass-items-img2 {
+<<<<<<< HEAD
     width: 70%;
+=======
+    width: 80%;
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
 }
 
 .container-installgopass-items-img3 {
@@ -373,8 +431,11 @@ header {
 }
 
 .container-installgopass-info p {
+<<<<<<< HEAD
     width: 75vw;
     text-align: center;
+=======
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
     color: white;
     font-size: 1em;
     margin-bottom: 5%;
@@ -383,11 +444,16 @@ header {
 /* Fin estilos seccion installgopass */
 /* Inicio estilos seccion map */
 .mapgopass{
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     height: 70vh;
+=======
+    padding: 1% 10%;
+    height: 80vh;
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
 }
 
 .container-icons-mapa-responsive{
@@ -507,13 +573,18 @@ header {
 /* Inicio estilos footer */
 footer {
     display: flex;
+<<<<<<< HEAD
     justify-content: center;
     padding: 0 5%;
+=======
+    padding: 2%;
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
 }
 .footer-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+<<<<<<< HEAD
     justify-content: space-around;
 
 }
@@ -530,6 +601,28 @@ footer {
 }
 
 .footer-container-contact-form{
+=======
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.footer-container-contact-image img {
+    width: 100%;
+}
+
+.footer-container-contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    order: 3;
+    width: 40%;
+    padding: 0;
+}
+
+.footer-container-contact-form p {
+    margin: 0;
+    padding: 0;
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -541,7 +634,7 @@ footer {
 
     text-align: center;
     font-size: 2em;
-    color: #fff;
+    color: #6ce52a;
     text-transform: uppercase;
     font-weight: bold;
     padding: 0;
@@ -583,7 +676,7 @@ footer {
     border: 0;
     border-radius: 13px;
     font-family: 'Source Sans Pro', sans-serif;
-    height: 80%;
+
     padding: 1.5%;
     font-size: 1.5em;
     margin-bottom: 2%;
@@ -593,6 +686,11 @@ footer {
 
 .check {
     padding: 1%;
+<<<<<<< HEAD
+=======
+    display: flex;
+    justify-content: center;
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
 }
 
 .container-checkbox {
@@ -665,11 +763,26 @@ footer {
     transform: rotate(45deg);
 }
 
+<<<<<<< HEAD
 .footer-container-contact-form form .buttonSend{
     padding: 0;
     margin: 0;
     display: flex;
     justify-self: center;
+=======
+.footer-container-contact-form form button {
+    background-color: #9be644;
+    padding: 2%;
+    font-weight: bold;
+    text-size-adjust: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 13px;
+    width: 30%;
+    cursor: pointer;
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
 }
 
 .footer-container-contact-form form .buttonSend img{
@@ -677,8 +790,16 @@ footer {
 }
 
 .footer-container-info {
+<<<<<<< HEAD
     width: 30vw;
     padding: 1%;
+=======
+    display: flex;
+    flex-direction: column;
+    padding: 0 2%;
+    padding-left: 3%;
+    width: 30%;
+>>>>>>> ec9d928b5fed2a04ce952cfc01bd1c144925cbf7
     /*Cambiar*/
 }
 
