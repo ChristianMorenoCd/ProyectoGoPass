@@ -731,14 +731,16 @@ footer {
     }
 
     .container-description-image-responsive {
+        border: 1px solid red;
         display: flex;
         justify-items: center;
+        align-content: center;
         padding: 0;
         margin: 0;
     }
 
     .container-description-image-responsive img {
-        width: 80%;
+        width: 100%;
     }
 
     .container-description-title {
@@ -771,26 +773,33 @@ footer {
     .container-description-image {
         display: none;
     }
+    
     .container-items{
         flex-direction: column;
-        padding: 2%;
-    }
-    .container-items-box{
-        padding-left: 15px;
         justify-content: center;
-        width: 100vw;
+        align-content: center;
+    }
+
+    .container-items-box{
+        width: 100%;
+        padding: 0;
+
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 
     .container-items-box img{
-        width: 80%;
+        width: 90%;
+        object-fit: contain ;
     }
-
     .container-seccion-home-imagen-paypal{
         padding: 5% 0;
     }
 
     .container-seccion-home-imagen-paypal img {
-        width: 400px;
+        width: 80%;
     }
 
     .footer-container-contact-image {
