@@ -428,13 +428,13 @@ header {
     align-content: center;
 }
 
-.container-map-img-marquer{
-    padding-left: 15%;
+/* .container-map-img-marquer{
+   
 }
 
 .container-map-img-marquer:nth-child(2){
     padding-left: 0;
-}
+} */
 
 .container-map-img-marquer img{
     width: 65%;
