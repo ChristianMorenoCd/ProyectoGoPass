@@ -612,22 +612,30 @@ footer {
         transition: .5s;
         left: 0;
     }
-    .container-seccion-gasolina-description{
-        background-image: url('../assets/img/responsive/gasolina-seccion-responsive.png');
-        background-position: center;
-        background-size: 100%;
-        background-repeat: no-repeat;
+
+    .container-seccion-gasolina{
+        display: flex;
+        flex-direction: column;
+        
     }
     .container-seccion-gasolina-description{
-        padding: 0;
-        padding: 10%;
+        order: 2;
+        width: 100%;
     }
     .container-seccion-gasolina-description p {
         display: table-cell;
-        color: gray;
+        color: white;
         font-size: 1.3rem;
         text-align: justify;
     }
+
+    .container-seccion-gasolina-description-img{
+        width: auto;
+        padding: 0;
+        justify-content: flex-end;        
+    }
+
+
     .container-seccion-gasolina-img {
         display: none;
     }
@@ -635,9 +643,10 @@ footer {
     .container-seccion-gasolina-img-responsive{
         display: flex;
         justify-content: center;
+        padding: 2% 0;
     }
     .container-seccion-gasolina-img-responsive img{
-        width: 100%; 
+        width: 80%; 
     }
     .container-seccion-gasolina-title-aliados p {
         font-size: 1.8em;
