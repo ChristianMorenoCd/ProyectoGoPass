@@ -128,6 +128,9 @@ header {
 .nav-header ul li ul li{
     width: 100%;
     background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    justify-content: center;
+    align-content: center;
     color: #fff;
 }
 
@@ -135,17 +138,20 @@ header {
 .nav-header ul li ul li:hover{
     background-color: #6ce52a;
     color: black;
+    display: flex;
+    justify-content: center;
 }
 .container-header-nav .nav-header ul li ul li a:hover:hover{
     color: black;
 }
 
 .container-header-nav .nav-header ul li ul li a{
-    color: #fff;
+    color: white;
+    width: 100%;
+    text-align: center;
     font-weight: bold;
     font-size: 1.2em;
 }
-
 .nav-header ul li ul li{
     padding: 10px;
 }
@@ -207,16 +213,36 @@ header {
     display: flex;  
     padding: 5% 0;
 }
+
 .container-seccion-gasolina-description {
     display: flex;
+    flex-direction: column;
     width: 80%;
+    padding: 5% 0;
 }
 
 .container-seccion-gasolina-description p {
     color: white;
     font-size: 1.5em;
     text-align: justify;
-    padding: 5% 4%;
+    padding: 0 4%;
+}
+
+
+.container-seccion-gasolina-description-principal{
+    padding-top: 5%;
+    color: white;
+    font-size: 40px;
+    padding: 0 4%;
+}
+.container-seccion-gasolina-description-secundario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-seccion-gasolina-description-secundario strong{
+    color: #6ce52a;
 }
 
 .container-seccion-gasolina-description-img{

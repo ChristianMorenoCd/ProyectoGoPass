@@ -134,6 +134,9 @@ header {
 .nav-header ul li ul li{
     width: 100%;
     background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    justify-content: center;
+    align-content: center;
     color: #fff;
 }
 
@@ -141,13 +144,17 @@ header {
 .nav-header ul li ul li:hover{
     background-color: #6ce52a;
     color: black;
+    display: flex;
+    justify-content: center;
 }
 .container-header-nav .nav-header ul li ul li a:hover:hover{
     color: black;
 }
 
 .container-header-nav .nav-header ul li ul li a{
-    color: #fff;
+    color: white;
+    width: 100%;
+    text-align: center;
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -214,11 +221,15 @@ header {
 }
 .container-peajes-description-strong{
     display: flex;
+    color: white;
 }
+
+
 .container-peajes-description-strong strong{
     font-size: 2em;
     color: white;
     font-weight: bold;
+    color: #6ce52a;
     
 }
 .container-peajes-description-strong-text{
@@ -867,7 +878,7 @@ footer {
     }
 
     .container-info-desvinculacion-box p{
-        font-size: .6em;
+        font-size: 1em;
     }
 
     .container-info-desvinculacion, .container-info-desvinculacion-link{

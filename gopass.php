@@ -110,10 +110,10 @@
                     Somos un ecosistema de servicios diseñados especialmente para mejorar tu movilidad. Con GoPass ahora
                     será más fácil pagar el parqueadero de centros comerciales, ya no será necesario el molesto papelito
                     que tenías que guardar para pagar y salir, ahora con tu tag GoPass entras y sales por las entradas
-                    exclusivas sin nungún problema, paga los peajes, paga el combustible de tu vehículo y actualiza tu
+                    exclusivas sin nungun problema, paga los peajes, paga el combustible de tu vehículo y actualiza tu
                     SOAT. <br>
                 </p>
-                <strong>¡Todo con un soló TAG!</strong>
+                <strong>¡Todo con un solo TAG!</strong>
             </div>
         </div>
     </section>
@@ -177,17 +177,17 @@
                 </div>
                 
                 <div class="container-installgopass-items-description">
-                    <p>Por último registra el TAG con el código QR a travéz de tu teléfono. Déspues de 24 horas quedará activo
+                    <p>Por último registra el TAG con el código QR a través de tu teléfono. Después de 24 horas quedará activo
                         tu TAG.</p>
                 </div>
             </div>
         </div>
         <div class="container-installgopass-info">
             <p>*Los costos del ecosistema completo de GoPass tienen un valor de $9.000+IVA al mes. Si quieres usar
-                GoPass soló para pagar peajes, no habrá costo de membresia, el Tag GoPass tiene un precio de
-                $20.000+IVA. Hacer parte de la comunidad GoPass no soló te brindará la comodidad de los pagos
+                GoPass solo para pagar peajes, no habrá costo de membresía, el Tag GoPass tiene un precio de
+                $20.000+IVA. Hacer parte de la comunidad GoPass no solo te brindará la comodidad de los pagos
                 automáticos sino que tambien accederás a promociones y descuentos exclusivos que GoPass tiene preparados para
-                tí.</p>
+                ti.</p>
         </div>
     </section>
 

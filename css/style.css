@@ -111,13 +111,14 @@ header {
 }
 
 .container-header-nav .nav-header ul li {
-    display: grid;
+    display: flex;
     justify-content: start;
     justify-items: center;
 }
 
 .container-header-nav .nav-header ul li:nth-child(1) {
-    display: grid;
+    display: flex;
+    width: 100%;
     justify-content: start;
     justify-items: center;
 }
@@ -127,6 +128,9 @@ header {
 .nav-header ul li ul li{
     width: 100%;
     background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    justify-content: center;
+    align-content: center;
     color: #fff;
 }
 
@@ -134,13 +138,17 @@ header {
 .nav-header ul li ul li:hover{
     background-color: #6ce52a;
     color: black;
+    display: flex;
+    justify-content: center;
 }
 .container-header-nav .nav-header ul li ul li a:hover:hover{
     color: black;
 }
 
 .container-header-nav .nav-header ul li ul li a{
-    color: #fff;
+    color: white;
+    width: 100%;
+    text-align: center;
     font-weight: bold;
     font-size: 1.2em;
 }
