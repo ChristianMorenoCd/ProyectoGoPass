@@ -118,13 +118,14 @@ header {
 }
 
 .container-header-nav .nav-header ul li {
-    display: grid;
+    display: flex;
     justify-content: start;
     justify-items: center;
 }
 
 .container-header-nav .nav-header ul li:nth-child(1) {
-    display: grid;
+    display: flex;
+    width: 100%;
     justify-content: start;
     justify-items: center;
 }
